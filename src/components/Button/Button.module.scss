@@ -1,0 +1,20 @@
+@use '../../styles/variables' as *;
+
+@use "sass:color";
+
+.button {
+  background-color: $primary-color;
+  color: white;
+
+  &:hover {
+    background-color: color.adjust($primary-color, $lightness: -10%);
+  }
+
+  &.secondary {
+    background-color: $secondary-color;
+
+    &:hover {
+      background-color: color.adjust($secondary-color, $lightness: -10%);
+    }
+  }
+}
