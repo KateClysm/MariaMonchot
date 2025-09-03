@@ -3,6 +3,34 @@
 
 body {
   font-family: $font-family;
-  background-color: #f5f5f5;
-  color: #333;
+  background-image: linear-gradient(to right, #04161a, #061117, #060c12, #05060a, #010101);
+  color: #ffffff;
+  height: 100vh;
+
+  .about{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 10rem;
+    
+    .about-content{
+      border: 1px solid white;
+      width: 70%;
+      height: 50%;
+    }
+
+    .about-svg{
+      position: absolute;
+      top: 0;
+      left: -25vw;
+      background-image: url('../assets/svgs/ccchaos.svg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      width: 50vw;
+    }
+
+  }
 }
