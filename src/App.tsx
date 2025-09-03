@@ -1,26 +1,54 @@
-function App() {
+import React from 'react';
+
+//Ruteo
+import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
+
+//Componentes y Secciones
+import Nav from './components/nav/Nav';
+import About from './sections/About/About';
+import AllProjects from './pages/allprojects/AllProjects';
+
+//Estilos
+import './styles/main.scss'
+
+
+const App: React.FC = () => {
+
+  const Layout = () => {
+    return (
+      <> 
+        <Nav />
+        <Outlet />
+      </>
+    );
+  };
+ 
+  const router = createBrowserRouter([
+    {
+      path: '/mariamonchot/', 
+      element: <Layout />,
+      children: [
+        {
+          path: '/mariamonchot/',
+          element: 
+            <>
+              <About/>
+
+            </>
+        },
+        {
+          path: '/mariamonchot/allprojects',
+          element: <AllProjects/>
+        }
+      ]
+    }
+  ]);
+
   return (
-    <>
-      {/* <Navbar />
-      <About />
-      <Projects />
-      <Contact /> */}
-
-      <div className="body">
-        <div className="about">
-          <div className="about-content">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam repellat velit maiores culpa repudiandae et veniam deserunt vel ab assumenda, aspernatur voluptatem expedita. Voluptatibus provident modi minima atque facere laudantium.</p>
-          </div>
-
-          <div className="about-svg">
-            
-          </div>
-
-          
-        </div>
-      </div>
-    </>
-  )
-}
+    <div>
+      <RouterProvider router={router} />
+    </div>
+  );
+};
 
 export default App;

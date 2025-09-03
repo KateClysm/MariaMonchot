@@ -1,5 +1,48 @@
+@use './variables' as v;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: v.$font-secondary;
+  letter-spacing: 0.1rem;
+  scroll-behavior: smooth;
+  color: v.$white-color;
+  text-align: left;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right, #04161a, #061117, #060c12, #05060a, #010101);
+}
+
+// Ocultar scrollbars en navegadores Webkit
+::-webkit-scrollbar {
+  display: none;
+}
+
+a { text-decoration: none;}
+
+h1 { font-family: v.$font-primary; font-size: 3rem;}
+h2 { font-family: v.$font-secondary; font-size: 2.4rem;}
+h2{ color: v.$primary-color}
+h1,h2,h3{font-weight: normal; display: inline-block;}
+p, li { font-size: 1.2rem; }
+
+.margin-mark {
+  margin: 0 6rem;
+}
+
+.fixed-border{
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid v.$primary-color;
+}
+
+.m-top-5{
+  margin-top: 5rem;
+}
+
+.m-top-2{
+  margin-top: 2rem;
 }

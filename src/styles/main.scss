@@ -1,36 +1,66 @@
-@use './variables' as *;
-@use './reset';
+@use './variables' as v;
+@use './reset' ;
 
-body {
-  font-family: $font-family;
-  background-image: linear-gradient(to right, #04161a, #061117, #060c12, #05060a, #010101);
-  color: #ffffff;
-  height: 100vh;
 
-  .about{
-    width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    margin-top: 10rem;
-    
-    .about-content{
-      border: 1px solid white;
-      width: 70%;
-      height: 50%;
-    }
+// Ajustes responsivos de tamaño de fuente en `html`
+html {
+  font-size: v.$font-size-small-mobile;
 
-    .about-svg{
-      position: absolute;
-      top: 0;
-      left: -25vw;
-      background-image: url('../assets/svgs/ccchaos.svg');
-      background-size: cover;
-      background-position: center;
-      height: 100vh;
-      width: 50vw;
-    }
-
+  @media (min-width: 425px) {
+    font-size: v.$font-size-mobile;
+  }
+  @media (min-width: 600px) {
+    font-size: v.$font-size-tablet;
+  }
+  @media (min-width: 1240px) {
+    font-size: v.$font-size-laptop;
+  }
+  @media (min-width: 1400px) {
+    font-size: v.$font-size-desktop;
+  }
+  @media (min-width: 1900px) {
+    font-size: v.$font-size-large-desktop;
+  }
+  @media (min-width: 2500px) {
+    font-size: v.$font-size-huge-desktop;
   }
 }
+
+// 🛠 Clase utilitaria
+.px5p {
+  padding: 0 5%;
+}
+
+// body {
+//   font-family: $font-family;
+//   background-image: linear-gradient(to right, #04161a, #061117, #060c12, #05060a, #010101);
+//   color: #ffffff;
+//   height: 100vh;
+
+//   .about{
+//     width: 100%;
+//     height: 500px;
+//     display: flex;
+//     justify-content: center;
+//     position: relative;
+//     margin-top: 10rem;
+    
+//     .about-content{
+//       border: 1px solid white;
+//       width: 70%;
+//       height: 50%;
+//     }
+
+//     .about-svg{
+//       position: absolute;
+//       top: 0;
+//       left: -25vw;
+//       background-image: url('../assets/svgs/ccchaos.svg');
+//       background-size: cover;
+//       background-position: center;
+//       height: 100vh;
+//       width: 50vw;
+//     }
+
+//   }
+// }

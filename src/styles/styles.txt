@@ -1,0 +1,32 @@
+Esta carpeta es tu capa de estilos globales. Normalmente se usa para resetear estilos, definir variables y reglas que se aplican en todo el proyecto.
+
+
+
+
+_reset.scss
+Es un partial (por el guion bajo _) que se usa para resetear estilos del navegador.
+Los navegadores aplican estilos por defecto (ej: márgenes en <body>, tamaños de títulos, etc.). Este archivo asegura que tu diseño arranque “desde cero” para que sea consistente en todos los navegadores.
+
+
+
+
+_variables.scss
+Otro partial, acá definís variables globales de Sass: colores, tipografías, tamaños, breakpoints, etc.
+Ejemplo:
+
+$primary-color: #3498db;
+$font-stack: "Roboto", sans-serif;
+
+
+main.scss
+Este es el punto de entrada de estilos globales.
+Generalmente hace @use o @import de los otros archivos (_reset, _variables, etc.) y puede incluir estilos globales adicionales.
+Ejemplo:
+
+@use "variables";
+@use "reset";
+
+body {
+  font-family: variables.$font-stack;
+  background-color: #f9f9f9;
+}
