@@ -2,65 +2,49 @@
 @use './reset' ;
 
 
+//Fuente general y Color general
+* { font-family: v.$font-secondary; color: v.$white-color; }
+
+//Fondo
+html, body {
+  background-image: linear-gradient(to right, #04161a, #061117, #060c12, #05060a, #010101);
+}
+
+// Tamaños de fuente para cada elemento
+h1 { font-size: 3rem;}
+h2 { font-size: 2.4rem;}
+p, li { font-size: 1.2rem; }
+
+
+//Tipos de fuente para cada elemento
+h1 { font-family: v.$font-primary; }
+h2 { font-family: v.$font-secondary; }
+
+//Color de los subtítulos
+h2 { color: v.$primary-color}
+
+//Disposición
+h1,h2,h3 { display: inline-block;}
+
+
+.fixed-border{
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid v.$primary-color;
+}
+
+.margin-mark {margin: 0 6rem;}
+.m-top-5{margin-top: 5rem;}
+.m-top-2{margin-top: 2rem;}
+
+
 // Ajustes responsivos de tamaño de fuente en `html`
 html {
   font-size: v.$font-size-small-mobile;
 
-  @media (min-width: 425px) {
-    font-size: v.$font-size-mobile;
-  }
-  @media (min-width: 600px) {
-    font-size: v.$font-size-tablet;
-  }
-  @media (min-width: 1240px) {
-    font-size: v.$font-size-laptop;
-  }
-  @media (min-width: 1400px) {
-    font-size: v.$font-size-desktop;
-  }
-  @media (min-width: 1900px) {
-    font-size: v.$font-size-large-desktop;
-  }
-  @media (min-width: 2500px) {
-    font-size: v.$font-size-huge-desktop;
-  }
+  @media (min-width: 425px)  {font-size: v.$font-size-mobile;}
+  @media (min-width: 600px)  {font-size: v.$font-size-tablet;}
+  @media (min-width: 1240px) {font-size: v.$font-size-laptop;}
+  @media (min-width: 1400px) {font-size: v.$font-size-desktop;}
+  @media (min-width: 1900px) {font-size: v.$font-size-large-desktop;}
+  @media (min-width: 2500px) {font-size: v.$font-size-huge-desktop;}
 }
-
-// 🛠 Clase utilitaria
-.px5p {
-  padding: 0 5%;
-}
-
-// body {
-//   font-family: $font-family;
-//   background-image: linear-gradient(to right, #04161a, #061117, #060c12, #05060a, #010101);
-//   color: #ffffff;
-//   height: 100vh;
-
-//   .about{
-//     width: 100%;
-//     height: 500px;
-//     display: flex;
-//     justify-content: center;
-//     position: relative;
-//     margin-top: 10rem;
-    
-//     .about-content{
-//       border: 1px solid white;
-//       width: 70%;
-//       height: 50%;
-//     }
-
-//     .about-svg{
-//       position: absolute;
-//       top: 0;
-//       left: -25vw;
-//       background-image: url('../assets/svgs/ccchaos.svg');
-//       background-size: cover;
-//       background-position: center;
-//       height: 100vh;
-//       width: 50vw;
-//     }
-
-//   }
-// }
