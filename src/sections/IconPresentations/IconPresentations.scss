@@ -1,0 +1,19 @@
+.a-cards,
+.b-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  row-gap: 3.5rem;
+}
+
+.background-b-cards {
+  background-image: linear-gradient(to right, #04161a2c, #29ffbf39);
+}
+
+@media (min-width: 800px) {
+  .a-cards,
+  .b-cards {
+    justify-content: space-between;
+  }
+}

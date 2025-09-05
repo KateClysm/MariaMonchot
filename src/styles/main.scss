@@ -73,7 +73,17 @@ h1,h2,h3 { display: inline-block;}
   }
 }
 
+.presentation {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        row-gap: 2rem;
 
+        h1,
+        span {
+            color: v.$primary-color;
+        }
+    }
 
 
 // Ajustes responsivos de tamaño de fuente en `html`

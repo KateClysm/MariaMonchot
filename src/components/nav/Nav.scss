@@ -14,6 +14,7 @@ header{
 
     .nav-container{
         &::before{
+            background-image: linear-gradient(to right, #04161a, #061117, #060c12, #05060a, #010101);
             content: '';
             position: absolute;
             width: 100%;

@@ -5,7 +5,7 @@ import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 //Componentes y Secciones
 import Nav from './components/nav/Nav';
-import About from './sections/About/About';
+import About from './pages/About/About';
 //import AllProjects from './pages/allprojects/AllProjects';
 
 //Estilos
