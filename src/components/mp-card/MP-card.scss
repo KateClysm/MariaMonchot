@@ -1,0 +1,23 @@
+.mp-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-width: 9rem;
+
+    .mp-card-img {
+        width: 3rem;
+    }
+}
+
+@media (min-width: 700px) {
+    .mp-card {
+        gap: 1.5rem;
+        min-width: 14.5rem;
+
+        .mp-card-img {
+            width: 5rem;
+        }
+    }
+}

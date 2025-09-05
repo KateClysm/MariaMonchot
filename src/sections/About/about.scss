@@ -4,18 +4,22 @@
 //mobile first
 .home {
     width: 100%;
-    
+
     .presentation {
         display: flex;
         flex-direction: column;
         align-items: start;
         row-gap: 2rem;
-        h1, span { color: v.$primary-color; }
 
+        h1,
+        span {
+            color: v.$primary-color;
+        }
     }
 
     .home-container {
         margin-top: 12rem;
+
         .presentation-container {
             width: 100%;
             position: relative;
@@ -33,78 +37,39 @@
         }
     }
 
-    .about{
+    .about {
         min-height: 100vh;
-        display: relative;
+        position: relative;
 
-        .what-i-do{
-            
-            .wid-cards{
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 1rem;
-                
-                .wid-card{
-                    background-image: linear-gradient(to bottom, #04161a2c, #29ffbf39);
-                    padding: 1rem;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 0.5rem;
-                    min-width: 9rem;
-                    .wid-card-img{
-                        width: 3rem;
-                    }
+        .my-priorities {
+            .background-mp-cards {
+                background-image: linear-gradient(to right, #04161a2c, #29ffbf39);
+
+                .mp-cards {
+                    padding: 2.5rem 0;
                 }
             }
         }
-        .my-priorities{
-                .mp-cards{
-                    background-image: linear-gradient(to right, #04161a2c, #29ffbf39);
-                    display: flex;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                    gap: 1rem;
+    }
 
-                    .mp-card{
-                    padding: 1rem;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 0.5rem;
-                    min-width: 9rem;
-                    .mp-card-img{
-                        width: 3rem;
-                    }
-                }
-                }
-            }
+    .wid-cards,
+    .mp-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        row-gap: 3.5rem;
     }
 }
 
 
 //Tablet
-@media (min-width: 700px) {
+@media (min-width: 800px) {
     .home {
-        .about {
-            .what-i-do {
-                .wid-cards {
-                    gap:0;
-                    justify-content: space-between;
-                    .wid-card {
-                        padding: 1rem;
-                        gap: 1.5rem;
-                        min-width: 14.5rem;
 
-                        .wid-card-img {
-                            width: 5rem;
-                        }
-                    }
-                }
-            }
+        .wid-cards,
+        .mp-cards {
+            justify-content: space-between;
         }
     }
 }
@@ -118,13 +83,11 @@
                 position: absolute;
                 padding: 0;
                 top: 120%;
-
             }
         }
     }
 }
 
-//Desktop
 @media (min-width: 1400px) {
     .home {
         .home-container {

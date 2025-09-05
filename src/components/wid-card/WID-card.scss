@@ -1,0 +1,26 @@
+.wid-card {
+    background-image: linear-gradient(to bottom, #04161a2c, #29ffbf39);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-width: 9rem;
+
+    .wid-card-img {
+        width: 3rem;
+    }
+}
+
+@media (min-width: 700px) {
+    .wid-card {
+            padding: 1rem;
+            gap: 1.5rem;
+            min-width: 14.5rem;
+
+            .wid-card-img {
+                width: 5rem;
+            }
+        }
+}

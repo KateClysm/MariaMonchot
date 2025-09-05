@@ -1,6 +1,10 @@
 import "./about.scss";
+import WidCard from "../../components/wid-card/WID-card";
+import portfolioData from "../../assets/data/portfolio.json";
+import MPCard from "../../components/mp-card/MP-card";
 
 const About: React.FC = () => {
+
   return (
     <section className="home">
       <div className="home-container ">
@@ -45,66 +49,37 @@ const About: React.FC = () => {
           <h3 className="fixed-border ">WHAT I DO</h3>
 
           <div className="wid-cards m-top-5">
-            <div className="wid-card br-5 holographic-card">
-              <img src="src/assets/icons/data_cleansing.png" alt="monkik" className="wid-card-img"/>
-              <p>Data Cleansing</p>
-            </div>
-
-            <div className="wid-card br-5 holographic-card">
-              <img src="src/assets/icons/languages.png" alt="edwinp99 freepik becris" className="wid-card-img"/>
-              <p>Programming</p>
-            </div>
-
-            <div className="wid-card br-5 holographic-card">
-              <img src="src/assets/icons/data_analysis.png" alt="mynamepong" className="wid-card-img"/>
-              <p>Analysis</p>
-            </div>
-
-            <div className="wid-card br-5 holographic-card">
-              <img src="src/assets/icons/dashboard.png" alt="andrean-prabowo" className="wid-card-img"/>
-              <p>Visualizations</p>
-            </div>
-
-            <div className="wid-card br-5 holographic-card">
-              <img src="src/assets/icons/database.png" alt="the-chohans-brand" className="wid-card-img"/>
-              <p>Databases</p>
-            </div>
+            {portfolioData.whatIDo.map((card, index) => (
+              <WidCard
+                key={index}
+                icon={card.icon}
+                alt={card.alt}
+                label={card.label}
+              />
+            ))}
+                  
 
           </div>
 
         </div>
 
 
-        <div className="my-priorities margin-mark m-top-5">
+        <div className="my-priorities  m-top-5">
 
-          <h3 className="fixed-border ">MY PRIORITIES</h3>
+          <h3 className="fixed-border margin-mark">MY PRIORITIES</h3>
 
-          <div className="mp-cards m-top-5">
-            <div className="mp-card">
-              <img src="src/assets/icons/_.png" alt="" className="mp-card-img"/>
-              <p>Data Cleansing</p>
-            </div>
+          <div className="background-mp-cards">
+            <div className="mp-cards m-top-5 margin-mark">
+            {portfolioData.myPriorities.map((card, index) => (
+              <MPCard
+                key={index}
+                icon={card.icon}
+                alt={card.alt}
+                label={card.label}
+              />
+            ))}
 
-            <div className="mp-card">
-              <img src="src/assets/icons/_.png" alt="" className="mp-card-img"/>
-              <p>Programming</p>
-            </div>
-
-            <div className="mp-card">
-              <img src="src/assets/icons/_.png" alt="" className="mp-card-img"/>
-              <p>Analysis</p>
-            </div>
-
-            <div className="mp-card">
-              <img src="src/assets/icons/_.png" alt="" className="mp-card-img"/>
-              <p>Visualizations</p>
-            </div>
-
-            <div className="mp-card">
-              <img src="src/assets/icons/_.png" alt="" className="mp-card-img"/>
-              <p>Databases</p>
-            </div>
-
+          </div>
           </div>
 
         </div>

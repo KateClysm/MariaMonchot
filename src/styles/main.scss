@@ -34,6 +34,7 @@ h1,h2,h3 { display: inline-block;}
   border-bottom: 1px solid v.$primary-color;
 }
 .margin-mark {margin-left: 6rem; margin-right: 6rem;}
+.padding-mark {padding-left: 6rem; padding-right: 6rem;}
 .m-top-5{margin-top: 5rem;}
 .m-top-2{margin-top: 2rem;}
 .br-5{border-radius: 5%;}
@@ -88,5 +89,6 @@ html {
 
 @media (max-width: 450px)  {
   .margin-mark {margin-left: 2.5rem; margin-right: 2.5rem;}
+  .padding-mark {padding-left: 2.5rem; padding-right: 2.5rem;}
   h1 { font-size: 2.5rem;}
 }

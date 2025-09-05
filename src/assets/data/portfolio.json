@@ -1,0 +1,57 @@
+{
+  "whatIDo": [
+    {
+      "icon": "src/assets/icons/data_cleansing.png",
+      "alt": "Data Cleansing Icon From Flaticon, made by monkik",
+      "label": "Data Cleansing"
+    },
+    {
+      "icon": "src/assets/icons/languages.png",
+      "alt": "Programming Icon From Flaticon, made by edwinp99, freepik, becris",
+      "label": "Programming"
+    },
+    {
+      "icon": "src/assets/icons/data_analysis.png",
+      "alt": "Analysis Icon From Flaticon, made by mynamepong",
+      "label": "Analysis"
+    },
+    {
+      "icon": "src/assets/icons/dashboard.png",
+      "alt": "Visualizations Icon From Flaticon, made by andrean-prabowo",
+      "label": "Visualizations"
+    },
+    {
+      "icon": "src/assets/icons/database.png",
+      "alt": "Databases Icon From Flaticon, made by the-chohans-brand",
+      "label": "Databases"
+    }
+  ],
+
+  "myPriorities": [
+    {
+      "icon": "src/assets/icons/communication.png",
+      "alt": "Good Comunication Icon From Flaticon, made by Made by Made Premium",
+      "label": "Good Comunication"
+    },
+    {
+      "icon": "src/assets/icons/online_learning.png",
+      "alt": "Constant Learning Icon From Flaticon, made by Freepik",
+      "label": "Constant Learning"
+    },
+    {
+      "icon": "src/assets/icons/organization_chart.png",
+      "alt": "Organization Icon From Flaticon, made by Freepik",
+      "label": "Organization"
+    },
+    {
+      "icon": "src/assets/icons/teamwork.png",
+      "alt": "Team Work Icon From Flaticon, made by Smashicons",
+      "label": "Team Work"
+    },
+    {
+      "icon": "src/assets/icons/solution.png",
+      "alt": "Resolutive Capacity Icon From Flaticon, made by anilofex",
+      "label": "Resolutive Capacity"
+    }
+  ]
+}
