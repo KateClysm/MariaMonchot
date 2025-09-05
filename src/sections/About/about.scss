@@ -42,26 +42,83 @@
             .wid-cards{
                 display: flex;
                 justify-content: center;
-                background-color: rgba(255, 192, 203, 0.322);
+                flex-wrap: wrap;
+                gap: 1rem;
+                
                 .wid-card{
-                    background-color: rgba(0, 128, 0, 0.425);
+                    background-image: linear-gradient(to bottom, #04161a2c, #29ffbf39);
+                    padding: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.5rem;
+                    min-width: 9rem;
+                    .wid-card-img{
+                        width: 3rem;
+                    }
+                }
+            }
+        }
+        .my-priorities{
+                .mp-cards{
+                    background-image: linear-gradient(to right, #04161a2c, #29ffbf39);
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 1rem;
+
+                    .mp-card{
+                    padding: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.5rem;
+                    min-width: 9rem;
+                    .mp-card-img{
+                        width: 3rem;
+                    }
+                }
+                }
+            }
+    }
+}
+
+
+//Tablet
+@media (min-width: 700px) {
+    .home {
+        .about {
+            .what-i-do {
+                .wid-cards {
+                    gap:0;
+                    justify-content: space-between;
+                    .wid-card {
+                        padding: 1rem;
+                        gap: 1.5rem;
+                        min-width: 14.5rem;
+
+                        .wid-card-img {
+                            width: 5rem;
+                        }
+                    }
                 }
             }
         }
     }
 }
 
-
-//Tablet
 @media (min-width: 1000px) {
     .home {
         .home-container {
             height: 70vh;
+
             .home-svg {
                 position: absolute;
                 padding: 0;
                 top: 120%;
-                
+
             }
         }
     }

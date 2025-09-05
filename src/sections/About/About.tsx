@@ -25,6 +25,7 @@ const About: React.FC = () => {
       </div>
 
       <div className="about ">
+
         <div className="presentation margin-mark">
           <h2>ABOUT</h2>
           <p>
@@ -39,32 +40,68 @@ const About: React.FC = () => {
           </p>
         </div>
 
-        <div className="what-i-do m-top-5 margin-mark">
+        <div className="what-i-do margin-mark m-top-5">
+
           <h3 className="fixed-border ">WHAT I DO</h3>
 
-          <div className="wid-cards m-top-2">
-            <div className="wid-card">
-              <img src="" alt="" />
+          <div className="wid-cards m-top-5">
+            <div className="wid-card br-5 holographic-card">
+              <img src="src/assets/icons/data_cleansing.png" alt="monkik" className="wid-card-img"/>
               <p>Data Cleansing</p>
             </div>
 
-            <div className="wid-card">
-              <img src="" alt="" />
+            <div className="wid-card br-5 holographic-card">
+              <img src="src/assets/icons/languages.png" alt="edwinp99 freepik becris" className="wid-card-img"/>
               <p>Programming</p>
             </div>
 
-            <div className="wid-card">
-              <img src="" alt="" />
+            <div className="wid-card br-5 holographic-card">
+              <img src="src/assets/icons/data_analysis.png" alt="mynamepong" className="wid-card-img"/>
               <p>Analysis</p>
             </div>
 
-            <div className="wid-card">
-              <img src="" alt="" />
+            <div className="wid-card br-5 holographic-card">
+              <img src="src/assets/icons/dashboard.png" alt="andrean-prabowo" className="wid-card-img"/>
               <p>Visualizations</p>
             </div>
 
-            <div className="wid-card">
-              <img src="" alt="" />
+            <div className="wid-card br-5 holographic-card">
+              <img src="src/assets/icons/database.png" alt="the-chohans-brand" className="wid-card-img"/>
+              <p>Databases</p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div className="my-priorities margin-mark m-top-5">
+
+          <h3 className="fixed-border ">MY PRIORITIES</h3>
+
+          <div className="mp-cards m-top-5">
+            <div className="mp-card">
+              <img src="src/assets/icons/_.png" alt="" className="mp-card-img"/>
+              <p>Data Cleansing</p>
+            </div>
+
+            <div className="mp-card">
+              <img src="src/assets/icons/_.png" alt="" className="mp-card-img"/>
+              <p>Programming</p>
+            </div>
+
+            <div className="mp-card">
+              <img src="src/assets/icons/_.png" alt="" className="mp-card-img"/>
+              <p>Analysis</p>
+            </div>
+
+            <div className="mp-card">
+              <img src="src/assets/icons/_.png" alt="" className="mp-card-img"/>
+              <p>Visualizations</p>
+            </div>
+
+            <div className="mp-card">
+              <img src="src/assets/icons/_.png" alt="" className="mp-card-img"/>
               <p>Databases</p>
             </div>
 
