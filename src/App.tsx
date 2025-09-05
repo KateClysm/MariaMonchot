@@ -6,7 +6,7 @@ import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
 //Componentes y Secciones
 import Nav from './components/nav/Nav';
 import About from './sections/About/About';
-import AllProjects from './pages/allprojects/AllProjects';
+//import AllProjects from './pages/allprojects/AllProjects';
 
 //Estilos
 import './styles/main.scss'
@@ -14,6 +14,7 @@ import './styles/main.scss'
 
 const App: React.FC = () => {
 
+  //Layout Base
   const Layout = () => {
     return (
       <> 
@@ -23,6 +24,7 @@ const App: React.FC = () => {
     );
   };
  
+  //Ruteo del Outlet
   const router = createBrowserRouter([
     {
       path: '/mariamonchot/', 
@@ -33,13 +35,12 @@ const App: React.FC = () => {
           element: 
             <>
               <About/>
-
             </>
         },
-        {
-          path: '/mariamonchot/allprojects',
-          element: <AllProjects/>
-        }
+        // {
+        //   path: '/mariamonchot/allprojects',
+        //   element: <AllProjects/>
+        // }
       ]
     }
   ]);

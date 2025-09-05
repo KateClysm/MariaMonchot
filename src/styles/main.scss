@@ -8,6 +8,7 @@
 //Fondo
 html, body {
   background-image: linear-gradient(to right, #04161a, #061117, #060c12, #05060a, #010101);
+  background-size: cover;
 }
 
 // Tamaños de fuente para cada elemento
@@ -26,12 +27,11 @@ h2 { color: v.$primary-color}
 //Disposición
 h1,h2,h3 { display: inline-block;}
 
-
+//Estilos Reutilizables
 .fixed-border{
   padding-bottom: 0.5rem;
   border-bottom: 1px solid v.$primary-color;
 }
-
 .margin-mark {margin: 0 6rem;}
 .m-top-5{margin-top: 5rem;}
 .m-top-2{margin-top: 2rem;}
@@ -48,3 +48,5 @@ html {
   @media (min-width: 1900px) {font-size: v.$font-size-large-desktop;}
   @media (min-width: 2500px) {font-size: v.$font-size-huge-desktop;}
 }
+
+@media (max-width: 450px)  {.margin-mark {margin: 0 2.5rem;} h1 { font-size: 2.5rem;}}
