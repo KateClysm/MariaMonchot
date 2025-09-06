@@ -1,0 +1,11 @@
+@use 'src/styles/_variables.scss' as v;
+
+footer{
+    padding: 5rem 0;
+      background-image: linear-gradient(to bottom, transparent, transparent 30%, #29ffbf39);
+
+      .footer-line{
+        width: 30rem;
+        border-bottom: 1px solid v.$primary-color;
+      }
+}

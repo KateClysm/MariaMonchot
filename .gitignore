@@ -25,11 +25,3 @@ dist-ssr
 
 /inspo
 inspo
-src/pages
-
-src/components/projectcard
-src/components/technology-icon
-src/components/SimpleProject
-src/components/footer
-src/components/contact
-src/components/Button

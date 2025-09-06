@@ -100,5 +100,38 @@
         "link": "https://github.com/KateClysm"
       }
     ]
+  },
+  "education": {
+    "academic": [
+      {
+        "title": "Bachelor's Degree in Data Science - University of Buenos Aires",
+        "period": "2025 - Currently enrolled."
+      },
+      {
+        "title": "Bachelor's Degree in Information Systems - Universidad Nacional de la Patagonia San Juan Bosco",
+        "period": "2024 - 2025",
+        "details": "Collaborative academic projects in Assembly, C, and Pascal programming."
+      }
+    ],
+    "internship": [
+      {
+        "title": "Artech + Fundación Pescar | Data Analysis & SAP + AI Intern",
+        "period": "Ongoing",
+        "details": "Technical training in Python, SQL, Power BI, Databricks, Power Apps, and Applied AI within a workplace environment provided by Artech (~237 hours). Development of soft skills, teamwork, and professional growth through Fundación Pescar (~180 hours)."
+      }
+    ],
+    "certifications": {
+      "c": [
+        "Google Data Analytics, Coursera + Google - Currently enrolled.",
+        "Data Science + IA, Oracle Next Education + Alura Latam - Currently enrolled.",
+        "Scientific Computing with Python, FreeCodeCamp, 2025.",
+        "SQL Interactivo, Desafío Latam, 2025.",
+        "Power BI Fundamentals, Santander Open Academy, 2025.",
+        "Excel de básico a intermedio.",
+        "Santander Open Academy, 2025.",
+        "Capacitación Junior Full Stack Developer, Empujar Coders - 2023."
+      ],
+      "linkAllCertifications": "https://drive.google.com/drive/folders/1Jb-3-c3aLqszJEEVcEQ2Tv4sNpovXage?usp=sharing"
+    }
   }
 }

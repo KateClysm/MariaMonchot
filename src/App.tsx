@@ -3,14 +3,15 @@ import React from 'react';
 //Ruteo
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-//Componentes y Secciones
+//Componentes y Pages
 import Nav from './components/Nav/Nav';
 import About from './pages/About/About';
 import Footer from './components/Footer/Footer';
+import Contact from './pages/Contact/Contact';
+import Education from './pages/Education/Education';
 
 //Estilos
 import './styles/main.scss'
-import Contact from './sections/Contact/Contact';
 
 
 const App: React.FC = () => {
@@ -38,6 +39,7 @@ const App: React.FC = () => {
           element: 
             <>
               <About/>
+              <Education/>
             </>
         },
         // {

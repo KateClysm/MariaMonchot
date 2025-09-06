@@ -1,0 +1,57 @@
+@use 'src/styles/_variables.scss' as v;
+
+
+//mobile first
+.home {
+    width: 100%;
+
+    .home-container {
+        margin-top: 12rem;
+
+        .presentation-container {
+            width: 100%;
+            position: relative;
+        }
+
+        .home-svg {
+            padding: 8rem 0;
+            width: 100vw;
+
+            img {
+                width: 100%; // se estira horizontalmente
+                height: 100%; // se comprime verticalmente
+                object-fit: fill; // deforma para llenar todo
+            }
+        }
+    }
+
+    .about {
+        min-height: 100vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .home {
+        .home-container {
+            height: 70vh;
+
+            .home-svg {
+                position: absolute;
+                padding: 0;
+                top: 120%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .home {
+        .home-container {
+            height: 100vh;
+        }
+    }
+}
