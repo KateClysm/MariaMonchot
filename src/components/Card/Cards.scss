@@ -1,3 +1,4 @@
+@use 'src/styles/_variables.scss' as v;
 .card {
     padding: 1rem;
     display: flex;
@@ -13,6 +14,20 @@
 }
 .a-card{
      background-image: linear-gradient(to bottom, #04161a2c, #29ffbf39);
+}
+
+.c-card {
+  .card-text {
+    display: flex;
+    gap: 0.3rem;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+
+    .card-icon, .card-plus{ font-size: 3rem; font-weight: lighter; font-family: v.$font-primary;}
+    .card-icon {color: v.$primary-color;}
+    .card-plus {color: v.$white-color;}
+  }
 }
 
 @media (min-width: 700px) {

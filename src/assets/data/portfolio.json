@@ -53,5 +53,28 @@
       "alt": "Resolutive Capacity Icon From Flaticon, made by anilofex",
       "label": "Resolutive Capacity"
     }
+  ],
+
+  "myHighlights": [
+    {
+      "icon": "30",
+      "plus": "+",
+      "label": "Team Members"
+    },
+    {
+      "icon": "10",
+      "plus": "+",
+      "label": "Projects"
+    },
+    {
+      "icon": "20",
+      "plus": "+",
+      "label": "Courses"
+    },
+    {
+      "icon": "20",
+      "plus": "+",
+      "label": "Technologies"
+    }
   ]
 }

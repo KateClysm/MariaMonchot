@@ -1,5 +1,6 @@
 .a-cards,
-.b-cards {
+.b-cards,
+.c-cards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -7,13 +8,20 @@
   row-gap: 3.5rem;
 }
 
-.background-b-cards {
+.bg-b-cards {
   background-image: linear-gradient(to right, #04161a2c, #29ffbf39);
+  padding: 1rem 0;
 }
 
-@media (min-width: 800px) {
+.bg-c-cards {
+  background-image: linear-gradient(to left, #04161a2c, #29ffbf39);
+  padding: 1rem 0;
+}
+
+@media (min-width: 1025px) {
   .a-cards,
-  .b-cards {
+  .b-cards,
+  .c-cards {
     justify-content: space-between;
   }
 }
