@@ -86,15 +86,18 @@
     "icons": [
       {
       "icon": "src/assets/icons/linkedin.png",
-      "alt": "LinkedIn Icon From Flaticon, made by riajulislam"
+      "alt": "LinkedIn Icon From Flaticon, made by riajulislam",
+      "link": "https://www.linkedin.com/in/maria-monchot"
       },
       {
         "icon": "src/assets/icons/mail.png",
-        "alt": "Email Icon From Flaticon, made by Uniconlabs"
+        "alt": "Email Icon From Flaticon, made by Uniconlabs",
+        "link": "https://mail.google.com/mail/?view=cm&fs=1&to=mariamonchot@gmail.com"
       },
       {
         "icon": "src/assets/icons/github.png",
-        "alt": "Github Icon From Flaticon, made by riajulislam"
+        "alt": "Github Icon From Flaticon, made by riajulislam",
+        "link": "https://github.com/KateClysm"
       }
     ]
   }
