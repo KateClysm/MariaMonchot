@@ -10,6 +10,7 @@ import Footer from './components/Footer/Footer';
 
 //Estilos
 import './styles/main.scss'
+import Contact from './sections/Contact/Contact';
 
 
 const App: React.FC = () => {
@@ -20,6 +21,7 @@ const App: React.FC = () => {
       <> 
         <Nav />
         <Outlet />
+        <Contact/>
         <Footer/>
       </>
     );

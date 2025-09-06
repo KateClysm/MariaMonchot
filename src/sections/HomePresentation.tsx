@@ -1,18 +1,15 @@
 import React from "react";
-
-const HomePresentation: React.FC = () => {
+interface AboutPresentationProps {
+  text: string;
+}
+const HomePresentation: React.FC<AboutPresentationProps> = ({ text })=> {
   return (
     <div className="presentation margin-mark">
       <h1>MARIA MONCHOT</h1>
       <h3 className="fixed-border">
         ALL ABOUT <span>DATA</span>
       </h3>
-      <p>
-        I am a Data Science student, constantly engaged in technical
-        training and actively involved in programs related to data and
-        artificial intelligence. I stand out for my problem-solving
-        mindset, self-learning ability, and strong organization.
-      </p>
+      <p>{text}</p>
     </div>
   );
 };

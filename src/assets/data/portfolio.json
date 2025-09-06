@@ -1,4 +1,8 @@
 {
+  "HomePresentation":
+    "I am a Data Science student, constantly engaged in technical training and actively involved in programs related to data and artificial intelligence. I stand out for my problem-solving mindset, self-learning ability, and strong organization.",
+  "AboutPresentation":
+    "Currently enrolled in the University of Buenos Aires in the area of Data Science (Bachelor's Degree), with a prior academic background in Systems and experience in programming and full stack web development. I complement my studies with certifications such as Google Data Analytics, Oracle Data Science, and Data Analysis at Fundación Pescar + Artech. I am passionate about learning, teamwork, and developing data-driven solutions that generate real value for IT projects and organizations.",
   "whatIDo": [
     {
       "icon": "src/assets/icons/data_cleansing.png",
@@ -76,5 +80,22 @@
       "plus": "+",
       "label": "Technologies"
     }
-  ]
+  ],
+  "contact": {
+    "text": "I am open to professional opportunities and collaborations in the field of Data Science and Analytics. Please feel free to contact me for further information or to discuss how I can contribute to your team or project.",
+    "icons": [
+      {
+      "icon": "src/assets/icons/linkedin.png",
+      "alt": "LinkedIn Icon From Flaticon, made by riajulislam"
+      },
+      {
+        "icon": "src/assets/icons/mail.png",
+        "alt": "Email Icon From Flaticon, made by Uniconlabs"
+      },
+      {
+        "icon": "src/assets/icons/github.png",
+        "alt": "Github Icon From Flaticon, made by riajulislam"
+      }
+    ]
+  }
 }
