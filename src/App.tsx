@@ -32,11 +32,11 @@ const App: React.FC = () => {
   //Ruteo del Outlet
   const router = createBrowserRouter([
     {
-      path: '/mariamonchot/', 
+      path: '/MariaMonchot/', 
       element: <Layout />,
       children: [
         {
-          path: '/mariamonchot/',
+          path: '/MariaMonchot/',
           element: 
             <>
               <About/>
