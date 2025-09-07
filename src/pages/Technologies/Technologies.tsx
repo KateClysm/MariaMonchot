@@ -10,7 +10,7 @@ const Technologies: React.FC = () => {
       <img 
           src="src/assets/svgs/waves.svg" 
           alt="Background SVG" 
-          className="contact-bg" 
+          className="technologies-svg" 
       />
 
       <h2 className="margin-mark">TECHNOLOGIES</h2>

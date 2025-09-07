@@ -11,11 +11,15 @@ const About: React.FC = () => {
       <div className="home-container ">
 
         <div className="presentation-container ">
-          <HomePresentation text={portfolioData.HomePresentation}/>
-
-          <div className="home-svg">
-            <img src="src/assets/svgs/oooscillate.svg" alt="oscillate" />
+          <div className="relative">
+            <HomePresentation text={portfolioData.HomePresentation}/>
           </div>
+
+          <img 
+              src="src/assets/svgs/wwwhirl.svg" 
+              alt="Background SVG" 
+              className="presentation-svg" 
+          />
 
         </div>
       </div>

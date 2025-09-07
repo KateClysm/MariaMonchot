@@ -9,7 +9,7 @@
     overflow: hidden; // Evita que el SVG se salga del contenedor
 
 
-    .contact-bg {
+    .technologies-svg {
         position: absolute;
         top: 0;
         right: 0; // fijamos al lado derecho
@@ -68,7 +68,7 @@
 
   @media (max-width: 450px) {
       .technologies {
-            .contact-bg {
+            .technologies-svg {
                 transform: translateX(75%);
             }
           .technologies-container {

@@ -10,17 +10,19 @@
 
         .presentation-container {
             width: 100%;
-            position: relative;
-        }
+            position: relative; // Esto permite que el SVG absoluto se posicione respecto a este contenedor
+            overflow: visible; // Permite que el SVG se salga del contenedor
 
-        .home-svg {
-            padding: 8rem 0;
-            width: 100vw;
-
-            img {
-                width: 100%; // se estira horizontalmente
-                height: 100%; // se comprime verticalmente
-                object-fit: fill; // deforma para llenar todo
+            .relative{position: relative; z-index: 1;}
+            .presentation-svg {
+                position: absolute;
+                top: 80%; // justo debajo del div.relative
+                left: 50%; // ancla el centro
+                transform: translateX(-50%); // centra horizontalmente
+                width: 120%; // agrandado, podés ajustar
+                height: auto; // mantiene proporción
+                z-index: 0;
+                pointer-events: none;
             }
         }
     }

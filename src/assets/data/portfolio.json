@@ -28,7 +28,6 @@
       "label": "Databases"
     }
   ],
-
   "myPriorities": [
     {
       "icon": "src/assets/icons/communication.png",
@@ -56,7 +55,6 @@
       "label": "Resolutive Capacity"
     }
   ],
-
   "myHighlights": [
     {
       "icon": "30",
@@ -79,7 +77,44 @@
       "label": "Technologies"
     }
   ],
-
+  "projectsData": {
+    "categories": [
+      { "name": "NOTABLE", "visualize": true },
+      { "name": "MACHINE LEARNING", "visualize": true },
+      { "name": "VISUALIZATION", "visualize": true },
+      { "name": "PYTHON", "visualize": true },
+      { "name": "SQL & DATABASES", "visualize": true }
+      
+    ],
+    "projects": [
+      {
+        "projectType": "image",
+        "name": "",
+        "image": "",
+        "description": "",
+        "githubLink": "",
+        "deployLink": "",
+        "highlightedTech": "",
+        "technologies": [],
+        "source": "",
+        "featured": true,
+        "categories": ["WEB DEVELOPMENT", "PYTHON"]
+      },
+      {
+        "projectType": "",
+        "name": "",
+        "image": "",
+        "description": "",
+        "githubLink": "",
+        "deployLink": "",
+        "highlightedTech": "",
+        "technologies": [],
+        "source": "",
+        "featured": true,
+        "categories": ["WEB DEVELOPMENT", "PYTHON"]
+      }
+    ]
+  },
   "technologies": [
     {
       "section": "PROGRAMMING LANGUAGUES",
@@ -217,7 +252,6 @@
       ]
     }
   ],
-
   "education": {
     "academic": [
       {
@@ -250,7 +284,6 @@
       "linkAllCertifications": "https://drive.google.com/drive/folders/1Jb-3-c3aLqszJEEVcEQ2Tv4sNpovXage?usp=sharing"
     }
   },
-
   "contact": {
     "text": "I am open to professional opportunities and collaborations in the field of Data Science and Analytics. Please feel free to contact me for further information or to discuss how I can contribute to your team or project.",
     "icons": [
