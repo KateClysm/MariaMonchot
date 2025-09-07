@@ -5,12 +5,31 @@
     flex-direction: column;
     padding: 15rem 0 10rem 0;
 
+    position: relative; // Esto permite que el SVG absoluto se posicione respecto a este contenedor
+    overflow: hidden; // Evita que el SVG se salga del contenedor
+
+
+    .contact-bg {
+        position: absolute;
+        top: 0;
+        right: 0; // fijamos al lado derecho
+        transform: translateX(50%);
+        height: 100%;
+        width: auto;
+        z-index: 0;
+        pointer-events: none;
+        object-fit: cover;
+    }
+
     .technologies-container {
         gap: 6rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 6rem;
         max-width: 75%;
+        position: relative;
+        z-index: 1;
+        
 
         .tech-block {
             display: flex;
@@ -47,8 +66,11 @@
     }
 }
 
-  @media (max-width: 430px) {
+  @media (max-width: 450px) {
       .technologies {
+            .contact-bg {
+                transform: translateX(75%);
+            }
           .technologies-container {
               grid-template-columns: 1fr;
               max-width: 100%;

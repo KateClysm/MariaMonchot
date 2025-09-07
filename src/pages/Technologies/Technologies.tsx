@@ -6,9 +6,15 @@ const Technologies: React.FC = () => {
   const { technologies } = portfolioData;
 
   return (
-    <section className="technologies margin-mark">
-      <h2>TECHNOLOGIES</h2>
-      <div className="technologies-container m-top-5">
+    <section className="technologies ">
+      <img 
+          src="src/assets/svgs/waves.svg" 
+          alt="Background SVG" 
+          className="contact-bg" 
+      />
+
+      <h2 className="margin-mark">TECHNOLOGIES</h2>
+      <div className="technologies-container m-top-5 margin-mark">
         {technologies.map((block: any, index: number) => (
           <div key={index} className="tech-block">
             <h3 className="tech-title fixed-border">{block.section}</h3>
