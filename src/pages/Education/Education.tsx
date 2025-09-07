@@ -1,5 +1,5 @@
 import React from "react";
-import portfolioData from "../../assets/data/portfolio.json";
+import portfolioData from "../../assets/portfolio.json";
 import "./Education.scss";
 
 const Education: React.FC = () => {

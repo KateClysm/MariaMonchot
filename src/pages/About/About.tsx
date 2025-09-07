@@ -1,5 +1,5 @@
 import "./about.scss";
-import portfolioData from "../../assets/data/portfolio.json";
+import portfolioData from "../../assets/portfolio.json";
 import HomePresentation from "../../sections/HomePresentation";
 import AboutPresentation from "../../sections/AboutPresentation";
 import IconPresentation from "../../sections/IconPresentation/IconPresentation";

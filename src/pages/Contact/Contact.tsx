@@ -1,6 +1,6 @@
 import './contact.scss';
 import React from 'react';
-import portfolioData from "../../assets/data/portfolio.json";
+import portfolioData from "../../assets/portfolio.json";
 
 const Contact: React.FC = () => {
     return (
