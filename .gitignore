@@ -23,5 +23,12 @@ dist-ssr
 *.sln
 *.sw?
 
+.env
+.env.local
+.env.*.local
+
+*.bak
+*.tmp
+
 /inspo
 inspo
