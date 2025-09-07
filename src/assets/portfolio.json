@@ -3,54 +3,54 @@
   "AboutPresentation": "Currently enrolled in the University of Buenos Aires in the area of Data Science (Bachelor's Degree), with a prior academic background in Systems and experience in programming and full stack web development. I complement my studies with certifications such as Google Data Analytics, Oracle Data Science, and Data Analysis at Fundación Pescar + Artech. I am passionate about learning, teamwork, and developing data-driven solutions that generate real value for IT projects and organizations.",
   "whatIDo": [
     {
-      "icon": "src/assets/icons/data_cleansing.png",
+      "icon": "/icons/data_cleansing.png",
       "alt": "Data Cleansing Icon From Flaticon, made by monkik",
       "label": "Data Cleansing"
     },
     {
-      "icon": "src/assets/icons/languagues.png",
+      "icon": "/icons/languagues.png",
       "alt": "Programming Icons From Flaticon, TypeScript made by Freepik, Python made by Freepik, JavaScript made by edt.im",
       "label": "Programming"
     },
     {
-      "icon": "src/assets/icons/data_analysis.png",
+      "icon": "/icons/data_analysis.png",
       "alt": "Analysis Icon From Flaticon, made by mynamepong",
       "label": "Analysis"
     },
     {
-      "icon": "src/assets/icons/dashboard.png",
+      "icon": "/icons/dashboard.png",
       "alt": "Visualizations Icon From Flaticon, made by andrean-prabowo",
       "label": "Visualizations"
     },
     {
-      "icon": "src/assets/icons/database.png",
+      "icon": "/icons/database.png",
       "alt": "Databases Icon From Flaticon, made by the-chohans-brand",
       "label": "Databases"
     }
   ],
   "myPriorities": [
     {
-      "icon": "src/assets/icons/communication.png",
+      "icon": "/icons/communication.png",
       "alt": "Good Comunication Icon From Flaticon, made by Made by Made Premium",
       "label": "Good Comunication"
     },
     {
-      "icon": "src/assets/icons/online_learning.png",
+      "icon": "/icons/online_learning.png",
       "alt": "Constant Learning Icon From Flaticon, made by Freepik",
       "label": "Constant Learning"
     },
     {
-      "icon": "src/assets/icons/organization_chart.png",
+      "icon": "/icons/organization_chart.png",
       "alt": "Organization Icon From Flaticon, made by Freepik",
       "label": "Organization"
     },
     {
-      "icon": "src/assets/icons/teamwork.png",
+      "icon": "/icons/teamwork.png",
       "alt": "Team Work Icon From Flaticon, made by Smashicons",
       "label": "Team Work"
     },
     {
-      "icon": "src/assets/icons/solution.png",
+      "icon": "/icons/solution.png",
       "alt": "Resolutive Capacity Icon From Flaticon, made by anilofex",
       "label": "Resolutive Capacity"
     }
@@ -120,17 +120,17 @@
       "section": "PROGRAMMING LANGUAGUES",
       "items": [
         {
-          "icon": "src/assets/icons/python.png",
+          "icon": "/icons/python.png",
           "alt": "Python Icon From Flaticon, made by Freepik",
           "label": "Python"
         },
         {
-          "icon": "src/assets/icons/typescript.png",
+          "icon": "/icons/typescript.png",
           "alt": "TypeScript Icon From Flaticon, made by Freepik",
           "label": "TypeScript"
         },
         {
-          "icon": "src/assets/icons/javascript.png",
+          "icon": "/icons/javascript.png",
           "alt": "JavaScript Icon From Flaticon, made by edt.im",
           "label": "JavaScript"
         }
@@ -140,17 +140,17 @@
       "section": "DATABASES",
       "items": [
         {
-          "icon": "src/assets/icons/database.png",
+          "icon": "/icons/database.png",
           "alt": "SQL Icon From Flaticon, made by the-chohans-brand",
           "label": "SQL"
         },
         {
-          "icon": "src/assets/icons/database.png",
+          "icon": "/icons/database.png",
           "alt": "Databases Icon From Flaticon, made by the-chohans-brand",
           "label": "MySQL"
         },
         {
-          "icon": "src/assets/icons/database.png",
+          "icon": "/icons/database.png",
           "alt": "Databases Icon From Flaticon, made by the-chohans-brand",
           "label": "SQL Server"
         }
@@ -160,12 +160,12 @@
       "section": "DATA VISUALIZATION",
       "items": [
         {
-          "icon": "src/assets/icons/visualizations.png",
+          "icon": "/icons/visualizations.png",
           "alt": "Power BI Icon From Flaticon, made by Eucalyp",
           "label": "Power BI"
         },
         {
-          "icon": "src/assets/icons/visualizations.png",
+          "icon": "/icons/visualizations.png",
           "alt": "Excel Icon From Flaticon, made by Pixel perfect",
           "label": "Excel"
         }
@@ -175,17 +175,17 @@
       "section": "LIBRARIES",
       "items": [
         {
-          "icon": "src/assets/icons/librarie.png",
+          "icon": "/icons/librarie.png",
           "alt": "Pandas Icon From Flaticon, made by zero_wing",
           "label": "Pandas"
         },
         {
-          "icon": "src/assets/icons/librarie.png",
+          "icon": "/icons/librarie.png",
           "alt": "NumPy Icon From Flaticon, made by zero_wing",
           "label": "NumPy"
         },
         {
-          "icon": "src/assets/icons/librarie.png",
+          "icon": "/icons/librarie.png",
           "alt": "MatplotLib Icon From Flaticon, made by zero_wing",
           "label": "MatplotLib"
         }
@@ -195,12 +195,12 @@
       "section": "FRAMEWORKS",
       "items": [
         {
-          "icon": "src/assets/icons/react.png",
+          "icon": "/icons/react.png",
           "alt": "React Icon From Flaticon, made by Freepik",
           "label": "React"
         },
         {
-          "icon": "src/assets/icons/expressjs.png",
+          "icon": "/icons/expressjs.png",
           "alt": "Express.js Icon",
           "label": "Express.js"
         }
@@ -210,12 +210,12 @@
       "section": "DEVELOPMENT KIT",
       "items": [
         {
-          "icon": "src/assets/icons/react.png",
+          "icon": "/icons/react.png",
           "alt": "React Icon From Flaticon, made by Freepik",
           "label": "React"
         },
         {
-          "icon": "src/assets/icons/expressjs.png",
+          "icon": "/icons/expressjs.png",
           "alt": "Express.js Icon",
           "label": "Express.js"
         }
@@ -225,27 +225,27 @@
       "section": "TOOLS",
       "items": [
         {
-          "icon": "src/assets/icons/nodejs.png",
+          "icon": "/icons/nodejs.png",
           "alt": "Node.js Icon From Flaticon, made by Grand Iconic",
           "label": "Node.js"
         },
         {
-          "icon": "src/assets/icons/figma.png",
+          "icon": "/icons/figma.png",
           "alt": "Figma Icon From Flaticon, made by Freepik",
           "label": "Figma"
         },
         {
-          "icon": "src/assets/icons/trello.png",
+          "icon": "/icons/trello.png",
           "alt": "Trello Icon From Flaticon, made by Pixel perfect",
           "label": "Trello"
         },
         {
-          "icon": "src/assets/icons/github.png",
+          "icon": "/icons/github.png",
           "alt": "GitHub Icon From Flaticon, made by riajulislam",
           "label": "GitHub"
         },
         {
-          "icon": "src/assets/icons/git.png",
+          "icon": "/icons/git.png",
           "alt": "Git Icon From Flaticon, made by pictogramer",
           "label": "Git"
         }
@@ -288,17 +288,17 @@
     "text": "I am open to professional opportunities and collaborations in the field of Data Science and Analytics. Please feel free to contact me for further information or to discuss how I can contribute to your team or project.",
     "icons": [
       {
-        "icon": "src/assets/icons/linkedin.png",
+        "icon": "/icons/linkedin.png",
         "alt": "LinkedIn Icon From Flaticon, made by riajulislam",
         "link": "https://www.linkedin.com/in/maria-monchot"
       },
       {
-        "icon": "src/assets/icons/mail.png",
+        "icon": "/icons/mail.png",
         "alt": "Email Icon From Flaticon, made by Uniconlabs",
         "link": "https://mail.google.com/mail/?view=cm&fs=1&to=mariamonchot@gmail.com"
       },
       {
-        "icon": "src/assets/icons/github.png",
+        "icon": "/icons/github.png",
         "alt": "Github Icon From Flaticon, made by riajulislam",
         "link": "https://github.com/KateClysm"
       }
