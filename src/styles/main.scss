@@ -29,9 +29,19 @@ h2 { color: v.$primary-color}
 h1,h2,h3 { display: inline-block;}
 
 //Estilos Reutilizables
-.fixed-border{
+.fixed-border {
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid v.$primary-color;
+  position: relative; // necesario para el pseudo-elemento
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; // grosor del borde
+    background: linear-gradient(to right, v.$primary-color, v.$primary-color, #21beae75, transparent);
+  }
 }
 .margin-mark {margin-left: 6rem; margin-right: 6rem;}
 .padding-mark {padding-left: 6rem; padding-right: 6rem;}

@@ -6,8 +6,7 @@ const Footer: React.FC = () => {
         <footer>
 
            <div className="footer-container presentation margin-mark">
-                <p className='footer-rights'>© María Monchot · Data Analyst </p>
-                <div className='footer-line'></div>
+                <p className='footer-rights fixed-border'>© María Monchot · Data Analyst </p>
                 <p className='built'>Built with React + TypeScript</p>
            </div>
             

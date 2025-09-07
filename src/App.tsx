@@ -12,6 +12,7 @@ import Education from './pages/Education/Education';
 
 //Estilos
 import './styles/main.scss'
+import Technologies from './pages/Technologies/Technologies';
 
 
 const App: React.FC = () => {
@@ -39,6 +40,7 @@ const App: React.FC = () => {
           element: 
             <>
               <About/>
+              <Technologies/>
               <Education/>
             </>
         },

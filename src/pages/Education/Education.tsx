@@ -11,7 +11,7 @@ const Education: React.FC = () => {
 
       <div className="education-categories m-top-5">
         <div className="education-block half">
-          <h3 className="education-subtitle">ACADEMIC</h3>
+          <h3 className="education-subtitle fixed-border">ACADEMIC</h3>
           <ul className="">
             {education.academic.map((item, index) => (
               <li key={index}>
@@ -23,7 +23,7 @@ const Education: React.FC = () => {
         </div>
 
         <div className="education-block half">
-          <h3 className="education-subtitle">INTERNSHIP</h3>
+          <h3 className="education-subtitle fixed-border">INTERNSHIP</h3>
           <ul className="">
             {education.internship.map((item, index) => (
               <li key={index}>
@@ -35,7 +35,7 @@ const Education: React.FC = () => {
         </div>
 
         <div className="education-block full">
-            <h3 className="education-subtitle">
+            <h3 className="education-subtitle fixed-border">
                 CERTIFICATIONS
                 <a href={education.certifications.linkAllCertifications}
                 target="_blank" rel="noopener noreferrer" className="see-more" >👁 See more</a>

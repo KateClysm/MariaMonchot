@@ -1,0 +1,61 @@
+@use "../../styles/variables" as v;
+
+.technologies {
+    display: flex;
+    flex-direction: column;
+    padding: 15rem 0 10rem 0;
+
+    .technologies-container {
+        gap: 6rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6rem;
+        max-width: 75%;
+
+        .tech-block {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            min-width: 35%;
+
+            .tech-title {
+                font-family: v.$font-primary;
+                font-size: 1.1rem;
+            }
+
+            .tech-items {
+                display: flex;
+                gap: 2rem;
+                flex-wrap: wrap;
+
+                .tech-item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    gap: 0.5rem;
+
+                    img {
+                        width: 3rem;
+                        height: auto;
+                        object-fit: contain;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+  @media (max-width: 430px) {
+      .technologies {
+          .technologies-container {
+              grid-template-columns: 1fr;
+              max-width: 100%;
+
+              .tech-block {
+                  min-width: 100%;
+              }
+          }
+      }
+  }

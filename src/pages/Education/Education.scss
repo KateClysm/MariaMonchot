@@ -1,7 +1,7 @@
 @use 'src/styles/_variables.scss' as v;
 
 .education {
-    min-height: 130vh;
+    //min-height: 130vh;
     padding: 10rem 0;
     display: flex;
     flex-direction: column;
@@ -13,15 +13,13 @@
         row-gap: 5rem;
         column-gap: 3rem;
 
-        
-
         .education-block {
             margin-bottom: 2rem;
 
             &.half{ flex: 1 1 45%; max-width: 50%; } //// grow: puede expandirse, shrink: puede achicarse, basis: ancho inicial 45%
             &.full{width: 100%; max-width: 100%;}
 
-            h3 {padding-bottom: 1rem;}
+            h3 {padding-bottom: 1rem; width: 100%;}
             ul {padding-top: 1.5rem;}
 
             ul {
@@ -30,7 +28,6 @@
                 row-gap: 1rem;
                 padding-left: 0; // elimina indentación por defecto
                 list-style: none;
-                border-top: 1px solid v.$primary-color;
 
                 li {
                     position: relative;
@@ -46,7 +43,7 @@
 
                 li,
                 .details {
-                    font-size: 1rem;
+                    
                     font-weight: lighter;
                 }
 
