@@ -22,17 +22,17 @@ const Nav: React.FC = () => {
   const handleScrollOrRedirection = (area: string) => {
     const currentPath = window.location.pathname;
 
-    if (area === "/mariamonchot/" && currentPath === "/mariamonchot/") {
+    if (area === "/MariaMonchot/" && currentPath === "/MariaMonchot/") {
       window.scrollTo({ top: 0, behavior: "smooth" });
-    } else if (area === "/mariamonchot/" && currentPath !== "/mariamonchot/") {
-      navigate("/mariamonchot/");
-    } else if (area.startsWith("/") && currentPath === "/mariamonchot/") {
+    } else if (area === "/MariaMonchot/" && currentPath !== "/MariaMonchot/") {
+      navigate("/MariaMonchot/");
+    } else if (area.startsWith("/") && currentPath === "/MariaMonchot/") {
       const element = document.getElementById(area.substring(1));
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
     } else {
-      navigate("/mariamonchot/");
+      navigate("/MariaMonchot/");
       setTimeout(() => {
         const element = document.getElementById(area.substring(1));
         if (element) {
