@@ -16,7 +16,7 @@ const About: React.FC = () => {
           </div>
 
           <img 
-              src="src/assets/svgs/wwwhirl.svg" 
+              src="svgs/wwwhirl.svg" 
               alt="Background SVG" 
               className="presentation-svg" 
           />

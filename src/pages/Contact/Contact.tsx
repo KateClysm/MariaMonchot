@@ -6,7 +6,7 @@ const Contact: React.FC = () => {
     return (
       <section className="contact">
         <img 
-          src="src/assets/svgs/waves.svg" 
+          src="svgs/waves.svg" 
           alt="Background SVG" 
           className="contact-bg" 
         />

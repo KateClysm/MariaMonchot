@@ -8,7 +8,7 @@ const Technologies: React.FC = () => {
   return (
     <section className="technologies ">
       <img 
-          src="src/assets/svgs/waves.svg" 
+          src="svgs/waves.svg" 
           alt="Background SVG" 
           className="technologies-svg" 
       />
