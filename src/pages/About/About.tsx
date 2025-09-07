@@ -27,7 +27,7 @@ const About: React.FC = () => {
       <div className="about ">
         <AboutPresentation text={portfolioData.AboutPresentation}/>
       
-        <IconPresentation cards={portfolioData.whatIDo} title="WHAT I DO" variant="A" extraClass="holographic-card"/>
+        <IconPresentation cards={portfolioData.whatIDo} title="WHAT I DO" variant="A" extraClass="holographic-card "/>
 
         <IconPresentation cards={portfolioData.myPriorities} title="MY PRIORITIES" variant="B"/>
 

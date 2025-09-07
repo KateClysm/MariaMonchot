@@ -210,14 +210,19 @@
       "section": "DEVELOPMENT KIT",
       "items": [
         {
-          "icon": "icons/react.png",
+          "icon": "icons/css3.png",
           "alt": "React Icon From Flaticon, made by Freepik",
-          "label": "React"
+          "label": "CSS3"
         },
         {
-          "icon": "icons/expressjs.png",
+          "icon": "icons/html5.png",
           "alt": "Express.js Icon",
-          "label": "Express.js"
+          "label": "HTML5"
+        },
+        {
+          "icon": "icons/sass.png",
+          "alt": "Express.js Icon",
+          "label": "SASS"
         }
       ]
     },

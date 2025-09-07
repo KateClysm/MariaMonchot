@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
           <h2>CONTACT</h2>
           <p>{portfolioData.contact.text}</p>
 
-          <div className="contact-icons">
+          <div className="contact-icons animate-bounce">
             {portfolioData.contact.icons.map((iconObj, index) => {
               
               let href = iconObj.link;
