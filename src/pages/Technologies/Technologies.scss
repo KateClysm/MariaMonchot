@@ -1,19 +1,21 @@
 @use '@/styles/_variables.scss' as v;
 
+// =======================
+// Estilos Mobile
+// =======================
 .technologies {
     display: flex;
     flex-direction: column;
     padding: 15rem 0 10rem 0;
 
-    position: relative; // Esto permite que el SVG absoluto se posicione respecto a este contenedor
+    position: relative; // Para que el SVG absoluto se posicione respecto a este contenedor
     overflow: hidden; // Evita que el SVG se salga del contenedor
-
 
     .technologies-svg {
         position: absolute;
         top: 0;
         right: 0; // fijamos al lado derecho
-        transform: translateX(50%);
+        transform: translateX(75%); // mobile por defecto
         height: 100%;
         width: auto;
         z-index: 0;
@@ -23,23 +25,18 @@
 
     .technologies-container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr; // mobile por defecto
         gap: 3rem;
-        max-width: 75%;
+        max-width: 100%; // mobile por defecto
         position: relative;
         z-index: 1;
         align-items: start;
-
-        .tech-block:last-child {
-        grid-column: span 2; // ocupa las dos columnas
-        }
-            
 
         .tech-block {
             display: flex;
             flex-direction: column;
             gap: 1.3rem;
-            min-width: 35%;
+            min-width: 100%; // mobile por defecto
 
             .tech-title {
                 font-family: v.$font-primary;
@@ -49,9 +46,8 @@
 
             .tech-items {
                 display: flex;
-                gap: 1.5rem;
+                gap: 1rem;
                 flex-wrap: wrap;
-            
 
                 .tech-item {
                     display: flex;
@@ -61,29 +57,49 @@
                     gap: 0.5rem;
 
                     img {
-                        width: 2rem;
+                        width: 1.5rem;
                         height: auto;
                         object-fit: contain;
                     }
 
+                    span {
+                        font-size: 0.7rem;
+                    }
                 }
             }
         }
     }
 }
 
-  @media (max-width: 600px) {
-      .technologies {
-            .technologies-svg {
-                transform: translateX(75%);
-            }
-          .technologies-container {
-              grid-template-columns: 1fr;
-              max-width: 100%;
+// =======================
+// Estilos Desktop
+// =======================
+@media (min-width: 550px) {
+    .technologies {
+        .technologies-svg {
+            transform: translateX(50%);
+        }
 
-              .tech-block {
-                  min-width: 100%;
-              }
-          }
-      }
-  }
+        .technologies-container {
+            grid-template-columns: auto auto;
+
+            .tech-block {
+                .fixed-border::after {
+                    width: 80%;
+                }
+                .tech-items {
+                    .tech-item {
+
+                        img {
+                            width: 2.5rem;
+                        }
+
+                        span {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
