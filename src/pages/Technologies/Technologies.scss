@@ -29,7 +29,11 @@
         position: relative;
         z-index: 1;
         align-items: end;
-        
+
+        .tech-block:last-child {
+        grid-column: span 2; // ocupa las dos columnas
+        }
+            
 
         .tech-block {
             display: flex;

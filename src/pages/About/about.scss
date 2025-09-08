@@ -34,3 +34,18 @@
     z-index: 2;
   }
 }
+
+@media (max-width: 600px) {
+  .home {
+    .home-container {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .home-content {
+        padding: 0;
+      }
+    }
+
+  }
+}

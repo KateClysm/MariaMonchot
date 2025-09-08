@@ -117,7 +117,7 @@
   },
   "technologies": [
     {
-      "section": "PROGRAMMING LANGUAGUES",
+      "section": "LANGUAGUES",
       "items": [
         {
           "icon": "icons/python.png",
@@ -157,7 +157,7 @@
       ]
     },
     {
-      "section": "DATA VISUALIZATION",
+      "section": "VISUALIZATION",
       "items": [
         {
           "icon": "icons/visualizations.png",
@@ -207,7 +207,7 @@
       ]
     },
     {
-      "section": "DEVELOPMENT KIT",
+      "section": "DEVELOPMENT",
       "items": [
         {
           "icon": "icons/css3.png",

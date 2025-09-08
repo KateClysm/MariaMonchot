@@ -12,27 +12,6 @@ const IconPresentation: React.FC<IconPresentationProps> = ({ cards, title, extra
   if (variant === "B") cardType = "b-card";
   if (variant === "C") cardType = "c-card";
 
-  if (variant === "A") {
-    return (
-      <div className="margin-mark">
-        <h3 className="fixed-border revealUp">{title}</h3>
-        <div className="a-cards m-top-5 revealUp">
-          
-          {cards.map((card: IconPresentationCard, index: number) => (
-            <Card
-              key={index}
-              icon={card.icon}
-              alt={card.alt}
-              label={card.label}
-              extraClass={extraClass}
-              variant={variant}
-            />
-          ))}
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div>
       <h3 className="fixed-border margin-mark revealUp">{title}</h3>

@@ -9,16 +9,18 @@ const About: React.FC = () => {
     <section className="home">
 
       
-      <div className="home-content ">
-        <HomePresentation text={portfolioData.HomePresentation} />
-      </div>
+      <div className="home-container">
+        <div className="home-content ">
+          <HomePresentation text={portfolioData.HomePresentation} />
+        </div>
 
-      <div className="home-svg-wrapper ">
-        <img
-          src="svgs/wwwhirl3.svg"
-          alt="Background SVG"
-          className="home-svg"
-        />
+        <div className="home-svg-wrapper ">
+          <img
+            src="svgs/wwwhirl3.svg"
+            alt="Background SVG"
+            className="home-svg"
+          />
+        </div>
       </div>
 
     <h2 className="presentation margin-mark revealUp">ABOUT</h2>
