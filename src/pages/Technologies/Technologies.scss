@@ -28,7 +28,7 @@
         max-width: 75%;
         position: relative;
         z-index: 1;
-        align-items: end;
+        align-items: start;
 
         .tech-block:last-child {
         grid-column: span 2; // ocupa las dos columnas
