@@ -1,10 +1,10 @@
 import "./about.scss";
 import portfolioData from "../../assets/portfolio.json";
 import HomePresentation from "../../sections/HomePresentation";
-// import AboutPresentation from "../../sections/AboutPresentation";
 import IconPresentation from "../../sections/IconPresentation/IconPresentation";
 
 const About: React.FC = () => {
+ 
   return (
     <section className="home">
 
@@ -21,13 +21,12 @@ const About: React.FC = () => {
         />
       </div>
 
-    <h2 className="presentation margin-mark">ABOUT</h2>
+    <h2 className="presentation margin-mark revealUp">ABOUT</h2>
       <div className="about m-top-5">
         <IconPresentation
           cards={portfolioData.whatIDo}
           title="WHAT I DO"
           variant="A"
-          extraClass=""
         />
         <IconPresentation
           cards={portfolioData.myPriorities}

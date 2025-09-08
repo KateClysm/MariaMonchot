@@ -8,7 +8,7 @@ const Education: React.FC = () => {
   useRevealUp()
   return (
     <section className="education margin-mark">
-      <h2 className="section-title">EDUCATION</h2>
+      <h2 className="section-title revealUp">EDUCATION</h2>
 
       <div className="education-categories m-top-5">
         <div className="education-block half revealUp">

@@ -1,8 +1,10 @@
 import './contact.scss';
 import React from 'react';
 import portfolioData from "../../assets/portfolio.json";
+import { useRevealUp } from '../../animations/RevealUp';
 
 const Contact: React.FC = () => {
+    useRevealUp()
     return (
       <section className="contact">
         <img 
@@ -11,7 +13,7 @@ const Contact: React.FC = () => {
           className="contact-bg" 
         />
 
-        <div className="contact-content margin-mark">
+        <div className="contact-content margin-mark revealUp">
           <h2>CONTACT</h2>
           <p>{portfolioData.contact.text}</p>
 
