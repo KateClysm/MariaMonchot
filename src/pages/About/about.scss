@@ -1,59 +1,36 @@
-@use 'src/styles/_variables.scss' as v;
+@use '@/styles/_variables.scss' as v;
 
 
-//mobile first
 .home {
+  width: 100%;
+
+  .home-content {
     width: 100%;
+    padding: 10rem 0 0 0;
+    position: relative;
+    z-index: 2;
+  }
 
-    .home-container {
-        margin-top: 12rem;
+  .home-svg-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
 
-        .presentation-container {
-            width: 100%;
-            position: relative; // Esto permite que el SVG absoluto se posicione respecto a este contenedor
-            overflow: visible; // Permite que el SVG se salga del contenedor
-
-            .relative{position: relative; z-index: 1;}
-            .presentation-svg {
-                position: absolute;
-                top: 80%; // justo debajo del div.relative
-                left: 50%; // ancla el centro
-                transform: translateX(-50%); // centra horizontalmente
-                width: 120%; // agrandado, podés ajustar
-                height: auto; // mantiene proporción
-                z-index: 0;
-                pointer-events: none;
-            }
-        }
+    .home-svg {
+      width: 100%; 
+      max-width: 100%;
+      height: auto;
+      pointer-events: none;
     }
-
-    .about {
-        min-height: 100vh;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        row-gap: 10rem;
-    }
-}
-
-@media (min-width: 1000px) {
-    .home {
-        .home-container {
-            height: 70vh;
-
-            .home-svg {
-                position: absolute;
-                padding: 0;
-                top: 120%;
-            }
-        }
-    }
-}
-
-@media (min-width: 1400px) {
-    .home {
-        .home-container {
-            height: 100vh;
-        }
-    }
+  }
+  .about {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10rem;
+    position: relative;
+    z-index: 2;
+  }
 }

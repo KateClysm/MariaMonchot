@@ -1,4 +1,4 @@
-@use './variables' as v;
+@use '@/styles/_variables.scss' as v;
 
 * {
   margin: 0;
@@ -8,6 +8,7 @@
   scroll-behavior: smooth;
   text-align: left;
   font-weight: normal;
+  line-height: 1.6;
 }
 
 html, body {

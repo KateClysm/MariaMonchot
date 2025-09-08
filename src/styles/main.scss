@@ -5,10 +5,13 @@
 //Fuente general y Color general
 * { font-family: v.$font-secondary; color: v.$white-color; }
 
-//Fondo
-html, body {
-  background-image: linear-gradient(to right, #04161a, #061117, #060c12, #05060a, #010101);
-  background-size: cover;
+.site-root {
+  background: linear-gradient(
+    to bottom,
+    v.$secondary-color 0%,
+    v.$terciary-color 100%
+  );
+  background-repeat: no-repeat; /* solo asegura que no se repita horizontalmente */
 }
 
 // Tamaños de fuente para cada elemento
@@ -73,7 +76,6 @@ h1,h2,h3 { display: inline-block;}
 
   &:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
     cursor: pointer;
   }
 
@@ -118,16 +120,17 @@ h1,h2,h3 { display: inline-block;}
 
 
 .presentation {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        row-gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 2rem;
+    max-width: 70%;
 
-        h1,
-        span {
-            color: v.$primary-color;
-        }
+    h1,
+    span {
+        color: v.$primary-color;
     }
+}
 
 
 @keyframes bounce {

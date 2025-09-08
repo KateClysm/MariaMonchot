@@ -5,34 +5,40 @@ import AboutPresentation from "../../sections/AboutPresentation";
 import IconPresentation from "../../sections/IconPresentation/IconPresentation";
 
 const About: React.FC = () => {
-
   return (
     <section className="home">
-      <div className="home-container ">
 
-        <div className="presentation-container ">
-          <div className="relative">
-            <HomePresentation text={portfolioData.HomePresentation}/>
-          </div>
+      
+      <div className="home-content ">
+        <HomePresentation text={portfolioData.HomePresentation} />
+      </div>
 
-          <img 
-              src="svgs/wwwhirl.svg" 
-              alt="Background SVG" 
-              className="presentation-svg" 
-          />
-
-        </div>
+      <div className="home-svg-wrapper ">
+        <img
+          src="svgs/wwwhirl3.svg"
+          alt="Background SVG"
+          className="home-svg"
+        />
       </div>
 
       <div className="about ">
-        <AboutPresentation text={portfolioData.AboutPresentation}/>
-      
-        <IconPresentation cards={portfolioData.whatIDo} title="WHAT I DO" variant="A" extraClass="holographic-card "/>
-
-        <IconPresentation cards={portfolioData.myPriorities} title="MY PRIORITIES" variant="B"/>
-
-        <IconPresentation cards={portfolioData.myHighlights} title="MY HIGHLIGHTS" variant="C" />
-
+        <AboutPresentation text={portfolioData.AboutPresentation} />
+        <IconPresentation
+          cards={portfolioData.whatIDo}
+          title="WHAT I DO"
+          variant="A"
+          extraClass="holographic-card "
+        />
+        <IconPresentation
+          cards={portfolioData.myPriorities}
+          title="MY PRIORITIES"
+          variant="B"
+        />
+        <IconPresentation
+          cards={portfolioData.myHighlights}
+          title="MY HIGHLIGHTS"
+          variant="C"
+        />
       </div>
     </section>
   );

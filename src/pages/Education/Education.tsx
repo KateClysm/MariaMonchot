@@ -1,16 +1,17 @@
 import React from "react";
 import portfolioData from "../../assets/portfolio.json";
 import "./Education.scss";
+import { useRevealUp } from "../../animations/RevealUp";
 
 const Education: React.FC = () => {
   const { education } = portfolioData;
-
+  useRevealUp()
   return (
     <section className="education margin-mark">
       <h2 className="section-title">EDUCATION</h2>
 
       <div className="education-categories m-top-5">
-        <div className="education-block half">
+        <div className="education-block half revealUp">
           <h3 className="education-subtitle fixed-border">ACADEMIC</h3>
           <ul className="">
             {education.academic.map((item, index) => (
@@ -22,7 +23,7 @@ const Education: React.FC = () => {
           </ul>
         </div>
 
-        <div className="education-block half">
+        <div className="education-block half revealUp">
           <h3 className="education-subtitle fixed-border">INTERNSHIP</h3>
           <ul className="">
             {education.internship.map((item, index) => (
@@ -34,7 +35,7 @@ const Education: React.FC = () => {
           </ul>
         </div>
 
-        <div className="education-block full">
+        <div className="education-block full revealUp">
             <h3 className="education-subtitle fixed-border">
                 CERTIFICATIONS
                 <a href={education.certifications.linkAllCertifications}
@@ -42,7 +43,7 @@ const Education: React.FC = () => {
             </h3>
           <ul className="">
             {education.certifications.c.map((course: string, index: number) => (
-              <li key={index}>{course}</li>
+              <li key={index}><strong>{course}</strong></li>
             ))}
           </ul>
         </div>

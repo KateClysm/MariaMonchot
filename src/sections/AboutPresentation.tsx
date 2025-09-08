@@ -6,7 +6,7 @@ interface AboutPresentationProps {
 
 const AboutPresentation: React.FC<AboutPresentationProps> = ({ text }) => {
   return (
-    <div className="presentation margin-mark">
+    <div className="presentation margin-mark animate__animated animate__fadeInUp">
       <h2>ABOUT</h2>
       <p>{text}</p>
     </div>

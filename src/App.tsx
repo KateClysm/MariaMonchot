@@ -20,12 +20,14 @@ const App: React.FC = () => {
   //Layout Base
   const Layout = () => {
     return (
-      <> 
+      <div className="site-root">
         <Nav />
-        <Outlet />
-        <Contact/>
-        <Footer/>
-      </>
+        <main className="site-content">
+          <Outlet />
+        </main>
+        <Contact />
+        <Footer />
+      </div>
     );
   };
  
