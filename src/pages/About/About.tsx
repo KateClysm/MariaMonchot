@@ -1,7 +1,7 @@
 import "./about.scss";
 import portfolioData from "../../assets/portfolio.json";
 import HomePresentation from "../../sections/HomePresentation";
-import AboutPresentation from "../../sections/AboutPresentation";
+// import AboutPresentation from "../../sections/AboutPresentation";
 import IconPresentation from "../../sections/IconPresentation/IconPresentation";
 
 const About: React.FC = () => {
@@ -21,13 +21,13 @@ const About: React.FC = () => {
         />
       </div>
 
-      <div className="about ">
-        <AboutPresentation text={portfolioData.AboutPresentation} />
+    <h2 className="presentation margin-mark">ABOUT</h2>
+      <div className="about m-top-5">
         <IconPresentation
           cards={portfolioData.whatIDo}
           title="WHAT I DO"
           variant="A"
-          extraClass="holographic-card "
+          extraClass=""
         />
         <IconPresentation
           cards={portfolioData.myPriorities}

@@ -22,29 +22,30 @@
     }
 
     .technologies-container {
-        gap: 6rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 6rem;
+        gap: 3rem;
         max-width: 75%;
         position: relative;
         z-index: 1;
+        align-items: end;
         
 
         .tech-block {
             display: flex;
             flex-direction: column;
-            gap: 1.5rem;
+            gap: 1.3rem;
             min-width: 35%;
 
             .tech-title {
                 font-family: v.$font-primary;
-                font-size: 1.1rem;
+                font-size: 0.9rem;
+                padding-bottom: 0.8rem;
             }
 
             .tech-items {
                 display: flex;
-                gap: 2rem;
+                gap: 1.5rem;
                 flex-wrap: wrap;
             
 
@@ -56,7 +57,7 @@
                     gap: 0.5rem;
 
                     img {
-                        width: 3rem;
+                        width: 2rem;
                         height: auto;
                         object-fit: contain;
                     }
@@ -67,7 +68,7 @@
     }
 }
 
-  @media (max-width: 450px) {
+  @media (max-width: 600px) {
       .technologies {
             .technologies-svg {
                 transform: translateX(75%);

@@ -4,11 +4,11 @@ interface AboutPresentationProps {
   text: string;
 }
 
-const AboutPresentation: React.FC<AboutPresentationProps> = ({ text }) => {
+const AboutPresentation: React.FC<AboutPresentationProps> = () => {
   return (
-    <div className="presentation margin-mark animate__animated animate__fadeInUp">
+    <div className="presentation margin-mark">
       <h2>ABOUT</h2>
-      <p>{text}</p>
+      {/* <p>{text}</p> */}
     </div>
   );
 };
