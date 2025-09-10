@@ -1,324 +1,711 @@
-{ 
-  "links": [
-  { "name": "ABOUT", "area": "#about" },
-  { "name": "PROJECTS", "area": "#projects" },
-  { "name": "TECHNOLOGIES", "area": "#technologies" },
-  { "name": "EDUCATION", "area": "#education" },
-  { "name": "CONTACT", "area": "#contact" }
-  ],
-  "buttons": {
-  "language": { "default": "EN" },
-  "theme": { "default": "LIGHT" }
-  },
-
-  "HomePresentation": "I am a Data Science student, constantly engaged in technical training and actively involved in programs related to data and artificial intelligence. I stand out for my problem-solving mindset, self-learning ability, and strong organization.",
-  "AboutPresentation": "Currently enrolled in the University of Buenos Aires in the area of Data Science (Bachelor's Degree), with a prior academic background in Systems and experience in programming and full stack web development. I complement my studies with certifications such as Google Data Analytics, Oracle Data Science, and Data Analysis at Fundación Pescar + Artech. I am passionate about learning, teamwork, and developing data-driven solutions that generate real value for IT projects and organizations.",
-  "whatIDo": [
-    {
-      "icon": "icons/data_cleansing.png",
-      "alt": "Data Cleansing Icon From Flaticon, made by monkik",
-      "label": "Data Cleansing"
-    },
-    {
-      "icon": "icons/languagues.png",
-      "alt": "Programming Icons From Flaticon, TypeScript made by Freepik, Python made by Freepik, JavaScript made by edt.im",
-      "label": "Programming"
-    },
-    {
-      "icon": "icons/data_analysis.png",
-      "alt": "Analysis Icon From Flaticon, made by mynamepong",
-      "label": "Analysis"
-    },
-    {
-      "icon": "icons/dashboard.png",
-      "alt": "Visualizations Icon From Flaticon, made by andrean-prabowo",
-      "label": "Visualizations"
-    },
-    {
-      "icon": "icons/database.png",
-      "alt": "Databases Icon From Flaticon, made by the-chohans-brand",
-      "label": "Databases"
-    }
-  ],
-  "myPriorities": [
-    {
-      "icon": "icons/communication.png",
-      "alt": "Good Comunication Icon From Flaticon, made by Made by Made Premium",
-      "label": "Good Comunication"
-    },
-    {
-      "icon": "icons/online_learning.png",
-      "alt": "Constant Learning Icon From Flaticon, made by Freepik",
-      "label": "Constant Learning"
-    },
-    {
-      "icon": "icons/organization_chart.png",
-      "alt": "Organization Icon From Flaticon, made by Freepik",
-      "label": "Organization"
-    },
-    {
-      "icon": "icons/teamwork.png",
-      "alt": "Team Work Icon From Flaticon, made by Smashicons",
-      "label": "Team Work"
-    },
-    {
-      "icon": "icons/solution.png",
-      "alt": "Resolutive Capacity Icon From Flaticon, made by anilofex",
-      "label": "Resolutive Capacity"
-    }
-  ],
-  "myHighlights": [
-    {
-      "icon": "30",
-      "plus": "+",
-      "label": "Team Members"
-    },
-    {
-      "icon": "10",
-      "plus": "+",
-      "label": "Projects"
-    },
-    {
-      "icon": "20",
-      "plus": "+",
-      "label": "Courses"
-    },
-    {
-      "icon": "20",
-      "plus": "+",
-      "label": "Technologies"
-    }
-  ],
-  "projectsData": {
-    "categories": [
-      { "name": "NOTABLE", "visualize": true },
-      { "name": "MACHINE LEARNING", "visualize": true },
-      { "name": "VISUALIZATION", "visualize": true },
-      { "name": "PYTHON", "visualize": true },
-      { "name": "SQL & DATABASES", "visualize": true }
-      
+{
+  "en-language": {
+    "links": [
+      { "name": "ABOUT", "area": "#about" },
+      { "name": "PROJECTS", "area": "#projects" },
+      { "name": "TECHNOLOGIES", "area": "#technologies" },
+      { "name": "EDUCATION", "area": "#education" },
+      { "name": "CONTACT", "area": "#contact" }
     ],
-    "projects": [
-      {
-        "projectType": "image",
-        "name": "",
-        "image": "",
-        "description": "",
-        "githubLink": "",
-        "deployLink": "",
-        "highlightedTech": "",
-        "technologies": [],
-        "source": "",
-        "featured": true,
-        "categories": ["WEB DEVELOPMENT", "PYTHON"]
-      },
-      {
-        "projectType": "",
-        "name": "",
-        "image": "",
-        "description": "",
-        "githubLink": "",
-        "deployLink": "",
-        "highlightedTech": "",
-        "technologies": [],
-        "source": "",
-        "featured": true,
-        "categories": ["WEB DEVELOPMENT", "PYTHON"]
-      }
-    ]
-  },
-  "technologies": [
-    {
-      "section": "LANGUAGUES",
-      "items": [
-        {
-          "icon": "icons/python.png",
-          "alt": "Python Icon From Flaticon, made by Freepik",
-          "label": "Python"
-        },
-        {
-          "icon": "icons/typescript.png",
-          "alt": "TypeScript Icon From Flaticon, made by Freepik",
-          "label": "TypeScript"
-        },
-        {
-          "icon": "icons/javascript.png",
-          "alt": "JavaScript Icon From Flaticon, made by edt.im",
-          "label": "JavaScript"
-        }
-      ]
+
+    "buttons": {
+      "language": { "default": "EN" },
+      "theme": { "default": "LIGHT" }
     },
-    {
-      "section": "DATABASES",
-      "items": [
+
+    "about": {
+      "name": "MARIA MONCHOT",
+      "subtitle": "ALL ABOUT DATA",
+      "HomePresentation": "I am a Data Science student, constantly engaged in technical training and actively involved in programs related to data and artificial intelligence. I stand out for my problem-solving mindset, self-learning ability, and strong organization.",
+      "sectionTitle": "ABOUT",
+      "AboutPresentation": "Currently enrolled in the University of Buenos Aires in the area of Data Science (Bachelor's Degree), with a prior academic background in Systems and experience in programming and full stack web development. I complement my studies with certifications such as Google Data Analytics, Oracle Data Science, and Data Analysis at Fundación Pescar + Artech. I am passionate about learning, teamwork, and developing data-driven solutions that generate real value for IT projects and organizations.",
+      "whatIDoTitle": "WHAT I DO",
+      "whatIDo": [
         {
-          "icon": "icons/database.png",
-          "alt": "SQL Icon From Flaticon, made by the-chohans-brand",
-          "label": "SQL"
+          "icon": "icons/data_cleansing.png",
+          "alt": "Data Cleansing Icon From Flaticon, made by monkik",
+          "label": "Data Cleansing"
+        },
+        {
+          "icon": "icons/languagues.png",
+          "alt": "Programming Icons From Flaticon, TypeScript made by Freepik, Python made by Freepik, JavaScript made by edt.im",
+          "label": "Programming"
+        },
+        {
+          "icon": "icons/data_analysis.png",
+          "alt": "Analysis Icon From Flaticon, made by mynamepong",
+          "label": "Analysis"
+        },
+        {
+          "icon": "icons/dashboard.png",
+          "alt": "Visualizations Icon From Flaticon, made by andrean-prabowo",
+          "label": "Visualizations"
         },
         {
           "icon": "icons/database.png",
           "alt": "Databases Icon From Flaticon, made by the-chohans-brand",
-          "label": "MySQL"
+          "label": "Databases"
+        }
+      ],
+      "myPrioritiesTitle": "MY PRIORITIES",
+      "myPriorities": [
+        {
+          "icon": "icons/communication.png",
+          "alt": "Good Communication Icon From Flaticon, made by Made Premium",
+          "label": "Good Communication"
         },
         {
-          "icon": "icons/database.png",
-          "alt": "Databases Icon From Flaticon, made by the-chohans-brand",
-          "label": "SQL Server"
+          "icon": "icons/online_learning.png",
+          "alt": "Constant Learning Icon From Flaticon, made by Freepik",
+          "label": "Constant Learning"
+        },
+        {
+          "icon": "icons/organization_chart.png",
+          "alt": "Organization Icon From Flaticon, made by Freepik",
+          "label": "Organization"
+        },
+        {
+          "icon": "icons/teamwork.png",
+          "alt": "Team Work Icon From Flaticon, made by Smashicons",
+          "label": "Team Work"
+        },
+        {
+          "icon": "icons/solution.png",
+          "alt": "Resolutive Capacity Icon From Flaticon, made by anilofex",
+          "label": "Resolutive Capacity"
+        }
+      ],
+      "myHighlightsTitle": "MY HIGHLIGHTS",
+      "myHighlights": [
+        {
+          "icon": "30",
+          "plus": "+",
+          "label": "Team Members"
+        },
+        {
+          "icon": "10",
+          "plus": "+",
+          "label": "Projects"
+        },
+        {
+          "icon": "20",
+          "plus": "+",
+          "label": "Courses"
+        },
+        {
+          "icon": "20",
+          "plus": "+",
+          "label": "Technologies"
         }
       ]
     },
-    {
-      "section": "VISUALIZATION",
-      "items": [
+
+    "projectsData": {
+      "categories": [
+        { "name": "NOTABLE", "visualize": true },
+        { "name": "MACHINE LEARNING", "visualize": true },
+        { "name": "VISUALIZATION", "visualize": true },
+        { "name": "PYTHON", "visualize": true },
+        { "name": "SQL & DATABASES", "visualize": true }
+      ],
+      "projects": [
         {
-          "icon": "icons/visualizations.png",
-          "alt": "Power BI Icon From Flaticon, made by Eucalyp",
-          "label": "Power BI"
+          "projectType": "image",
+          "name": "",
+          "image": "",
+          "description": "",
+          "githubLink": "",
+          "deployLink": "",
+          "highlightedTech": "",
+          "technologies": [],
+          "source": "",
+          "featured": true,
+          "categories": ["WEB DEVELOPMENT", "PYTHON"]
         },
         {
-          "icon": "icons/visualizations.png",
-          "alt": "Excel Icon From Flaticon, made by Pixel perfect",
-          "label": "Excel"
+          "projectType": "",
+          "name": "",
+          "image": "",
+          "description": "",
+          "githubLink": "",
+          "deployLink": "",
+          "highlightedTech": "",
+          "technologies": [],
+          "source": "",
+          "featured": true,
+          "categories": ["WEB DEVELOPMENT", "PYTHON"]
         }
       ]
     },
-    {
-      "section": "LIBRARIES",
-      "items": [
+
+    "technologies": {
+      "sectionTitle": "TECHNOLOGIES",
+      "blocks": [
         {
-          "icon": "icons/librarie.png",
-          "alt": "Pandas Icon From Flaticon, made by zero_wing",
-          "label": "Pandas"
+          "section": "LANGUAGES",
+          "items": [
+            {
+              "icon": "icons/python.png",
+              "alt": "Python Icon From Flaticon, made by Freepik",
+              "label": "Python"
+            },
+            {
+              "icon": "icons/typescript.png",
+              "alt": "TypeScript Icon From Flaticon, made by Freepik",
+              "label": "TypeScript"
+            },
+            {
+              "icon": "icons/javascript.png",
+              "alt": "JavaScript Icon From Flaticon, made by edt.im",
+              "label": "JavaScript"
+            }
+          ]
         },
         {
-          "icon": "icons/librarie.png",
-          "alt": "NumPy Icon From Flaticon, made by zero_wing",
-          "label": "NumPy"
+          "section": "DATABASES",
+          "items": [
+            {
+              "icon": "icons/database.png",
+              "alt": "SQL Icon From Flaticon, made by the-chohans-brand",
+              "label": "SQL"
+            },
+            {
+              "icon": "icons/database.png",
+              "alt": "Databases Icon From Flaticon, made by the-chohans-brand",
+              "label": "MySQL"
+            },
+            {
+              "icon": "icons/database.png",
+              "alt": "Databases Icon From Flaticon, made by the-chohans-brand",
+              "label": "SQL Server"
+            }
+          ]
         },
         {
-          "icon": "icons/librarie.png",
-          "alt": "MatplotLib Icon From Flaticon, made by zero_wing",
-          "label": "MatplotLib"
+          "section": "VISUALIZATION",
+          "items": [
+            {
+              "icon": "icons/visualizations.png",
+              "alt": "Power BI Icon From Flaticon, made by Eucalyp",
+              "label": "Power BI"
+            },
+            {
+              "icon": "icons/visualizations.png",
+              "alt": "Excel Icon From Flaticon, made by Pixel perfect",
+              "label": "Excel"
+            }
+          ]
+        },
+        {
+          "section": "LIBRARIES",
+          "items": [
+            {
+              "icon": "icons/librarie.png",
+              "alt": "Pandas Icon From Flaticon, made by zero_wing",
+              "label": "Pandas"
+            },
+            {
+              "icon": "icons/librarie.png",
+              "alt": "NumPy Icon From Flaticon, made by zero_wing",
+              "label": "NumPy"
+            },
+            {
+              "icon": "icons/librarie.png",
+              "alt": "MatplotLib Icon From Flaticon, made by zero_wing",
+              "label": "MatplotLib"
+            }
+          ]
+        },
+        {
+          "section": "FRAMEWORKS",
+          "items": [
+            {
+              "icon": "icons/react.png",
+              "alt": "React Icon From Flaticon, made by Freepik",
+              "label": "React"
+            },
+            {
+              "icon": "icons/expressjs.png",
+              "alt": "Express.js Icon",
+              "label": "Express.js"
+            }
+          ]
+        },
+        {
+          "section": "DEVELOPMENT",
+          "items": [
+            {
+              "icon": "icons/css3.png",
+              "alt": "CSS3 Icon From Flaticon, made by Freepik",
+              "label": "CSS3"
+            },
+            {
+              "icon": "icons/html5.png",
+              "alt": "HTML5 Icon From Flaticon, made by Freepik",
+              "label": "HTML5"
+            },
+            {
+              "icon": "icons/sass.png",
+              "alt": "SASS Icon From Flaticon, made by Freepik",
+              "label": "SASS"
+            }
+          ]
+        },
+        {
+          "section": "TOOLS",
+          "items": [
+            {
+              "icon": "icons/nodejs.png",
+              "alt": "Node.js Icon From Flaticon, made by Grand Iconic",
+              "label": "Node.js"
+            },
+            {
+              "icon": "icons/figma.png",
+              "alt": "Figma Icon From Flaticon, made by Freepik",
+              "label": "Figma"
+            },
+            {
+              "icon": "icons/trello.png",
+              "alt": "Trello Icon From Flaticon, made by Pixel perfect",
+              "label": "Trello"
+            },
+            {
+              "icon": "icons/github.png",
+              "alt": "GitHub Icon From Flaticon, made by riajulislam",
+              "label": "GitHub"
+            },
+            {
+              "icon": "icons/git.png",
+              "alt": "Git Icon From Flaticon, made by pictogramer",
+              "label": "Git"
+            }
+          ]
         }
       ]
     },
-    {
-      "section": "FRAMEWORKS",
-      "items": [
+
+    "education": {
+      "sectionTitle": "EDUCATION",
+      "blocks": [
         {
-          "icon": "icons/react.png",
-          "alt": "React Icon From Flaticon, made by Freepik",
-          "label": "React"
+          "section": "ACADEMIC",
+          "items": [
+            {
+              "title": "Bachelor's Degree in Data Science - University of Buenos Aires",
+              "period": "2025 - Currently enrolled."
+            },
+            {
+              "title": "Bachelor's Degree in Information Systems - Universidad Nacional de la Patagonia San Juan Bosco",
+              "period": "2024 - 2025",
+              "details": "Collaborative academic projects in Assembly, C, and Pascal programming."
+            }
+          ]
         },
         {
-          "icon": "icons/expressjs.png",
-          "alt": "Express.js Icon",
-          "label": "Express.js"
+          "section": "INTERNSHIP",
+          "items": [
+            {
+              "title": "Artech + Fundación Pescar | Data Analysis & SAP + AI Intern",
+              "period": "Ongoing",
+              "details": "Technical training in Python, SQL, Power BI, Databricks, Power Apps, and Applied AI within a workplace environment provided by Artech (~237 hours). Development of soft skills, teamwork, and professional growth through Fundación Pescar (~180 hours)."
+            }
+          ]
+        },
+        {
+          "section": "CERTIFICATIONS",
+          "linkAllCertifications": "https://drive.google.com/drive/folders/1Jb-3-c3aLqszJEEVcEQ2Tv4sNpovXage?usp=sharing",
+          "items": [
+            "Google Data Analytics, Coursera + Google - Currently enrolled.",
+            "Data Science + IA, Oracle Next Education + Alura Latam - Currently enrolled.",
+            "Scientific Computing with Python, FreeCodeCamp, 2025.",
+            "Interactive SQL, Desafío Latam, 2025.",
+            "Power BI Fundamentals, Santander Open Academy, 2025.",
+            "Excel from Basic to Intermediate, Santander Open Academy, 2025.",
+            "Junior Full Stack Developer Training, Empujar Coders - 2023."
+          ]
         }
       ]
     },
-    {
-      "section": "DEVELOPMENT",
-      "items": [
+
+    "contact": {
+      "sectionTitle": "CONTACT",
+      "text": "I am open to professional opportunities and collaborations in the field of Data Science and Analytics. Please feel free to contact me for further information or to discuss how I can contribute to your team or project.",
+      "icons": [
         {
-          "icon": "icons/css3.png",
-          "alt": "React Icon From Flaticon, made by Freepik",
-          "label": "CSS3"
+          "icon": "icons/linkedin.png",
+          "alt": "LinkedIn Icon From Flaticon, made by riajulislam",
+          "link": "https://www.linkedin.com/in/maria-monchot"
         },
         {
-          "icon": "icons/html5.png",
-          "alt": "Express.js Icon",
-          "label": "HTML5"
-        },
-        {
-          "icon": "icons/sass.png",
-          "alt": "Express.js Icon",
-          "label": "SASS"
-        }
-      ]
-    },
-    {
-      "section": "TOOLS",
-      "items": [
-        {
-          "icon": "icons/nodejs.png",
-          "alt": "Node.js Icon From Flaticon, made by Grand Iconic",
-          "label": "Node.js"
-        },
-        {
-          "icon": "icons/figma.png",
-          "alt": "Figma Icon From Flaticon, made by Freepik",
-          "label": "Figma"
-        },
-        {
-          "icon": "icons/trello.png",
-          "alt": "Trello Icon From Flaticon, made by Pixel perfect",
-          "label": "Trello"
+          "icon": "icons/mail.png",
+          "alt": "Email Icon From Flaticon, made by Uniconlabs",
+          "link": "https://mail.google.com/mail/?view=cm&fs=1&to=mariamonchot@gmail.com"
         },
         {
           "icon": "icons/github.png",
-          "alt": "GitHub Icon From Flaticon, made by riajulislam",
-          "label": "GitHub"
-        },
-        {
-          "icon": "icons/git.png",
-          "alt": "Git Icon From Flaticon, made by pictogramer",
-          "label": "Git"
+          "alt": "Github Icon From Flaticon, made by riajulislam",
+          "link": "https://github.com/KateClysm"
         }
       ]
-    }
-  ],
-  "education": {
-    "academic": [
-      {
-        "title": "Bachelor's Degree in Data Science - University of Buenos Aires",
-        "period": "2025 - Currently enrolled."
-      },
-      {
-        "title": "Bachelor's Degree in Information Systems - Universidad Nacional de la Patagonia San Juan Bosco",
-        "period": "2024 - 2025",
-        "details": "Collaborative academic projects in Assembly, C, and Pascal programming."
-      }
-    ],
-    "internship": [
-      {
-        "title": "Artech + Fundación Pescar | Data Analysis & SAP + AI Intern",
-        "period": "Ongoing",
-        "details": "Technical training in Python, SQL, Power BI, Databricks, Power Apps, and Applied AI within a workplace environment provided by Artech (~237 hours). Development of soft skills, teamwork, and professional growth through Fundación Pescar (~180 hours)."
-      }
-    ],
-    "certifications": {
-      "c": [
-        "Google Data Analytics, Coursera + Google - Currently enrolled.",
-        "Data Science + IA, Oracle Next Education + Alura Latam - Currently enrolled.",
-        "Scientific Computing with Python, FreeCodeCamp, 2025.",
-        "Interactive SQL, Desafío Latam, 2025.",
-        "Power BI Fundamentals, Santander Open Academy, 2025.",
-        "Excel from Basic to Intermediate, Santander Open Academy, 2025.",
-        "Junior Full Stack Developer Training, Empujar Coders - 2023."
-      ],
-      "linkAllCertifications": "https://drive.google.com/drive/folders/1Jb-3-c3aLqszJEEVcEQ2Tv4sNpovXage?usp=sharing"
+    },
+
+    "footer": {
+      "copyright": "© María Monchot · Data Analyst · All rights reserved",
+      "builtWith": "Built with React + TypeScript"
     }
   },
-  "contact": {
-    "text": "I am open to professional opportunities and collaborations in the field of Data Science and Analytics. Please feel free to contact me for further information or to discuss how I can contribute to your team or project.",
-    "icons": [
-      {
-        "icon": "icons/linkedin.png",
-        "alt": "LinkedIn Icon From Flaticon, made by riajulislam",
-        "link": "https://www.linkedin.com/in/maria-monchot"
-      },
-      {
-        "icon": "icons/mail.png",
-        "alt": "Email Icon From Flaticon, made by Uniconlabs",
-        "link": "https://mail.google.com/mail/?view=cm&fs=1&to=mariamonchot@gmail.com"
-      },
-      {
-        "icon": "icons/github.png",
-        "alt": "Github Icon From Flaticon, made by riajulislam",
-        "link": "https://github.com/KateClysm"
-      }
-    ]
+
+  "es-language": {
+    "links": [
+      { "name": "SOBRE MÍ", "area": "#about" },
+      { "name": "PROYECTOS", "area": "#projects" },
+      { "name": "TECNOLOGÍAS", "area": "#technologies" },
+      { "name": "EDUCACIÓN", "area": "#education" },
+      { "name": "CONTACTO", "area": "#contact" }
+    ],
+    "buttons": {
+      "language": { "default": "ES" },
+      "theme": { "default": "CLARO" }
+    },
+
+    "about": {
+      "name": "MARIA MONCHOT",
+      "subtitle": "DATA ANALYST",
+      "HomePresentation": "Soy estudiante de Ciencia de Datos, siempre involucrada en formación técnica y programas relacionados con datos e inteligencia artificial. Destaco por mi capacidad de resolución de problemas, aprendizaje autónomo y fuerte organización.",
+      "sectionTitle": "SOBRE MÍ",
+      "AboutPresentation": "Actualmente cursando la Licenciatura en Ciencia de Datos en la Universidad de Buenos Aires, con formación previa en Sistemas y experiencia en programación y desarrollo web full stack. Complemento mis estudios con certificaciones como Google Data Analytics, Oracle Data Science y Análisis de Datos en Fundación Pescar + Artech. Me apasiona aprender, el trabajo en equipo y desarrollar soluciones basadas en datos que generen valor real en proyectos y organizaciones de TI.",
+      "whatIDoTitle": "LO QUE HAGO",
+      "whatIDo": [
+        {
+          "icon": "icons/data_cleansing.png",
+          "alt": "Icono de limpieza de datos de Flaticon, hecho por monkik",
+          "label": "Limpieza de Datos"
+        },
+        {
+          "icon": "icons/languagues.png",
+          "alt": "Iconos de programación de Flaticon, TypeScript hecho por Freepik, Python hecho por Freepik, JavaScript hecho por edt.im",
+          "label": "Programación"
+        },
+        {
+          "icon": "icons/data_analysis.png",
+          "alt": "Icono de análisis de Flaticon, hecho por mynamepong",
+          "label": "Análisis"
+        },
+        {
+          "icon": "icons/dashboard.png",
+          "alt": "Icono de visualizaciones de Flaticon, hecho por andrean-prabowo",
+          "label": "Visualizaciones"
+        },
+        {
+          "icon": "icons/database.png",
+          "alt": "Icono de bases de datos de Flaticon, hecho por the-chohans-brand",
+          "label": "Bases de Datos"
+        }
+      ],
+      "myPrioritiesTitle": "MIS PRIORIDADES",
+      "myPriorities": [
+        {
+          "icon": "icons/communication.png",
+          "alt": "Icono de buena comunicación de Flaticon, hecho por Made Premium",
+          "label": "Buena Comunicación"
+        },
+        {
+          "icon": "icons/online_learning.png",
+          "alt": "Icono de aprendizaje constante de Flaticon, hecho por Freepik",
+          "label": "Aprendizaje Constante"
+        },
+        {
+          "icon": "icons/organization_chart.png",
+          "alt": "Icono de organización de Flaticon, hecho por Freepik",
+          "label": "Organización"
+        },
+        {
+          "icon": "icons/teamwork.png",
+          "alt": "Icono de trabajo en equipo de Flaticon, hecho por Smashicons",
+          "label": "Trabajo en Equipo"
+        },
+        {
+          "icon": "icons/solution.png",
+          "alt": "Icono de capacidad resolutiva de Flaticon, hecho por anilofex",
+          "label": "Capacidad Resolutiva"
+        }
+      ],
+      "myHighlightsTitle": "MIS LOGROS",
+      "myHighlights": [
+        {
+          "icon": "30",
+          "plus": "+",
+          "label": "Miembros de Equipo"
+        },
+        {
+          "icon": "10",
+          "plus": "+",
+          "label": "Proyectos"
+        },
+        {
+          "icon": "20",
+          "plus": "+",
+          "label": "Cursos"
+        },
+        {
+          "icon": "20",
+          "plus": "+",
+          "label": "Tecnologías"
+        }
+      ]
+    },
+    "projectsData": {
+      "categories": [
+        { "name": "DESTACADOS", "visualize": true },
+        { "name": "MACHINE LEARNING", "visualize": true },
+        { "name": "VISUALIZACIÓN", "visualize": true },
+        { "name": "PYTHON", "visualize": true },
+        { "name": "SQL & BASES DE DATOS", "visualize": true }
+      ],
+      "projects": [
+        {
+          "projectType": "image",
+          "name": "",
+          "image": "",
+          "description": "",
+          "githubLink": "",
+          "deployLink": "",
+          "highlightedTech": "",
+          "technologies": [],
+          "source": "",
+          "featured": true,
+          "categories": ["DESARROLLO WEB", "PYTHON"]
+        },
+        {
+          "projectType": "",
+          "name": "",
+          "image": "",
+          "description": "",
+          "githubLink": "",
+          "deployLink": "",
+          "highlightedTech": "",
+          "technologies": [],
+          "source": "",
+          "featured": true,
+          "categories": ["DESARROLLO WEB", "PYTHON"]
+        }
+      ]
+    },
+
+    "technologies": {
+      "sectionTitle": "TECNOLOGÍAS",
+      "blocks": [
+        {
+          "section": "LENGUAJES",
+          "items": [
+            {
+              "icon": "icons/python.png",
+              "alt": "Icono de Python de Flaticon, hecho por Freepik",
+              "label": "Python"
+            },
+            {
+              "icon": "icons/typescript.png",
+              "alt": "Icono de TypeScript de Flaticon, hecho por Freepik",
+              "label": "TypeScript"
+            },
+            {
+              "icon": "icons/javascript.png",
+              "alt": "Icono de JavaScript de Flaticon, hecho por edt.im",
+              "label": "JavaScript"
+            }
+          ]
+        },
+        {
+          "section": "BASES DE DATOS",
+          "items": [
+            {
+              "icon": "icons/database.png",
+              "alt": "Icono SQL de Flaticon, hecho por the-chohans-brand",
+              "label": "SQL"
+            },
+            {
+              "icon": "icons/database.png",
+              "alt": "Icono MySQL de Flaticon, hecho por the-chohans-brand",
+              "label": "MySQL"
+            },
+            {
+              "icon": "icons/database.png",
+              "alt": "Icono SQL Server de Flaticon, hecho por the-chohans-brand",
+              "label": "SQL Server"
+            }
+          ]
+        },
+        {
+          "section": "VISUALIZACIÓN",
+          "items": [
+            {
+              "icon": "icons/visualizations.png",
+              "alt": "Icono Power BI de Flaticon, hecho por Eucalyp",
+              "label": "Power BI"
+            },
+            {
+              "icon": "icons/visualizations.png",
+              "alt": "Icono Excel de Flaticon, hecho por Pixel perfect",
+              "label": "Excel"
+            }
+          ]
+        },
+        {
+          "section": "LIBRERÍAS",
+          "items": [
+            {
+              "icon": "icons/librarie.png",
+              "alt": "Icono Pandas de Flaticon, hecho por zero_wing",
+              "label": "Pandas"
+            },
+            {
+              "icon": "icons/librarie.png",
+              "alt": "Icono NumPy de Flaticon, hecho por zero_wing",
+              "label": "NumPy"
+            },
+            {
+              "icon": "icons/librarie.png",
+              "alt": "Icono MatplotLib de Flaticon, hecho por zero_wing",
+              "label": "MatplotLib"
+            }
+          ]
+        },
+        {
+          "section": "FRAMEWORKS",
+          "items": [
+            {
+              "icon": "icons/react.png",
+              "alt": "Icono React de Flaticon, hecho por Freepik",
+              "label": "React"
+            },
+            {
+              "icon": "icons/expressjs.png",
+              "alt": "Icono Express.js",
+              "label": "Express.js"
+            }
+          ]
+        },
+        {
+          "section": "DESARROLLO",
+          "items": [
+            {
+              "icon": "icons/css3.png",
+              "alt": "Icono CSS3 de Flaticon, hecho por Freepik",
+              "label": "CSS3"
+            },
+            {
+              "icon": "icons/html5.png",
+              "alt": "Icono HTML5 de Flaticon, hecho por Freepik",
+              "label": "HTML5"
+            },
+            {
+              "icon": "icons/sass.png",
+              "alt": "Icono SASS de Flaticon, hecho por Freepik",
+              "label": "SASS"
+            }
+          ]
+        },
+        {
+          "section": "HERRAMIENTAS",
+          "items": [
+            {
+              "icon": "icons/nodejs.png",
+              "alt": "Icono Node.js de Flaticon, hecho por Grand Iconic",
+              "label": "Node.js"
+            },
+            {
+              "icon": "icons/figma.png",
+              "alt": "Icono Figma de Flaticon, hecho por Freepik",
+              "label": "Figma"
+            },
+            {
+              "icon": "icons/trello.png",
+              "alt": "Icono Trello de Flaticon, hecho por Pixel perfect",
+              "label": "Trello"
+            },
+            {
+              "icon": "icons/github.png",
+              "alt": "Icono GitHub de Flaticon, hecho por riajulislam",
+              "label": "GitHub"
+            },
+            {
+              "icon": "icons/git.png",
+              "alt": "Icono Git de Flaticon, hecho por pictogramer",
+              "label": "Git"
+            }
+          ]
+        }
+      ]
+    },
+
+    "education": {
+      "sectionTitle": "EDUCACIÓN",
+      "blocks": [
+        {
+          "section": "ACADÉMICO",
+          "items": [
+            {
+              "title": "Licenciatura en Ciencia de Datos - Universidad de Buenos Aires",
+              "period": "2025 - Actualmente cursando."
+            },
+            {
+              "title": "Licenciatura en Sistemas de Información - Universidad Nacional de la Patagonia San Juan Bosco",
+              "period": "2024 - 2025",
+              "details": "Proyectos académicos colaborativos en programación con Assembly, C y Pascal."
+            }
+          ]
+        },
+        {
+          "section": "PRACTICAS",
+          "items": [
+            {
+              "title": "Artech + Fundación Pescar | Pasantía en Análisis de Datos & SAP + IA",
+              "period": "En curso",
+              "details": "Capacitación técnica en Python, SQL, Power BI, Databricks, Power Apps y AI aplicada en un entorno laboral proporcionado por Artech (~237 horas). Desarrollo de habilidades blandas, trabajo en equipo y crecimiento profesional mediante Fundación Pescar (~180 horas)."
+            }
+          ]
+        },
+        {
+          "section": "CERTIFICACIONES",
+          "linkAllCertifications": "https://drive.google.com/drive/folders/1Jb-3-c3aLqszJEEVcEQ2Tv4sNpovXage?usp=sharing",
+          "items": [
+            "Google Data Analytics, Coursera + Google - Actualmente cursando.",
+            "Ciencia de Datos + IA, Oracle Next Education + Alura Latam - Actualmente cursando.",
+            "Computación Científica con Python, FreeCodeCamp, 2025.",
+            "SQL Interactivo, Desafío Latam, 2025.",
+            "Fundamentos de Power BI, Santander Open Academy, 2025.",
+            "Excel de Básico a Intermedio, Santander Open Academy, 2025.",
+            "Capacitación Junior Full Stack Developer, Empujar Coders - 2023."
+          ]
+        }
+      ]
+    },
+
+    "contact": {
+      "sectionTitle": "CONTACTO",
+      "text": "Estoy abierta a oportunidades profesionales y colaboraciones en el área de Ciencia de Datos y Analítica. No dudes en contactarme para obtener más información o para discutir cómo puedo contribuir a tu equipo o proyecto.",
+      "icons": [
+        {
+          "icon": "icons/linkedin.png",
+          "alt": "Icono de LinkedIn de Flaticon, hecho por riajulislam",
+          "link": "https://www.linkedin.com/in/maria-monchot"
+        },
+        {
+          "icon": "icons/mail.png",
+          "alt": "Icono de Email de Flaticon, hecho por Uniconlabs",
+          "link": "https://mail.google.com/mail/?view=cm&fs=1&to=mariamonchot@gmail.com"
+        },
+        {
+          "icon": "icons/github.png",
+          "alt": "Icono de Github de Flaticon, hecho por riajulislam",
+          "link": "https://github.com/KateClysm"
+        }
+      ]
+    },
+
+    "footer": {
+      "copyright": "© María Monchot · Data Analyst · Todos los derechos reservados",
+      "builtWith": "Built with React + TypeScript"
+    }
   }
 }

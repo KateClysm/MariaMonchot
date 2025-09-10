@@ -1,11 +1,18 @@
 import './contact.scss';
 import React from 'react';
+import { useLanguage } from '../../contexts/LanguageContext';
 import portfolioData from "../../assets/portfolio.json";
 import { useRevealUp } from '../../animations/RevealUp';
 import PageProps from '../../interfaces/IPage';
 
 const Contact: React.FC<PageProps> = ({ id }) => {
-    useRevealUp()
+    useRevealUp();
+
+    const { language } = useLanguage();
+
+    // Seleccionamos los datos del JSON según el idioma
+    const data = language === "EN" ? portfolioData["en-language"] : portfolioData["es-language"];
+
     return (
       <section className="contact" id={id}>
         <img 
@@ -15,18 +22,14 @@ const Contact: React.FC<PageProps> = ({ id }) => {
         />
 
         <div className="contact-content margin-mark revealUp">
-          <h2>CONTACT</h2>
-          <p>{portfolioData.contact.text}</p>
+          <h2>{language === "EN" ? "CONTACT" : "CONTACTO"}</h2>
+          <p>{data.contact.text}</p>
 
           <div className="contact-icons animate-bounce">
-            {portfolioData.contact.icons.map((iconObj, index) => {
-              
-              let href = iconObj.link;
-
-              return (
+            {data.contact.icons.map((iconObj, index) => (
                 <a 
                   key={index} 
-                  href={href} 
+                  href={iconObj.link} 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
@@ -36,8 +39,7 @@ const Contact: React.FC<PageProps> = ({ id }) => {
                     className="contact-icon"
                   />
                 </a>
-              );
-            })}
+            ))}
           </div>
         </div>
       </section>

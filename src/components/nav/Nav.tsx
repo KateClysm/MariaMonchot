@@ -1,16 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { HiBars3 } from "react-icons/hi2";
 import { IoClose } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import navData from "../../assets/portfolio.json";
+import { useLanguage } from "../../contexts/LanguageContext";
 import "./Nav.scss";
 
 const BASE_PATH = "/MariaMonchot/";
 
 const Nav: React.FC = () => {
   const navigate = useNavigate();
-  const { links, buttons } = navData;
+
+  // Contexto de lenguaje
+  const { language, toggleLanguage } = useLanguage();
+
+  // Obtenemos los links y botones según el idioma
+  const { links, buttons } = navData[
+    language === "EN" ? "en-language" : "es-language"
+  ];
 
   // Mobile menu
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,15 +26,10 @@ const Nav: React.FC = () => {
   // Para esconder/mostrar el header según scroll
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
-  const [isTop, setIsTop] = useState(true); // para fondo transparente/solido
+  const [isTop, setIsTop] = useState(true);
 
-  // tema y lenguaje:
-  const [lang, setLang] = useState(buttons?.language?.default || "EN");
-  const [themeMode, setThemeMode] = useState(
-    buttons?.theme?.default || "LIGHT"
-  );
-
-  useEffect(() => {
+  // Manejo del overflow al abrir/cerrar menú
+  React.useEffect(() => {
     if (isMenuOpen) document.body.style.overflow = "hidden";
     else document.body.style.overflow = "visible";
     return () => {
@@ -34,18 +37,16 @@ const Nav: React.FC = () => {
     };
   }, [isMenuOpen]);
 
-  // Detectar dirección del scroll y si está en top
+  // Detectar dirección del scroll y si estamos en top
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious();
-    // si baja -> ocultar; si sube -> mostrar
     if (latest > previous + 10) setHidden(true);
     else if (latest < previous - 10) setHidden(false);
 
-    // si estamos muy cerca del top -> fondo transparente <3
     setIsTop(latest < 20);
   });
 
-  // Manejo del click en links: si estamos en la misma ruta hace scroll, sino navega y hace scroll después
+  // Scroll a sección
   const scrollToSection = (area: string) => {
     const id = area.startsWith("#") ? area.substring(1) : area;
     if (!id) return;
@@ -56,9 +57,7 @@ const Nav: React.FC = () => {
     };
 
     if (window.location.pathname !== BASE_PATH) {
-      // navegamos y esperamos brevemente
       navigate(BASE_PATH);
-      // pequeño timeout para permitir render
       setTimeout(tryScroll, 320);
     } else {
       tryScroll();
@@ -67,9 +66,7 @@ const Nav: React.FC = () => {
 
   return (
     <motion.nav
-      className={`nav ${isTop ? "transparent" : "solid"} ${
-        hidden ? "hidden" : ""
-      }`}
+      className={`nav ${isTop ? "transparent" : "solid"} ${hidden ? "hidden" : ""}`}
     >
       <div className="nav-container">
         {/* Botón hamburguesa */}
@@ -98,16 +95,20 @@ const Nav: React.FC = () => {
 
         {/* Botones de idioma/tema */}
         <div className="nav-buttons">
-          <button onClick={() => setLang(lang === "EN" ? "ES" : "EN")}>
-            {lang}
-          </button>
-          <button
-            onClick={() =>
-              setThemeMode(themeMode === "LIGHT" ? "DARK" : "LIGHT")
-            }
-          >
-            {themeMode}
-          </button>
+          {/* ----------------- Aquí va el toggle de idioma ----------------- */}
+          <div className="language-toggle" onClick={toggleLanguage}>
+            <div
+              className="language-slider"
+              style={{
+                transform: language === "EN" ? "translateX(100%)" : "translateX(0)",
+              }}
+            />
+            <span className={`lang ${language === "ES" ? "active" : ""}`}>ES</span>
+            <span className={`lang ${language === "EN" ? "active" : ""}`}>EN</span>
+          </div>
+          {/* ---------------------------------------------------------------- */}
+          
+          {/* <button>{buttons.theme.default}</button> */}
         </div>
       </div>
     </motion.nav>

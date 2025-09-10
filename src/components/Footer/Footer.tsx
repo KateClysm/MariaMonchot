@@ -1,18 +1,20 @@
-import React from 'react';
-import './Footer.scss';
+import React from "react";
+import { useLanguage } from "../../contexts/LanguageContext";
+import portfolioData from "../../assets/portfolio.json"; 
+import "./footer.scss";
 
 const Footer: React.FC = () => {
-    return(
-        <footer>
+  const { language } = useLanguage(); // "EN" o "ES"
+  const languageData = portfolioData[
+    `${language.toLowerCase()}-language` as keyof typeof portfolioData
+  ];
 
-           <div className="footer-container presentation margin-mark">
-                <p className='footer-rights fixed-border'>© María Monchot · Data Analyst </p>
-                <p className='built'>Built with React + TypeScript</p>
-           </div>
-            
-        </footer>
-    )
-    
+  return (
+    <footer className="footer presentation margin-mark ">
+      <p className="fixed-border footer-rights">{languageData.footer.copyright}</p>
+      <p>{languageData.footer.builtWith}</p>
+    </footer>
+  );
 };
 
 export default Footer;
