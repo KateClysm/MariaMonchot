@@ -18,7 +18,6 @@
     backdrop-filter: blur(6px);
   }
 
-  // 🔹 Importante: ocultar con scroll SOLO en desktop (lo restringimos más abajo en @media)
   &.hidden {
     transform: translateY(-100%);
   }
@@ -45,7 +44,7 @@
     display: none;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 2.5rem;
     list-style: none;
 
     &.open {
@@ -54,7 +53,7 @@
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 100vh; // 🔹 garantiza que siempre ocupa toda la pantalla
+      height: 100vh;
       inset: 0;
       background: linear-gradient(
         to bottom,
@@ -84,15 +83,16 @@
 
     button {
       background: transparent;
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.692);
       padding: 0.4rem 0.8rem;
       border-radius: 6px;
       color: white;
       font-size: 0.9rem;
       cursor: pointer;
-
+      transition: transform 0.2s ease;
       &:hover {
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(4, 96, 47, 0.467);
+        transform: translateY(-3px);
       }
     }
   }
@@ -111,24 +111,20 @@
     }
 
     .nav-links {
-      display: flex !important;
+      display: flex ;
       flex-direction: row;
-      gap: 2.5rem;
+      gap: 4rem;
       position: static;
       background: none;
       padding: 0;
 
-      li {
-        font-size: 1rem;
-      }
     }
 
     .nav-buttons {
       position: absolute;
-      right: 2rem;
+      right: 3rem;
     }
 
-    // 🔹 Ocultar nav solo aplica en desktop
     &.hidden {
       transform: translateY(-100%);
     }
