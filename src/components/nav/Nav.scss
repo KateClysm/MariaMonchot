@@ -1,147 +1,148 @@
-@use '@/styles/_variables.scss' as v;
+@use "@/styles/_variables.scss" as v;
 
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  padding: 1rem 1.5rem;
 
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2% 5%;
+  &.transparent {
+    background-color: transparent;
+  }
+
+  &.solid {
+    background-color: rgba(2, 18, 19, 0.95);
+    backdrop-filter: blur(6px);
+  }
+
+  // 🔹 Importante: ocultar con scroll SOLO en desktop (lo restringimos más abajo en @media)
+  &.hidden {
+    transform: translateY(-100%);
+  }
+
+  .nav-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+  }
+
+  // Botón hamburguesa (mobile-first)
+  .menu-toggle {
+    display: flex;
     justify-content: center;
-    z-index: 100;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    z-index: 110;
+  }
 
-    .nav-container{
-        &::before{
-            
-            // background-color: v.$secondary-color;
+  // Links (mobile ocultos hasta abrir)
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
 
-
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: -5;
-        }
-
-        nav{
-            display: flex;      
-            gap: 4.5rem;    
-            a{
-                font-size: 1rem;
-                color: v.$primary-color;
-            }
-        }
+    &.open {
+      display: flex;
+      position: fixed;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100vh; // 🔹 garantiza que siempre ocupa toda la pantalla
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(1, 12, 13, 0.95),
+        rgba(7, 0, 18, 0.95)
+      );
+      animation: fadeIn 0.5s ease forwards;
     }
 
-    .icons{
-        position: absolute;
-        right: 5%;
-        top: 5%;
-        font-size: 3rem;
-        color: v.$white-color;
-        cursor: pointer;
-        display: none;
-        .bars, .close{
-            path{
-                color: v.$primary-color;
-            }
-        }
+    li {
+      cursor: pointer;
+      font-size: 1.2rem;
+      letter-spacing: 0.1rem;
+      color: #00ffcc;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: translateY(-3px);
+      }
     }
+  }
 
-    #check{
-        display: none;
+  .nav-buttons {
+    display: flex;
+    gap: 0.8rem;
+    z-index: 110;
+
+    button {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      color: white;
+      font-size: 0.9rem;
+      cursor: pointer;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
     }
-
-    // .nav-container nav a, .modes button{
-
-    //     position: relative;
-
-    //     &::after {
-    //         content: '';
-    //         position: absolute;
-    //         bottom: -0.5rem;
-    //         left: 0;
-    //         width: 0;
-            
-    //         height: 2px; 
-    //         background-color: v.$white-color; 
-    //         transition: width 0.3s ease-in-out; 
-    //     }
-
-    //     &:hover::after {
-    //         width: 100%;
-    //     }
-    // }
+  }
 }
 
-
-@media (max-width: 768px){
-    header{
-        .icons{
-            display: inline-flex;
-            position: absolute;
-            z-index: 1;
-            top: 1rem;
-        }
-        
-        .nav-container{
-            nav{
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                height: 0;
-
-                background: linear-gradient(to bottom, v.$secondary-color, v.$terciary-color);
-                background-attachment: fixed;
-
-
-                transition: .3s ease;
-                overflow: hidden;
-
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                row-gap: 2.5rem;
-    
-                a{
-                    display: block;
-                    align-self: center;
-                    width: fit-content;
-                    margin: 2rem 0;
-                    transform: translateY(-50px);
-                    transition: .3s ease;
-                    opacity: 0;
-
-                    &::after {
-                        bottom: -0.5rem;
-                    }
-            
-                }
-            }
-        }
-
-        #close-icon{
-            display: none;
-        }
-        #check:checked~.icons #menu-icon{
-            display: none;
-        }
-        #check:checked~.icons #close-icon{
-            display: block;
-        }
-
-        #check:checked~.nav-container nav{
-            height: 100vh;
-        }
-        #check:checked~.nav-container nav a{
-            transform: translateY(0);
-            opacity: 1;
-            transition-delay: calc(.15s * var(--i));
-        }
+// Desktop layout
+@media (min-width: 768px) {
+  .nav {
+    .nav-container {
+      justify-content: center;
+      gap: 3rem;
     }
+
+    .menu-toggle {
+      display: none;
+    }
+
+    .nav-links {
+      display: flex !important;
+      flex-direction: row;
+      gap: 2.5rem;
+      position: static;
+      background: none;
+      padding: 0;
+
+      li {
+        font-size: 1rem;
+      }
+    }
+
+    .nav-buttons {
+      position: absolute;
+      right: 2rem;
+    }
+
+    // 🔹 Ocultar nav solo aplica en desktop
+    &.hidden {
+      transform: translateY(-100%);
+    }
+  }
+}
+
+// Animación
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

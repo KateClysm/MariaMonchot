@@ -2,19 +2,20 @@ import React from "react";
 import portfolioData from "../../assets/portfolio.json";
 import "./technologies.scss";
 import { useRevealUp } from "../../animations/RevealUp";
+import PageProps from '../../interfaces/IPage';
 
-const Technologies: React.FC = () => {
+const Technologies: React.FC<PageProps> = ({ id }) => {
   const { technologies } = portfolioData;
   useRevealUp()
   return (
-    <section className="technologies ">
+    <section className="technologies " id={id}>
       <img 
           src="svgs/waves.svg" 
           alt="Background SVG" 
           className="technologies-svg" 
       />
 
-      <h2 className="margin-mark revealUp">TECHNOLOGIES</h2>
+      <h2 className="margin-mark revealUp" >TECHNOLOGIES</h2>
       <div className="technologies-container m-top-5 margin-mark">
         {technologies.map((block: any, index: number) => (
           <div key={index} className="tech-block revealUp">

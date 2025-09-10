@@ -2,12 +2,13 @@ import React from "react";
 import portfolioData from "../../assets/portfolio.json";
 import "./Education.scss";
 import { useRevealUp } from "../../animations/RevealUp";
+import PageProps from '../../interfaces/IPage';
 
-const Education: React.FC = () => {
+const Education: React.FC<PageProps> = ({ id }) => {
   const { education } = portfolioData;
   useRevealUp()
   return (
-    <section className="education margin-mark">
+    <section className="education margin-mark "id={id} >
       <h2 className="section-title revealUp">EDUCATION</h2>
 
       <div className="education-categories m-top-5">

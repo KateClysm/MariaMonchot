@@ -25,7 +25,7 @@ const App: React.FC = () => {
         <main className="site-content">
           <Outlet />
         </main>
-        <Contact />
+        <Contact id="contact"/>
         <Footer />
       </div>
     );
@@ -41,9 +41,9 @@ const App: React.FC = () => {
           path: '/MariaMonchot/',
           element: 
             <>
-              <About/>
-              <Technologies/>
-              <Education/>
+              <About id="about"/>
+              <Technologies id="technologies"/>
+              <Education id="education"/>
             </>
         },
         // {

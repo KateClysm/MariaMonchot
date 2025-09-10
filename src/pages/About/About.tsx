@@ -2,11 +2,12 @@ import "./about.scss";
 import portfolioData from "../../assets/portfolio.json";
 import HomePresentation from "../../sections/HomePresentation";
 import IconPresentation from "../../sections/IconPresentation/IconPresentation";
+import PageProps from '../../interfaces/IPage';
 
-const About: React.FC = () => {
+const About: React.FC<PageProps> = ({ id }) => {
  
   return (
-    <section className="home">
+    <section className="home" id={id}>
 
       
       <div className="home-container">

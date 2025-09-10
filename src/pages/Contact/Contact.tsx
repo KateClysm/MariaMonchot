@@ -2,11 +2,12 @@ import './contact.scss';
 import React from 'react';
 import portfolioData from "../../assets/portfolio.json";
 import { useRevealUp } from '../../animations/RevealUp';
+import PageProps from '../../interfaces/IPage';
 
-const Contact: React.FC = () => {
+const Contact: React.FC<PageProps> = ({ id }) => {
     useRevealUp()
     return (
-      <section className="contact">
+      <section className="contact" id={id}>
         <img 
           src="svgs/waves.svg" 
           alt="Background SVG" 
