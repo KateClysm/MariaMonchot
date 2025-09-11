@@ -2,11 +2,19 @@ import React, { useEffect, useRef } from "react";
 import "../animations/RevealUp.scss";
 import { useLanguage } from "../contexts/LanguageContext";
 import portfolioData from "../assets/portfolio.json";
+import "./HomePresentation.scss";
 
 interface AboutData {
   name: string;
   subtitle: string;
   HomePresentation: string;
+  icons: {
+    [key: string]: {
+      icon: string;
+      alt: string;
+      link: string;
+    };
+  };
 }
 
 const HomePresentation: React.FC = () => {
@@ -34,6 +42,28 @@ const HomePresentation: React.FC = () => {
         )}
       </h3>
       <p>{about.HomePresentation}</p>
+
+      {/* Íconos */}
+      <div className="about-icons">
+        {about.icons &&
+          Object.keys(about.icons).map((key) => {
+            const icon = about.icons[key];
+            return (
+              <a
+                key={key}
+                href={icon.link || "#"}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={key}
+              >
+                <img
+                  src={icon.icon}
+                  alt={icon.alt}
+                />
+              </a>
+            );
+          })}
+      </div>
     </div>
   );
 };

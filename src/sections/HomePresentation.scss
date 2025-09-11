@@ -1,0 +1,17 @@
+.about-icons {
+  display: flex;
+  gap: 1rem;
+
+  a {
+    img {
+      width: 2rem;
+      height: 2rem;
+      object-fit: contain;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: translateY(-3px);
+      }
+    }
+  }
+}

@@ -15,7 +15,6 @@ const Nav: React.FC = () => {
   const { language, toggleLanguage } = useLanguage();
 
   // Obtenemos los links y botones según el idioma
-  // const { links, buttons } = navData[
   const { links } = navData[
     language === "EN" ? "en-language" : "es-language"
   ];
@@ -95,8 +94,7 @@ const Nav: React.FC = () => {
 
         {/* Botones de idioma/tema */}
         <div className="nav-buttons">
-
-          {/* lenguaje */}
+          
           <div className="language-toggle" onClick={toggleLanguage}>
             <div
               className="language-slider"
@@ -107,8 +105,6 @@ const Nav: React.FC = () => {
             <span className={`lang ${language === "ES" ? "active" : ""}`}>ES</span>
             <span className={`lang ${language === "EN" ? "active" : ""}`}>EN</span>
           </div>
-          
-          {/* <button>{buttons.theme.default}</button> */}
         </div>
       </div>
     </motion.nav>
