@@ -32,23 +32,23 @@ const About: React.FC<PageProps> = ({ id }) => {
       
 
       <h2 className="presentation margin-mark revealUp">
-        {languageData.about.sectionTitle} {/* Aquí se interpolará ABOUT o ACERCA DE */}
+        {languageData.about.sectionTitle} 
       </h2>
 
       <div className="about m-top-5">
         <IconPresentation
           cards={languageData.about.whatIDo}
-          title={languageData.about.whatIDoTitle}  // "WHAT I DO" o "QUÉ HAGO"
+          title={languageData.about.whatIDoTitle}  
           variant="A"
         />
         <IconPresentation
           cards={languageData.about.myPriorities}
-          title={languageData.about.myPrioritiesTitle}  // "MY PRIORITIES" o "MIS PRIORIDADES"
+          title={languageData.about.myPrioritiesTitle} 
           variant="B"
         />
         <IconPresentation
           cards={languageData.about.myHighlights}
-          title={languageData.about.myHighlightsTitle} // "MY HIGHLIGHTS" o "MIS LOGROS"
+          title={languageData.about.myHighlightsTitle}
           variant="C"
         />
       </div>

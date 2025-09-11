@@ -10,8 +10,7 @@ const Education: React.FC<PageProps> = ({ id }) => {
 
   const { language } = useLanguage();
   const languageKey = (language.toLowerCase() + "-language") as "en-language" | "es-language";
-  const data = portfolioData[languageKey];
-  const { education } = data;
+  const { education } = portfolioData[languageKey];
 
   return (
     <section className="education margin-mark" id={id}>
@@ -22,6 +21,7 @@ const Education: React.FC<PageProps> = ({ id }) => {
           <div
             key={index}
             className={`education-block ${block.linkAllCertifications ? "full" : "half"} revealUp`}
+            // si existe linkAllCertifications se trata del bloque certifications, así que asigna la clase full
           >
             <h3 className="education-subtitle fixed-border">
               {block.section}
@@ -32,12 +32,13 @@ const Education: React.FC<PageProps> = ({ id }) => {
                   rel="noopener noreferrer"
                   className="see-more"
                 >
-                  👁 {language === "EN" ? "See more" : "Ver más"}
+                  👁 {block.seeMore}
                 </a>
               )}
             </h3>
 
             <ul>
+              {/* renderiza el bloque según el tipo, ej, si el bloque tiene .title es de un tipo */}
               {(block.items[0] as any).title === undefined
                 ? (block.items as string[]).map((course, i) => <li key={i}><strong>{course}</strong></li>)
                 : (block.items as { title: string; period: string; details?: string }[]).map((item, i) => (

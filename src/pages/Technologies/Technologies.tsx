@@ -6,9 +6,9 @@ import PageProps from '../../interfaces/IPage';
 import { useRevealUp } from "../../animations/RevealUp";
 
 const Technologies: React.FC<PageProps> = ({ id }) => {
-  const { language } = useLanguage(); // "EN" o "ES"
+  const { language } = useLanguage(); 
   const languageKey = (language.toLowerCase() + "-language") as "en-language" | "es-language";
-  const languageData = portfolioData[languageKey].technologies;
+  const technologies = portfolioData[languageKey].technologies;
 
   useRevealUp();
 
@@ -20,10 +20,10 @@ const Technologies: React.FC<PageProps> = ({ id }) => {
         className="technologies-svg" 
       />
 
-      <h2 className="margin-mark revealUp">{languageData.sectionTitle}</h2>
+      <h2 className="margin-mark revealUp">{technologies.sectionTitle}</h2>
 
       <div className="technologies-container m-top-5 margin-mark">
-        {languageData.blocks.map((block: any, index: number) => (
+        {technologies.blocks.map((block: any, index: number) => (
           <div key={index} className="tech-block revealUp">
             <h3 className="tech-title fixed-border">{block.section}</h3>
             <div className="tech-items">

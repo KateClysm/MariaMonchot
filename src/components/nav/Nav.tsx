@@ -12,11 +12,11 @@ const BASE_PATH = "/MariaMonchot/";
 const Nav: React.FC = () => {
   const navigate = useNavigate();
 
-  // Contexto de lenguaje
   const { language, toggleLanguage } = useLanguage();
 
   // Obtenemos los links y botones según el idioma
-  const { links, buttons } = navData[
+  // const { links, buttons } = navData[
+  const { links } = navData[
     language === "EN" ? "en-language" : "es-language"
   ];
 
@@ -69,7 +69,7 @@ const Nav: React.FC = () => {
       className={`nav ${isTop ? "transparent" : "solid"} ${hidden ? "hidden" : ""}`}
     >
       <div className="nav-container">
-        {/* Botón hamburguesa */}
+        {/* Botón hamburguesa para nav mobile*/}
         <button
           className="menu-toggle"
           onClick={() => setIsMenuOpen((prev) => !prev)}
@@ -95,7 +95,8 @@ const Nav: React.FC = () => {
 
         {/* Botones de idioma/tema */}
         <div className="nav-buttons">
-          {/* ----------------- Aquí va el toggle de idioma ----------------- */}
+
+          {/* lenguaje */}
           <div className="language-toggle" onClick={toggleLanguage}>
             <div
               className="language-slider"
@@ -106,7 +107,6 @@ const Nav: React.FC = () => {
             <span className={`lang ${language === "ES" ? "active" : ""}`}>ES</span>
             <span className={`lang ${language === "EN" ? "active" : ""}`}>EN</span>
           </div>
-          {/* ---------------------------------------------------------------- */}
           
           {/* <button>{buttons.theme.default}</button> */}
         </div>

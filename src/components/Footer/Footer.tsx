@@ -4,7 +4,7 @@ import portfolioData from "../../assets/portfolio.json";
 import "./footer.scss";
 
 const Footer: React.FC = () => {
-  const { language } = useLanguage(); // "EN" o "ES"
+  const { language } = useLanguage();
   const languageData = portfolioData[
     `${language.toLowerCase()}-language` as keyof typeof portfolioData
   ];
