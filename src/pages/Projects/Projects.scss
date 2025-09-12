@@ -1,22 +1,72 @@
 @use '@/styles/variables' as v;
 
 .projects-section {
-  width: 100%; // ocupa todo el ancho disponible
+  width: 100%;
   padding-block: 10rem;
   display: flex;
   flex-direction: column;
-  row-gap: 3rem;
   box-sizing: border-box;
 
-  .projects-grid {
-    display: grid;
-    width: auto; // ocupa el espacio disponible dentro de margin-mark
-    max-width: 100%;
-    gap: 3rem;
-    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)); // máximo 3 columnas
-    box-sizing: border-box;
+  h2.margin-mark {
+    margin-bottom: 2rem;
   }
 
+  .projects-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 2rem;
+    min-height: 25rem; // evita que el hover desborde
+    justify-content: flex-start;
+    align-items: flex-start;
+    scroll-snap-type: x mandatory;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    align-items: stretch;
+
+    &.is-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, auto);
+      gap: 3rem;
+      overflow: visible; 
+    }
+
+    &.is-carousel {
+      & > * {
+        scroll-snap-align: center;
+        flex: 0 0 calc((100% - 2rem) / 2); // 2 tarjetas visibles
+        transition: transform 0.3s ease;
+      }
+    }
+
+    // Scrollbar invisible
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .carousel-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    button {
+      padding: 0.5rem 1rem;
+      border: 0.1rem solid v.$primary-color;
+      border-radius: 0.5rem;
+      background: transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: v.$primary-color;
+        color: v.$black-color;
+        transform: scale(1.05);
+      }
+    }
+  }
 
   .more-projects-btn {
     align-self: start;
@@ -38,18 +88,29 @@
 }
 
 // Responsive ajustes
-@media (max-width: 768px) {
+
+@media (max-width: 767px) {
   .projects-section {
-    .projects-grid {
-      grid-template-columns: repeat(auto-fit, minmax(45%, 1fr)); // máximo 2 columnas
+    .projects-container.is-carousel > * {
+      flex: 0 0 100%;
     }
   }
 }
 
-@media (max-width: 500px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .projects-section {
-    .projects-grid {
-      grid-template-columns: 1fr;
+    .projects-container.is-carousel > * {
+      flex: 0 0 calc((100% - 2rem)/2);
+    }
+  }
+}
+
+// Desktop ≥1200px → grid 3x2
+@media (min-width: 1200px) {
+  .projects-section {
+    .projects-container.is-grid {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, auto);
     }
   }
 }

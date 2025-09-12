@@ -5,7 +5,7 @@
   flex-direction: column;
   row-gap: 0.7rem;
   width: 100%;
-  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  transition: transform 0.5s ease;
 
   padding: 1rem;
   border: 1px solid v.$primary-color;
@@ -28,18 +28,19 @@
     // Shake del ícono github una sola vez
     .links a img {
       animation: shakeOnce 0.5s ease forwards;
+      transition: transform 0.5s ease;
     }
   }
 
   &.text:hover {
     background-image: linear-gradient(
-  to bottom,
-  rgba(v.$primary-color, 0.2) 0%,   // más potente arriba
-  rgba(v.$primary-color, 0.1) 10%,
-  rgba(v.$primary-color, 0.05) 20%,
-  rgba(v.$primary-color, 0.03) 30%,
-  transparent 100%
-);
+      to bottom,
+      rgba(v.$primary-color, 0.2) 0%,   // más potente arriba
+      rgba(v.$primary-color, 0.1) 10%,
+      rgba(v.$primary-color, 0.05) 20%,
+      rgba(v.$primary-color, 0.03) 30%,
+      transparent 100%
+    );
   }
 
   h3 { font-size: 1.2rem; }
@@ -99,9 +100,9 @@
 // Shake de GitHub una sola vez
 @keyframes shakeOnce {
   0% { transform: translateX(0); }
-  20% { transform: translateX(-5px); }
-  40% { transform: translateX(5px); }
-  60% { transform: translateX(-3px); }
-  80% { transform: translateX(3px); }
+  20% { transform: translateX(-4px); }
+  40% { transform: translateX(4px); }
+  60% { transform: translateX(-2px); }
+  80% { transform: translateX(2px); }
   100% { transform: translateX(0); }
 }
