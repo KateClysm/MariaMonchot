@@ -267,6 +267,7 @@
 
     "projectsData": {
       "sectionTitle": "PROJECTS",
+      "icons": [{ "ref": "github" }, { "ref": "web" }],
       "categories": [
         { "name": "NOTABLE", "visualize": true },
         { "name": "MACHINE LEARNING", "visualize": false },
@@ -277,8 +278,8 @@
       "projects": [
         {
           "projectType": "image",
-          "name": "Dashboard Ventas Dark",
-          "image": "projects/visualization/dashboard_ventas_dark.png",
+          "name": "Dashboard Ventas",
+          "image": "projects/dashboards/Ventas.png",
           "description": "Dashboard en Power BI con análisis de ventas en modo oscuro.",
           "githubLink": "https://github.com/mariamonchot/dashboard-ventas-dark",
           "deployLink": "",
@@ -291,7 +292,7 @@
         {
           "projectType": "image",
           "name": "Dashboard Productividad",
-          "image": "projects/visualization/dashboard_productividad.png",
+          "image": "projects/dashboards/Productividad.png",
           "description": "Dashboard en Power BI para seguimiento de la productividad.",
           "githubLink": "https://github.com/mariamonchot/dashboard-productividad",
           "deployLink": "",
@@ -304,7 +305,7 @@
         {
           "projectType": "image",
           "name": "Dashboard Resumen Financiero",
-          "image": "projects/visualization/dashboard_resumen_financiero.png",
+          "image": "projects/dashboards/Resumen Financiero.png",
           "description": "Resumen financiero visualizado con indicadores clave en Power BI.",
           "githubLink": "https://github.com/mariamonchot/dashboard-resumen-financiero",
           "deployLink": "",
@@ -312,6 +313,19 @@
           "technologies": [{ "ref": "powerbi" }],
           "source": "",
           "featured": true,
+          "categories": ["VISUALIZATION"]
+        },
+        {
+          "projectType": "image",
+          "name": "Dashboard Resumen Bancario",
+          "image": "projects/dashboards/Resumen Bancario.png",
+          "description": "Resumen Bancario visualizado con indicadores clave en Power BI.",
+          "githubLink": "https://github.com/mariamonchot/dashboard-resumen-financiero",
+          "deployLink": "",
+          "highlightedTech": "Power BI",
+          "technologies": [{ "ref": "powerbi" }],
+          "source": "",
+          "featured": false,
           "categories": ["VISUALIZATION"]
         },
         {
@@ -520,6 +534,7 @@
     },
 
     "projectsData": {
+      "icons": [{ "ref": "github" }, { "ref": "web" }],
       "sectionTitle": "PROYECTOS",
       "categories": [
         { "name": "DESTACADOS", "visualize": true },

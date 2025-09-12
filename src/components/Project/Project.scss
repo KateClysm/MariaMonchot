@@ -5,24 +5,61 @@
   flex-direction: column;
   row-gap: 0.7rem;
   width: 100%;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
 
+  padding: 1rem;
+  border: 1px solid v.$primary-color;
+  border-radius: 0.5rem;
+  position: relative;
 
-  img {
-    width: 100%;
-    object-fit: cover;
-    aspect-ratio: 16/9;
-    height: auto;
-    border: 1.5px solid transparent;
-    border-image: linear-gradient(to bottom, transparent, v.$primary-color) 1;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(4, 148, 105, 0.241);
+    background-color: #7329fd07;
+    background-image: linear-gradient(
+      to bottom,
+      v.$primary-color 0%,
+      rgba(v.$primary-color, 0.5) 10%,
+      rgba(v.$primary-color, 0.3) 20%,
+      rgba(v.$primary-color, 0.15) 40%,
+      transparent 100%
+    );
+
+    // Shake del ícono github una sola vez
+    .links a img {
+      animation: shakeOnce 0.5s ease forwards;
+    }
   }
 
-  h3 {font-size: 1.2rem;}
-  p {font-size: 1rem;}
+  &.text:hover {
+    background-image: linear-gradient(
+  to bottom,
+  rgba(v.$primary-color, 0.2) 0%,   // más potente arriba
+  rgba(v.$primary-color, 0.1) 10%,
+  rgba(v.$primary-color, 0.05) 20%,
+  rgba(v.$primary-color, 0.03) 30%,
+  transparent 100%
+);
+  }
 
+  h3 { font-size: 1.2rem; }
+  p { font-size: 1rem; }
+
+  .container-project-image {
+    .project-image {
+      width: 100%;
+      object-fit: cover;
+      aspect-ratio: 16/9;
+      height: auto;
+      display: block;
+      border-radius: 0.5rem;
+      transition: filter 0.3s ease, box-shadow 0.3s ease;
+    }
+  }
 
   .link-etiquetes {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     margin-top: auto;
@@ -38,17 +75,13 @@
     }
 
     .links a {
-      padding: 0.3rem 0.7rem;
-      border-radius: 1.5rem;
-      background: v.$primary-color;
-      color: #000;
-      font-weight: bold;
-      text-decoration: none;
-      transition: transform 0.2s ease, background 0.2s ease;
+      display: flex;
+      justify-content: center;
 
-      &:hover {
-        transform: scale(1.05);
-        background: v.$primary-color;
+      img {
+        width: 1.7rem;
+        height: auto;
+        cursor: pointer;
       }
     }
 
@@ -61,4 +94,14 @@
       border: 1px solid v.$primary-color;
     }
   }
+}
+
+// Shake de GitHub una sola vez
+@keyframes shakeOnce {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-3px); }
+  80% { transform: translateX(3px); }
+  100% { transform: translateX(0); }
 }
