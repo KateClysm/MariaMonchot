@@ -6,26 +6,23 @@
   row-gap: 0.7rem;
   width: 100%;
 
+
   img {
     width: 100%;
-    border-radius: 0.6rem;
     object-fit: cover;
     aspect-ratio: 16/9;
     height: auto;
-    border: 0.07rem solid v.$primary-color;
+    border: 1.5px solid transparent;
+    border-image: linear-gradient(to bottom, transparent, v.$primary-color) 1;
   }
 
-  h3 {
-    font-size: 1.2rem;
-  }
+  h3 {font-size: 1.2rem;}
+  p {font-size: 1rem;}
 
-  p {
-    font-size: 1rem;
-  }
 
   .link-etiquetes {
     display: flex;
-    justify-content: space-between; // links izquierda, etiquetas derecha
+    justify-content: space-between; 
     align-items: center;
     flex-wrap: wrap;
     margin-top: auto;
@@ -43,7 +40,7 @@
     .links a {
       padding: 0.3rem 0.7rem;
       border-radius: 1.5rem;
-      background: #29fdbc;
+      background: v.$primary-color;
       color: #000;
       font-weight: bold;
       text-decoration: none;
@@ -51,7 +48,7 @@
 
       &:hover {
         transform: scale(1.05);
-        background: #00e0b0;
+        background: v.$primary-color;
       }
     }
 
@@ -59,8 +56,9 @@
       margin: 0;
       padding: 0.3rem 0.7rem;
       border-radius: 1.5rem;
-      background: rgba(41, 253, 190, 0.3);
+      background: #29fdbd0d;
       font-size: 0.85rem;
+      border: 1px solid v.$primary-color;
     }
   }
 }

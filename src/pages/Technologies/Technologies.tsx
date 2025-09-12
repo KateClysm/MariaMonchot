@@ -1,16 +1,14 @@
 import React from "react";
 import "./technologies.scss";
-import { useLanguage } from "../../contexts/LanguageContext";
-import portfolioData from "../../assets/portfolio.json";
 import PageProps from '../../interfaces/IPage';
 import { useRevealUp } from "../../animations/RevealUp";
+import { useSection } from '../../hooks/useSection';
 
 const Technologies: React.FC<PageProps> = ({ id }) => {
-  const { language } = useLanguage(); 
-  const languageKey = (language.toLowerCase() + "-language") as "en-language" | "es-language";
-  const technologies = portfolioData[languageKey].technologies;
-
   useRevealUp();
+
+  // Consumimos la sección 'technologies' usando nuestro hook
+  const technologies = useSection("technologies");
 
   return (
     <section className="technologies" id={id}>
