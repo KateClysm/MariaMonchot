@@ -1,0 +1,56 @@
+@use '@/styles/variables' as v;
+
+.projects-section {
+  width: 100%; // ocupa todo el ancho disponible
+  padding-block: 10rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  box-sizing: border-box;
+
+  .projects-grid {
+    display: grid;
+    width: auto; // ocupa el espacio disponible dentro de margin-mark
+    max-width: 100%;
+    row-gap: 6rem;
+    column-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)); // máximo 3 columnas
+    box-sizing: border-box;
+  }
+
+
+  .more-projects-btn {
+    align-self: start;
+    margin-top: 2rem;
+    padding: 0.8rem 1.3rem;
+    border: 0.1rem solid v.$primary-color;
+    border-radius: 2.5rem;
+    font-family: v.$font-primary;
+    color: v.$primary-color;
+    background: transparent;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: v.$primary-color;
+      color: v.$black-color;
+      transform: scale(1.05);
+    }
+  }
+}
+
+// Responsive ajustes
+@media (max-width: 768px) {
+  .projects-section {
+    .projects-grid {
+      grid-template-columns: repeat(auto-fit, minmax(45%, 1fr)); // máximo 2 columnas
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .projects-section {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

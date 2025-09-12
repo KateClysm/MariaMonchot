@@ -13,6 +13,8 @@ import { LanguageProvider } from './contexts/LanguageContext';
 //Estilos
 import './styles/main.scss'
 import Technologies from './pages/Technologies/Technologies';
+import Projects from './pages/Projects/Projects';
+import AllProjects from './pages/AllProjects/AllProjects';
 
 
 const App: React.FC = () => {
@@ -45,14 +47,15 @@ const App: React.FC = () => {
           element: 
             <>
               <About id="about"/>
+              <Projects id="projects"/>
               <Technologies id="technologies"/>
               <Education id="education"/>
             </>
         },
-        // {
-        //   path: '/mariamonchot/allprojects',
-        //   element: <AllProjects/>
-        // }
+        {
+          path: '/MariaMonchot/allprojects',
+          element: <AllProjects/>
+        }
       ]
     }
   ]);

@@ -118,39 +118,104 @@
     },
 
     "projectsData": {
+      "sectionTitle": "PROJECTS",
       "categories": [
         { "name": "NOTABLE", "visualize": true },
-        { "name": "MACHINE LEARNING", "visualize": true },
+        { "name": "MACHINE LEARNING", "visualize": false },
         { "name": "VISUALIZATION", "visualize": true },
         { "name": "PYTHON", "visualize": true },
-        { "name": "SQL & DATABASES", "visualize": true }
+        { "name": "SQL & DATABASES", "visualize": false }
       ],
       "projects": [
         {
           "projectType": "image",
-          "name": "",
-          "image": "",
-          "description": "",
-          "githubLink": "",
+          "name": "Dashboard Ventas Dark",
+          "image": "projects/visualization/dashboard_ventas_dark.png",
+          "description": "Dashboard en Power BI con análisis de ventas en modo oscuro.",
+          "githubLink": "https://github.com/mariamonchot/dashboard-ventas-dark",
           "deployLink": "",
-          "highlightedTech": "",
-          "technologies": [],
+          "highlightedTech": "Power BI",
+          "technologies": [
+            { "icon": "icons/powerbi.png", "alt": "Power BI Icon", "label": "Power BI" }
+          ],
           "source": "",
           "featured": true,
-          "categories": ["WEB DEVELOPMENT", "PYTHON"]
+          "categories": ["VISUALIZATION"]
         },
         {
-          "projectType": "",
-          "name": "",
-          "image": "",
-          "description": "",
-          "githubLink": "",
+          "projectType": "image",
+          "name": "Dashboard Productividad",
+          "image": "projects/visualization/dashboard_productividad.png",
+          "description": "Dashboard en Power BI para seguimiento de la productividad.",
+          "githubLink": "https://github.com/mariamonchot/dashboard-productividad",
           "deployLink": "",
-          "highlightedTech": "",
-          "technologies": [],
+          "highlightedTech": "Power BI",
+          "technologies": [
+            { "icon": "icons/powerbi.png", "alt": "Power BI Icon", "label": "Power BI" }
+          ],
           "source": "",
           "featured": true,
-          "categories": ["WEB DEVELOPMENT", "PYTHON"]
+          "categories": ["VISUALIZATION"]
+        },
+        {
+          "projectType": "image",
+          "name": "Dashboard Resumen Financiero",
+          "image": "projects/visualization/dashboard_resumen_financiero.png",
+          "description": "Resumen financiero visualizado con indicadores clave en Power BI.",
+          "githubLink": "https://github.com/mariamonchot/dashboard-resumen-financiero",
+          "deployLink": "",
+          "highlightedTech": "Power BI",
+          "technologies": [
+            { "icon": "icons/powerbi.png", "alt": "Power BI Icon", "label": "Power BI" }
+          ],
+          "source": "",
+          "featured": true,
+          "categories": ["VISUALIZATION"]
+        },
+        {
+          "projectType": "text",
+          "name": "Polygon Area Calculator",
+          "image": "",
+          "description": "Calculadora de áreas, perímetros y diagonales de polígonos con visualización ASCII y diseño modular.",
+          "githubLink": "https://github.com/mariamonchot/polygon-area-calculator",
+          "deployLink": "",
+          "highlightedTech": "Python",
+          "technologies": [
+            { "icon": "icons/python.png", "alt": "Python Icon", "label": "Python" }
+          ],
+          "source": "FreeCodeCamp Project",
+          "featured": true,
+          "categories": ["PYTHON"]
+        },
+        {
+          "projectType": "text",
+          "name": "Probability Calculator",
+          "image": "",
+          "description": "Simulación de experimentos de probabilidad con métodos de Monte Carlo.",
+          "githubLink": "https://github.com/mariamonchot/probability-calculator",
+          "deployLink": "",
+          "highlightedTech": "Python",
+          "technologies": [
+            { "icon": "icons/python.png", "alt": "Python Icon", "label": "Python" }
+          ],
+          "source": "FreeCodeCamp Project",
+          "featured": true,
+          "categories": ["PYTHON"]
+        },
+        {
+          "projectType": "text",
+          "name": "Budget App",
+          "image": "",
+          "description": "Gestión de presupuestos con depósitos, retiros, transferencias y gráficos de gasto en texto.",
+          "githubLink": "https://github.com/mariamonchot/budget-app",
+          "deployLink": "",
+          "highlightedTech": "Python",
+          "technologies": [
+            { "icon": "icons/python.png", "alt": "Python Icon", "label": "Python" }
+          ],
+          "source": "FreeCodeCamp Project",
+          "featured": true,
+          "categories": ["PYTHON"]
         }
       ]
     },
@@ -489,40 +554,105 @@
         }
       ]
     },
-    "projectsData": {
+     "projectsData": {
+      "sectionTitle": "PROJECTS",
       "categories": [
-        { "name": "DESTACADOS", "visualize": true },
-        { "name": "MACHINE LEARNING", "visualize": true },
-        { "name": "VISUALIZACIÓN", "visualize": true },
+        { "name": "NOTABLE", "visualize": true },
+        { "name": "MACHINE LEARNING", "visualize": false },
+        { "name": "VISUALIZATION", "visualize": true },
         { "name": "PYTHON", "visualize": true },
-        { "name": "SQL & BASES DE DATOS", "visualize": true }
+        { "name": "SQL & DATABASES", "visualize": false }
       ],
       "projects": [
         {
           "projectType": "image",
-          "name": "",
-          "image": "",
-          "description": "",
-          "githubLink": "",
+          "name": "Dashboard Ventas Dark",
+          "image": "projects/visualization/dashboard_ventas_dark.png",
+          "description": "Dashboard en Power BI con análisis de ventas en modo oscuro.",
+          "githubLink": "https://github.com/mariamonchot/dashboard-ventas-dark",
           "deployLink": "",
-          "highlightedTech": "",
-          "technologies": [],
-          "source": "",
+          "highlightedTech": "Power BI",
+          "technologies": [
+            { "icon": "icons/powerbi.png", "alt": "Power BI Icon", "label": "Power BI" }
+          ],
+          "source": "Power BI",
           "featured": true,
-          "categories": ["DESARROLLO WEB", "PYTHON"]
+          "categories": ["VISUALIZATION"]
         },
         {
-          "projectType": "",
-          "name": "",
-          "image": "",
-          "description": "",
-          "githubLink": "",
+          "projectType": "image",
+          "name": "Dashboard Productividad",
+          "image": "projects/visualization/dashboard_productividad.png",
+          "description": "Dashboard en Power BI para seguimiento de la productividad.",
+          "githubLink": "https://github.com/mariamonchot/dashboard-productividad",
           "deployLink": "",
-          "highlightedTech": "",
-          "technologies": [],
-          "source": "",
+          "highlightedTech": "Power BI",
+          "technologies": [
+            { "icon": "icons/powerbi.png", "alt": "Power BI Icon", "label": "Power BI" }
+          ],
+          "source": "Power BI",
           "featured": true,
-          "categories": ["DESARROLLO WEB", "PYTHON"]
+          "categories": ["VISUALIZATION"]
+        },
+        {
+          "projectType": "image",
+          "name": "Dashboard Resumen Financiero",
+          "image": "projects/visualization/dashboard_resumen_financiero.png",
+          "description": "Resumen financiero visualizado con indicadores clave en Power BI.",
+          "githubLink": "https://github.com/mariamonchot/dashboard-resumen-financiero",
+          "deployLink": "",
+          "highlightedTech": "Power BI",
+          "technologies": [
+            { "icon": "icons/powerbi.png", "alt": "Power BI Icon", "label": "Power BI" }
+          ],
+          "source": "Power BI",
+          "featured": true,
+          "categories": ["VISUALIZATION"]
+        },
+        {
+          "projectType": "text",
+          "name": "Polygon Area Calculator",
+          "image": "",
+          "description": "Calculadora de áreas, perímetros y diagonales de polígonos con visualización ASCII y diseño modular.",
+          "githubLink": "https://github.com/mariamonchot/polygon-area-calculator",
+          "deployLink": "",
+          "highlightedTech": "Python",
+          "technologies": [
+            { "icon": "icons/python.png", "alt": "Python Icon", "label": "Python" }
+          ],
+          "source": "FreeCodeCamp Project",
+          "featured": true,
+          "categories": ["PYTHON"]
+        },
+        {
+          "projectType": "text",
+          "name": "Probability Calculator",
+          "image": "",
+          "description": "Simulación de experimentos de probabilidad con métodos de Monte Carlo.",
+          "githubLink": "https://github.com/mariamonchot/probability-calculator",
+          "deployLink": "",
+          "highlightedTech": "Python",
+          "technologies": [
+            { "icon": "icons/python.png", "alt": "Python Icon", "label": "Python" }
+          ],
+          "source": "FreeCodeCamp Project",
+          "featured": true,
+          "categories": ["PYTHON"]
+        },
+        {
+          "projectType": "text",
+          "name": "Budget App",
+          "image": "",
+          "description": "Gestión de presupuestos con depósitos, retiros, transferencias y gráficos de gasto en texto.",
+          "githubLink": "https://github.com/mariamonchot/budget-app",
+          "deployLink": "",
+          "highlightedTech": "Python",
+          "technologies": [
+            { "icon": "icons/python.png", "alt": "Python Icon", "label": "Python" }
+          ],
+          "source": "FreeCodeCamp Project",
+          "featured": true,
+          "categories": ["PYTHON"]
         }
       ]
     },

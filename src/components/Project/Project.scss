@@ -1,0 +1,66 @@
+@use '@/styles/variables' as v;
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.7rem;
+  width: 100%;
+
+  img {
+    width: 100%;
+    border-radius: 0.6rem;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    height: auto;
+    border: 0.07rem solid v.$primary-color;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .link-etiquetes {
+    display: flex;
+    justify-content: space-between; // links izquierda, etiquetas derecha
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: auto;
+    gap: 1rem;
+
+    .links,
+    .etiquetes {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .links a {
+      padding: 0.3rem 0.7rem;
+      border-radius: 1.5rem;
+      background: #29fdbc;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.2s ease, background 0.2s ease;
+
+      &:hover {
+        transform: scale(1.05);
+        background: #00e0b0;
+      }
+    }
+
+    .etiquetes p {
+      margin: 0;
+      padding: 0.3rem 0.7rem;
+      border-radius: 1.5rem;
+      background: rgba(41, 253, 190, 0.3);
+      font-size: 0.85rem;
+    }
+  }
+}

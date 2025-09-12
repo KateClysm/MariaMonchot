@@ -1,23 +1,19 @@
-
-export interface ITechnologies {
-  icon: JSX.Element;
-  name: string;
-}
-
 interface IProject {
-  id: number;
-  title: string;
-  card_description: string;
+  projectType: string;
+  name: string;
+  image: string;
   description: string;
-  key_features: string[];
-  my_rol: string;
-  photo: string;
-  mobile_view: string;
-  secondary_view: string;
-  technologies: ITechnologies[];
-  git: string;
-  link: string;
-  date: string;
+  githubLink?: string;
+  deployLink?: string;
+  highlightedTech?: string;
+  technologies?: {
+    icon: string;
+    alt: string;
+    label: string;
+  }[];
+  source?: string;
+  featured?: boolean;
+  categories: string[];
 }
 
 export default IProject;
