@@ -61,7 +61,7 @@ export const useSection = (sectionName: string): UseSectionIconsResult => {
   }
 
   // Siempre devolvemos también los íconos principales de la sección
-  const icons = mapRefs(section.icons);
+  const icons = section?.icons ? mapRefs(section.icons) : [];
 
   return { ...mappedSection, icons };
 };
