@@ -266,7 +266,8 @@
     },
 
     "projectsData": {
-      "sectionTitle": "PROJECTS",
+      "sectionProjects": "PROJECTS",
+      "sectionAllProjects": "ALL PROJECTS",
       "icons": [{ "ref": "github" }, { "ref": "web" }],
       "categories": [
         { "name": "NOTABLE", "visualize": true },
@@ -362,7 +363,7 @@
           "githubLink": "https://github.com/mariamonchot/budget-app",
           "deployLink": "",
           "highlightedTech": "Python",
-          "technologies": [{ "ref": "python" }],
+          "technologies": [{ "ref": "python" },{ "ref": "github" }],
           "source": "FreeCodeCamp Project",
           "featured": true,
           "categories": ["PYTHON"]
@@ -535,7 +536,8 @@
 
     "projectsData": {
       "icons": [{ "ref": "github" }, { "ref": "web" }],
-      "sectionTitle": "PROYECTOS",
+      "sectionProjects": "PROJECTOS",
+      "sectionAllProjects": "TODOS LOS PROJECTOS",
       "categories": [
         { "name": "DESTACADOS", "visualize": true },
         { "name": "MACHINE LEARNING", "visualize": false },

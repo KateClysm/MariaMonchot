@@ -1,4 +1,6 @@
-interface IProject {
+import { IconData } from "./IIcon";
+
+export default interface IProject {
   projectType: string;
   name: string;
   image: string;
@@ -6,14 +8,8 @@ interface IProject {
   githubLink?: string;
   deployLink?: string;
   highlightedTech?: string;
-  technologies?: {
-    icon: string;
-    alt: string;
-    label: string;
-  }[];
+  technologies: IconData[];
   source?: string;
   featured?: boolean;
   categories: string[];
 }
-
-export default IProject;

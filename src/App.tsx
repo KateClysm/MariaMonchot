@@ -14,7 +14,7 @@ import { LanguageProvider } from './contexts/LanguageContext';
 import './styles/main.scss'
 import Technologies from './pages/Technologies/Technologies';
 import Projects from './pages/Projects/Projects';
-// import AllProjects from './pages/AllProjects/AllProjects';
+import AllProjects from './pages/AllProjects/AllProjects';
 
 
 const App: React.FC = () => {
@@ -52,10 +52,10 @@ const App: React.FC = () => {
               <Education id="education"/>
             </>
         },
-        // {
-        //   path: '/MariaMonchot/allprojects',
-        //   element: <AllProjects/>
-        // }
+        {
+          path: '/MariaMonchot/allprojects',
+          element: <AllProjects/>
+        }
       ]
     }
   ]);

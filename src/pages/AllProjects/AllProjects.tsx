@@ -1,40 +1,73 @@
-import React, { useState } from "react";
-import { useLanguage } from "../../contexts/LanguageContext";
-import portfolioData from "../../assets/portfolio.json";
+import React, { useRef, useState, useEffect } from "react";
+import { useSection } from "../../hooks/useSection";
+import Project from "../../components/Project/Project";
+import PageProps from "../../interfaces/IPage";
 import IProject from "../../interfaces/IProject";
 import "./AllProjects.scss";
 
-const AllProjects: React.FC = () => {
-  const { language } = useLanguage();
-  const languageKey = (language.toLowerCase() + "-language") as
-    | "en-language"
-    | "es-language";
-  const { projectsData } = portfolioData[languageKey];
+const AllProjects: React.FC<PageProps> = ({ id }) => {
+  const projectsSection = useSection("projectsData");
 
   // Estado inicial: categoría "NOTABLE"
   const [selectedCategory, setSelectedCategory] = useState("NOTABLE");
 
-  // Filtrado de proyectos
-  const filteredProjects = (projectsData.projects as IProject[]).filter(
-    (project: IProject) => {
-      if (selectedCategory === "NOTABLE") {
-        return project.featured === true;
-      }
-      return project.categories.includes(selectedCategory);
+  // Filtrado según categoría
+  const filteredProjects = projectsSection.projects.filter((project: IProject) => {
+    if (selectedCategory === "NOTABLE") return project.featured;
+    return project.categories.includes(selectedCategory);
+  });
+
+  // Carousel
+  const carouselRef = useRef<HTMLDivElement>(null);
+  const [visibleCount, setVisibleCount] = useState<number>(1);
+
+  const updateVisibleCount = () => {
+    if (window.innerWidth < 425) setVisibleCount(1);
+    else if (window.innerWidth < 1200) setVisibleCount(2);
+    else setVisibleCount(3);
+  };
+
+  useEffect(() => {
+    updateVisibleCount();
+    window.addEventListener("resize", updateVisibleCount);
+    return () => window.removeEventListener("resize", updateVisibleCount);
+  }, []);
+
+  const scrollToIndex = (index: number) => {
+    if (!carouselRef.current) return;
+    const container = carouselRef.current;
+    const totalItems = filteredProjects.length;
+    const newIndex = (index + totalItems) % totalItems;
+    const child = container.children[newIndex] as HTMLElement;
+    if (child) {
+      container.scrollTo({
+        left: child.offsetLeft,
+        behavior: "smooth",
+      });
     }
-  );
+  };
+
+  const [activeIndex, setActiveIndex] = useState<number>(0);
+  const handlePrev = () => {
+    setActiveIndex(prev => (prev - 1 + filteredProjects.length) % filteredProjects.length);
+    scrollToIndex(activeIndex - 1);
+  };
+  const handleNext = () => {
+    setActiveIndex(prev => (prev + 1) % filteredProjects.length);
+    scrollToIndex(activeIndex + 1);
+  };
 
   return (
-    <section className="projects-section">
-      <h2 className="section-title">{projectsData.sectionTitle}</h2>
+    <section className="projects-section" id={id}>
+      <h2 className="margin-mark">{projectsSection.sectionAllProjects}</h2>
 
       {/* Botones de categorías */}
-      <div className="categories">
-        {projectsData.categories
-          .filter((cat) => cat.visualize) // solo categorías visibles
-          .map((cat) => (
+      <div className="categories margin-mark">
+        {projectsSection.categories
+          .filter((cat: any) => cat.visualize)
+          .map((cat: any, idx: number) => (
             <button
-              key={cat.name}
+              key={idx}
               className={selectedCategory === cat.name ? "active" : ""}
               onClick={() => setSelectedCategory(cat.name)}
             >
@@ -43,34 +76,23 @@ const AllProjects: React.FC = () => {
           ))}
       </div>
 
-      {/* Grilla de proyectos */}
-      <div className="projects-grid">
-        {filteredProjects.map((project: IProject, index) => (
-          <div key={index} className="project-card">
-            {project.image && <img src={project.image} alt={project.name} />}
-            <h3>{project.name}</h3>
-            <p>{project.description}</p>
-            {project.githubLink && (
-              <a
-                href={project.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-            )}
-            {project.deployLink && (
-              <a
-                href={project.deployLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live Demo
-              </a>
-            )}
-          </div>
+      {/* Contenedor de proyectos */}
+      <div
+        className={`projects-container padding-mark ${visibleCount < 3 ? "is-carousel" : "is-grid"}`}
+        ref={carouselRef}
+      >
+        {filteredProjects.map((project: IProject, idx: number) => (
+          <Project key={idx} project={project} icons={projectsSection.icons} />
         ))}
       </div>
+
+      {/* Controles solo para carousel */}
+      {visibleCount < 3 && filteredProjects.length > 1 && (
+        <div className="carousel-controls">
+          <button className="prev" onClick={handlePrev}>&lt;</button>
+          <button className="next" onClick={handleNext}>&gt;</button>
+        </div>
+      )}
     </section>
   );
 };

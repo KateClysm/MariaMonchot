@@ -57,7 +57,7 @@ const Projects: React.FC<PageProps> = ({ id }) => {
 
   return (
     <section className="projects-section" id={id}>
-      <h2 className="margin-mark">{projectsSection.sectionTitle}</h2>
+      <h2 className="margin-mark">{projectsSection.sectionProjects}</h2>
 
       <div
         className={`projects-container padding-mark ${visibleCount < 3 ? "is-carousel" : "is-grid"}`}
