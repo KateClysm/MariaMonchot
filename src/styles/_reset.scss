@@ -16,7 +16,19 @@ html, body {
   width: 100%;
 }
 
-// Ocultar scrollbars en navegadores Webkit
-::-webkit-scrollbar {display: none;}
+::-webkit-scrollbar {
+  width: 6px; 
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(30, 30, 30, 0.703);
+}
+::-webkit-scrollbar-thumb {
+  background: #21beae;        
+  border-radius: 10px;      
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1aa596;       
+}
 
 a { text-decoration: none;}

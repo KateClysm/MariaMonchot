@@ -45,6 +45,13 @@ h1,h2,h3 { display: inline-block;}
     background: linear-gradient(to right, v.$primary-color, v.$primary-color, #21beae75, transparent);
   }
 }
+.section-title.fixed-border {
+  &::after {
+    width: 130%;
+  }
+}
+
+
 .margin-mark {margin-left: 6rem; margin-right: 6rem;}
 .padding-mark {padding-left: 6rem; padding-right: 6rem;}
 .m-top-5{margin-top: 5rem;}
@@ -114,8 +121,6 @@ h1,h2,h3 { display: inline-block;}
   }
 
 }
-
-
 
 
 .presentation {

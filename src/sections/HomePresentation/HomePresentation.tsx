@@ -23,7 +23,7 @@ const HomePresentation: React.FC<HomePresentationProps> = ({ name, subtitle_1, s
   return (
     <div ref={ref} className="presentation margin-mark revealUp no-reset">
       <h1>{name}</h1>
-      <h3 className="fixed-border">
+      <h3 className="section-title fixed-border">
         {subtitleSpanPosition === "EN" ? (
           <><span>{subtitle_1}</span> {subtitle_2}</>
         ) : (

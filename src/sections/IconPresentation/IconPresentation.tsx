@@ -22,7 +22,7 @@ const IconPresentation: React.FC<IconPresentationProps> = ({ cards, title, extra
 
   return (
     <div>
-      <h3 className="fixed-border margin-mark revealUp">{title}</h3>
+      <h3 className="section-title fixed-border margin-mark revealUp">{title}</h3>
 
       <div className={`${"bg-"+cardType+"s"} m-top-5 hover-underline` }>
         <div className={`${cardType+"s"} margin-mark revealUp` }>
