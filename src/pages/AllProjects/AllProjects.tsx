@@ -16,7 +16,6 @@ const AllProjects: React.FC<PageProps> = () => {
 
   // Filtrado según categoría
   const filteredProjects = projectsSection.projects.filter((project: IProject) => {
-    if (selectedCategory === "NOTABLE") return project.featured;
     return project.categories.includes(selectedCategory);
   });
 

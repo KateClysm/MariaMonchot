@@ -282,48 +282,48 @@
       "projects": [
         {
           "projectType": "image",
-          "name": "Dashboard Ventas",
+          "name": "Dashboard Sales",
           "image": "projects/dashboards/Ventas.png",
-          "description": "Dashboard en Power BI con análisis de ventas en modo oscuro.",
-          "githubLink": "https://github.com/mariamonchot/dashboard-ventas-dark",
-          "deployLink": "",
+          "description": "Interactive Power BI sales dashboard with data cleaned in Power Query, showing revenue, regional sales, trends, and performance metrics with interactive visualizations.",
+          "githubLink": "",
+          "deployLink": "https://lnkd.in/p/dg_EKY9R",
           "highlightedTech": "Power BI",
           "technologies": [{ "ref": "powerbi" }],
           "source": "",
           "featured": true,
-          "categories": ["VISUALIZATION"]
+          "categories": ["VISUALIZATION", "NOTABLE"]
         },
         {
           "projectType": "image",
-          "name": "Dashboard Productividad",
+          "name": "Dashboard Productivity",
           "image": "projects/dashboards/Productividad.png",
-          "description": "Dashboard en Power BI para seguimiento de la productividad.",
-          "githubLink": "https://github.com/mariamonchot/dashboard-productividad",
-          "deployLink": "",
+          "description": "Interactive Power BI productivity dashboard using DAX measures to track efficiency, quality, and operator performance, with clear visualizations designed in Figma.",
+          "githubLink": "",
+          "deployLink": "https://lnkd.in/p/dg_EKY9R",
           "highlightedTech": "Power BI",
           "technologies": [{ "ref": "powerbi" }],
           "source": "",
           "featured": true,
-          "categories": ["VISUALIZATION"]
+          "categories": ["VISUALIZATION", "NOTABLE"]
         },
         {
           "projectType": "image",
-          "name": "Dashboard Resumen Financiero",
-          "image": "projects/dashboards/Resumen Financiero.png",
-          "description": "Resumen financiero visualizado con indicadores clave en Power BI.",
-          "githubLink": "https://github.com/mariamonchot/dashboard-resumen-financiero",
-          "deployLink": "",
-          "highlightedTech": "Power BI",
-          "technologies": [{ "ref": "powerbi" }],
-          "source": "",
-          "featured": true,
-          "categories": ["VISUALIZATION"]
-        },
-        {
-          "projectType": "image",
-          "name": "Dashboard Resumen Bancario",
+          "name": "Dashboard Banking and Finance",
           "image": "projects/dashboards/Resumen Bancario.png",
-          "description": "Resumen Bancario visualizado con indicadores clave en Power BI.",
+          "description": "Interactive Power BI Finance dashboard using DAX measures to analyze payments, taxes, and cumulative profit, segmented by banks and payment methods, with clear visuals designed in Figma for strategic insights.",
+          "githubLink": "",
+          "deployLink": "https://lnkd.in/p/dg_EKY9R",
+          "highlightedTech": "Power BI",
+          "technologies": [{ "ref": "powerbi" }],
+          "source": "",
+          "featured": true,
+          "categories": ["VISUALIZATION", "NOTABLE"]
+        },
+        {
+          "projectType": "image",
+          "name": "Dashboard Sales",
+          "image": "projects/dashboards/Resumen Financiero.png",
+          "description": "Interactive Sales and Margin Analysis dashboard in Power BI, using Power Query for data preparation and DAX for key metrics, with visuals designed in Figma to provide clear, actionable insights by region, team, and product category.",
           "githubLink": "https://github.com/mariamonchot/dashboard-resumen-financiero",
           "deployLink": "",
           "highlightedTech": "Power BI",
@@ -343,7 +343,7 @@
           "technologies": [{ "ref": "python" }],
           "source": "FreeCodeCamp Project",
           "featured": true,
-          "categories": ["PYTHON"]
+          "categories": ["PYTHON", "NOTABLE"]
         },
         {
           "projectType": "text",
@@ -356,7 +356,7 @@
           "technologies": [{ "ref": "python" }],
           "source": "FreeCodeCamp Project",
           "featured": true,
-          "categories": ["PYTHON"]
+          "categories": ["PYTHON", "NOTABLE"]
         },
         {
           "projectType": "text",
@@ -369,7 +369,7 @@
           "technologies": [{ "ref": "python" },{ "ref": "github" }],
           "source": "FreeCodeCamp Project",
           "featured": false,
-          "categories": ["PYTHON"]
+          "categories": ["PYTHON", "NOTABLE"]
         },
         {
           "projectType": "text",
@@ -606,92 +606,172 @@
       "moreProjects": "TODOS MIS PROYECTOS",
       "categories": [
         { "name": "DESTACADOS", "visualize": true },
-        { "name": "MACHINE LEARNING", "visualize": false },
+        { "name": "APRENDIZAJE AUTOMÁTICO", "visualize": false },
         { "name": "VISUALIZACIÓN", "visualize": true },
         { "name": "PYTHON", "visualize": true },
-        { "name": "SQL Y BASES DE DATOS", "visualize": false }
+        { "name": "SQL Y BASES DE DATOS", "visualize": false },
+        { "name": "DESARROLLO WEB", "visualize": true }
       ],
       "projects": [
         {
           "projectType": "image",
-          "name": "Dashboard Ventas Dark",
-          "image": "projects/visualization/dashboard_ventas_dark.png",
-          "description": "Dashboard en Power BI con análisis de ventas en modo oscuro.",
-          "githubLink": "https://github.com/mariamonchot/dashboard-ventas-dark",
-          "deployLink": "",
+          "name": "Dashboard de Ventas",
+          "image": "projects/dashboards/Ventas.png",
+          "description": "Dashboard interactivo de ventas en Power BI con datos limpios y transformados en Power Query, mostrando ingresos, ventas por región, tendencias y métricas de desempeño con visualizaciones interactivas.",
+          "githubLink": "",
+          "deployLink": "https://lnkd.in/p/dg_EKY9R",
           "highlightedTech": "Power BI",
           "technologies": [{ "ref": "powerbi" }],
           "source": "",
           "featured": true,
-          "categories": ["VISUALIZATION"]
+          "categories": ["VISUALIZACIÓN", "DESTACADOS"]
         },
         {
           "projectType": "image",
-          "name": "Dashboard Productividad",
-          "image": "projects/visualization/dashboard_productividad.png",
-          "description": "Dashboard en Power BI para seguimiento de la productividad.",
-          "githubLink": "https://github.com/mariamonchot/dashboard-productividad",
-          "deployLink": "",
+          "name": "Dashboard de Productividad",
+          "image": "projects/dashboards/Productividad.png",
+          "description": "Dashboard interactivo de productividad en Power BI usando medidas DAX para hacer seguimiento de eficiencia, calidad y desempeño por operador, con visualizaciones claras diseñadas en Figma.",
+          "githubLink": "",
+          "deployLink": "https://lnkd.in/p/dg_EKY9R",
           "highlightedTech": "Power BI",
           "technologies": [{ "ref": "powerbi" }],
           "source": "",
           "featured": true,
-          "categories": ["VISUALIZATION"]
+          "categories": ["VISUALIZACIÓN", "DESTACADOS"]
         },
         {
           "projectType": "image",
-          "name": "Resumen Financiero",
-          "image": "projects/visualization/dashboard_resumen_financiero.png",
-          "description": "Resumen financiero visualizado con indicadores clave en Power BI.",
+          "name": "Dashboard Bancario y Financiero",
+          "image": "projects/dashboards/Resumen Bancario.png",
+          "description": "Dashboard financiero interactivo en Power BI usando medidas DAX para analizar pagos, impuestos y utilidad acumulada, segmentado por bancos y métodos de pago, con visualizaciones claras diseñadas en Figma para insights estratégicos.",
+          "githubLink": "",
+          "deployLink": "https://lnkd.in/p/dg_EKY9R",
+          "highlightedTech": "Power BI",
+          "technologies": [{ "ref": "powerbi" }],
+          "source": "",
+          "featured": true,
+          "categories": ["VISUALIZACIÓN", "DESTACADOS"]
+        },
+        {
+          "projectType": "image",
+          "name": "Dashboard de Ventas y Margen",
+          "image": "projects/dashboards/Resumen Financiero.png",
+          "description": "Dashboard interactivo de ventas y análisis de margen en Power BI, usando Power Query para preparar datos y DAX para métricas clave, con visualizaciones diseñadas en Figma para ofrecer insights claros y accionables por región, equipo y categoría de producto.",
           "githubLink": "https://github.com/mariamonchot/dashboard-resumen-financiero",
           "deployLink": "",
           "highlightedTech": "Power BI",
           "technologies": [{ "ref": "powerbi" }],
           "source": "",
-          "featured": true,
-          "categories": ["VISUALIZATION"]
+          "featured": false,
+          "categories": ["VISUALIZACIÓN"]
         },
         {
           "projectType": "text",
           "name": "Calculadora de Área de Polígonos",
           "image": "",
-          "description": "Calculadora de áreas, perímetros y diagonales de polígonos con visualización ASCII y diseño modular.",
-          "githubLink": "https://github.com/mariamonchot/polygon-area-calculator",
+          "description": "Implementación orientada a objetos para calcular áreas, perímetros y diagonales de polígonos, con visualizaciones en ASCII.",
+          "githubLink": "https://github.com/KateClysm/Python_Practices/blob/main/FreeCodeCamp/Projects/polygon_area_calculator_project.py",
           "deployLink": "",
           "highlightedTech": "Python",
           "technologies": [{ "ref": "python" }],
-          "source": "Proyecto FreeCodeCamp",
+          "source": "FreeCodeCamp Project",
           "featured": true,
-          "categories": ["PYTHON"]
+          "categories": ["PYTHON", "DESTACADOS"]
         },
         {
           "projectType": "text",
           "name": "Calculadora de Probabilidad",
           "image": "",
-          "description": "Simulación de experimentos de probabilidad con métodos de Monte Carlo.",
-          "githubLink": "https://github.com/mariamonchot/probability-calculator",
+          "description": "Proyecto orientado a objetos que simula experimentos de probabilidad usando métodos aleatorios y Monte Carlo para aproximar resultados teóricos.",
+          "githubLink": "https://github.com/KateClysm/Python_Practices/blob/main/FreeCodeCamp/Projects/probability_calculator_project.py",
           "deployLink": "",
           "highlightedTech": "Python",
           "technologies": [{ "ref": "python" }],
-          "source": "Proyecto FreeCodeCamp",
+          "source": "FreeCodeCamp Project",
+          "featured": true,
+          "categories": ["PYTHON", "DESTACADOS"]
+        },
+        {
+          "projectType": "text",
+          "name": "Aplicación de Presupuesto",
+          "image": "",
+          "description": "Sistema de gestión de presupuesto que permite depósitos, retiros, transferencias y gráficos de gasto en texto, con diseño limpio.",
+          "githubLink": "https://github.com/KateClysm/Python_Practices/blob/main/FreeCodeCamp/Projects/budget_app_project_final.py",
+          "deployLink": "",
+          "highlightedTech": "Python",
+          "technologies": [{ "ref": "python" },{ "ref": "github" }],
+          "source": "FreeCodeCamp Project",
+          "featured": false,
+          "categories": ["PYTHON", "DESTACADOS"]
+        },
+        {
+          "projectType": "text",
+          "name": "Calculadora de Tiempo",
+          "image": "",
+          "description": "Función para calcular tiempos futuros basada en una hora de inicio y duración, considerando opcionalmente el día de la semana.",
+          "githubLink": "https://github.com/KateClysm/Python_Practices/blob/main/FreeCodeCamp/Projects/time_calculator_clean_project.py",
+          "deployLink": "",
+          "highlightedTech": "Python",
+          "technologies": [{ "ref": "python" },{ "ref": "github" }],
+          "source": "FreeCodeCamp Project",
           "featured": true,
           "categories": ["PYTHON"]
         },
         {
           "projectType": "text",
-          "name": "App de Presupuesto",
+          "name": "Formateador Aritmético",
           "image": "",
-          "description": "Gestión de presupuestos con depósitos, retiros, transferencias y gráficos de gasto en texto.",
-          "githubLink": "https://github.com/mariamonchot/budget-app",
+          "description": "Función para formatear problemas aritméticos básicos en columnas verticales alineadas, con validación de entrada y diseño limpio y estructurado.",
+          "githubLink": "https://github.com/KateClysm/Python_Practices/blob/main/FreeCodeCamp/Projects/arithmetic_formatter_project.py",
           "deployLink": "",
           "highlightedTech": "Python",
-          "technologies": [{ "ref": "python" }],
-          "source": "Proyecto FreeCodeCamp",
-          "featured": true,
+          "technologies": [{ "ref": "python" },{ "ref": "github" }],
+          "source": "FreeCodeCamp Project",
+          "featured": false,
           "categories": ["PYTHON"]
+        },
+        {
+          "projectType": "text",
+          "name": "Guía de Pensamiento Computacional",
+          "image": "",
+          "description": "Guía gratuita que cubre todos los temas del curso, ejercicios y recursos oficiales. Incluye resúmenes, ejemplos, explicaciones adicionales y aplicaciones prácticas con Pandas, NumPy y Matplotlib, creada para apoyar a estudiantes y futuros aprendices.",
+          "githubLink": "https://github.com/KateClysm/Python_Practices/tree/main/Licenciatura%20en%20Ciencias%20de%20Datos/Pensamiento%20Computacional",
+          "deployLink": "https://www.notion.so/kateclysm/Pensamiento-Computacional-1bbdb20b02c98015a80dfefd1611de9e",
+          "highlightedTech": "Python",
+          "technologies": [{ "ref": "python" },{ "ref": "github" }, {"ref": "Notion"}],
+          "source": "Academic Project",
+          "featured": false,
+          "categories": ["PYTHON"]
+        },
+        {
+          "projectType": "image",
+          "name": "VibrAr",
+          "image": "projects/webdevelopment/VibrAr.png",
+          "description": "VibrAr es tu guía esencial de los últimos eventos y rumores sobre conciertos de artistas que vienen a Argentina. Explora la escena musical con información detallada de fechas, recintos y noticias frescas. Sumérgete en la experiencia VibrAr, donde la música cobra vida. ¡Descubre, vibra y mantente actualizado con la magia de la música en Argentina!",
+          "githubLink": "https://github.com/KateClysm/VibrAr",
+          "deployLink": "https://vibrar-88b3b.web.app",
+          "highlightedTech": "React",
+          "technologies": [{ "ref": "react" },{ "ref": "javascript" }, {"ref": "sass"}],
+          "source": "",
+          "featured": false,
+          "categories": ["DESARROLLO WEB"]
+        },
+        {
+          "projectType": "image",
+          "name": "ParaSeekers",
+          "image": "projects/webdevelopment/ParaSeekers.png",
+          "description": "Paraseekers Forum es una plataforma de discusión interactiva construida como proyecto grupal para el Curso de Desarrollo Web Full Stack en SomosCoders. Permite a los usuarios crear cuentas, compartir publicaciones y explorar contenido en una interfaz moderna y responsiva.",
+          "githubLink": "https://github.com/KateClysm/Foro/tree/main",
+          "deployLink": "",
+          "highlightedTech": "FullStack",
+          "technologies": [{ "ref": "react" },{ "ref": "nodejs" }, {"ref": "html5"},{"ref": "css3"},{"ref": "typescript"},{"ref": "mysql"}],
+          "source": "SomosCoders Project",
+          "featured": false,
+          "categories": ["DESARROLLO WEB"]
         }
       ]
     },
+
 
     "technologies": {
       "sectionTitle": "TECNOLOGÍAS",
