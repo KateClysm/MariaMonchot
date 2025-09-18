@@ -6,7 +6,6 @@
   row-gap: 0.7rem;
   width: 100%;
   transition: transform 0.5s ease;
-
   padding: 1rem;
   border: 1px solid v.$primary-color;
   border-radius: 0.5rem;
@@ -16,35 +15,25 @@
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(4, 148, 105, 0.241);
     background-color: #7329fd07;
-    background-image: linear-gradient(
-      to bottom,
-      v.$primary-color 0%,
-      rgba(v.$primary-color, 0.5) 10%,
-      rgba(v.$primary-color, 0.3) 20%,
-      rgba(v.$primary-color, 0.15) 40%,
-      transparent 100%
-    );
-
-    // Shake del ícono github una sola vez
-    .links a img {
-      animation: shakeOnce 0.5s ease forwards;
-      transition: transform 0.5s ease;
-    }
+    background-image: linear-gradient(to bottom,
+        v.$primary-color 0%,
+        rgba(v.$primary-color, 0.5) 10%,
+        rgba(v.$primary-color, 0.3) 20%,
+        rgba(v.$primary-color, 0.15) 40%,
+        transparent 100%);
   }
 
   &.text:hover {
-    background-image: linear-gradient(
-      to bottom,
-      rgba(v.$primary-color, 0.2) 0%,   // más potente arriba
-      rgba(v.$primary-color, 0.1) 10%,
-      rgba(v.$primary-color, 0.05) 20%,
-      rgba(v.$primary-color, 0.03) 30%,
-      transparent 100%
-    );
+    background-image: linear-gradient(to bottom,
+        rgba(v.$primary-color, 0.2) 0%,
+        rgba(v.$primary-color, 0.1) 10%,
+        rgba(v.$primary-color, 0.05) 20%,
+        rgba(v.$primary-color, 0.03) 30%,
+        transparent 100%);
   }
 
-  h3 { font-size: 1.2rem; }
-  p { font-size: 1rem; }
+  h3 {font-size: 1.2rem;}
+  p {font-size: 1rem;}
 
   .container-project-image {
     .project-image {
@@ -95,14 +84,18 @@
       border: 1px solid v.$primary-color;
     }
   }
-}
 
-// Shake de GitHub una sola vez
-@keyframes shakeOnce {
-  0% { transform: translateX(0); }
-  20% { transform: translateX(-4px); }
-  40% { transform: translateX(4px); }
-  60% { transform: translateX(-2px); }
-  80% { transform: translateX(2px); }
-  100% { transform: translateX(0); }
+  .links a {
+    display: inline-block;
+    border: 0.5px solid transparent;
+    border-radius: 20%;
+    padding: 0.1rem;
+    transition: all 0.3s ease;
+    transform: scale(1);
+  }
+
+  &:hover .links a {
+    transform: scale(1.2); 
+    border-color: v.$white-color;
+  }
 }

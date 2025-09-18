@@ -269,6 +269,7 @@
     "projectsData": {
       "sectionProjects": "PROJECTS",
       "sectionAllProjects": "ALL PROJECTS",
+      "moreProjects": "ALL PROJECTS",
       "icons": [{ "ref": "github" }, { "ref": "web" }],
       "categories": [
         { "name": "NOTABLE", "visualize": true },
@@ -536,6 +537,7 @@
       "icons": [{ "ref": "github" }, { "ref": "web" }],
       "sectionProjects": "PROJECTOS",
       "sectionAllProjects": "TODOS LOS PROJECTOS",
+      "moreProjects": "TODOS MIS PROYECTOS",
       "categories": [
         { "name": "DESTACADOS", "visualize": true },
         { "name": "MACHINE LEARNING", "visualize": false },

@@ -69,25 +69,41 @@
   }
 
   .more-projects-btn {
-    align-self: start;
-    margin-top: 2rem;
-    padding: 0.8rem 1.3rem;
-    border: 0.1rem solid v.$primary-color;
-    border-radius: 2.5rem;
-    font-family: v.$font-primary;
-    color: v.$primary-color;
-    background: transparent;
-    transition: all 0.3s ease;
-
+      width: 100%;
+      margin-top: 2rem;
+      
+    a{
+      
+      
+      padding: 0.5rem 1rem;
+      border: 0.1rem solid v.$primary-color;
+      border-radius: 2rem;
+      font-family: v.$font-primary;
+      color: v.$primary-color;
+      background: transparent;
+      transition: all 0.3s ease;
+    }
     &:hover {
-      background: v.$primary-color;
-      color: v.$black-color;
-      transform: scale(1.05);
+      a{
+        background: v.$primary-color;
+        transform: scale(1.05);
+        color: v.$black-color;
+        font-weight: bold;
+      }
     }
   }
 }
 
-// Responsive ajustes
+@media (max-width: 426px) {
+  .projects-section {
+    .more-projects-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+  }
+}
 
 @media (max-width: 767px) {
   .projects-section {

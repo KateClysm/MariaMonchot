@@ -80,9 +80,11 @@ const Projects: React.FC<PageProps> = ({ id }) => {
         </div>
       )}
 
-      <Link to="/MariaMonchot/allprojects" className="more-projects-btn margin-mark">
-        MORE PROJECTS
-      </Link>
+      <div className="more-projects-btn">
+          <Link to="/MariaMonchot/allprojects" className=" margin-mark">
+        {projectsSection.moreProjects}
+        </Link>
+      </div>
     </section>
   );
 };

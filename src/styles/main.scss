@@ -30,7 +30,7 @@ h2 { color: v.$primary-color}
 //Disposición
 h1,h2,h3 { display: inline-block;}
 
-//Estilos Reutilizables
+
 .fixed-border {
   padding-bottom: 0.5rem;
   position: relative; // necesario para el pseudo-elemento
@@ -51,49 +51,15 @@ h1,h2,h3 { display: inline-block;}
   }
 }
 
-
 .margin-mark {margin-left: 6rem; margin-right: 6rem;}
 .padding-mark {padding-left: 6rem; padding-right: 6rem;}
 .m-top-5{margin-top: 5rem;}
 .m-top-2{margin-top: 2rem;}
 .br-5{border-radius: 5%;}
 
-//hover
-.holographic-card {
-  position: relative;
-  overflow: hidden;
-  transition: all 0.5s ease;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(0deg,
-        transparent,
-        transparent 30%,
-        rgba(0, 255, 255, 0.3));
-    transform: rotate(-45deg);
-    transition: all 0.5s ease;
-    opacity: 0;
-  }
-
-  &:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-  }
-
-  &:hover::before {
-    opacity: 1;
-    transform: rotate(-45deg) translateY(100%);
-  }
-}
-
 .hover-underline {
   font-size: 2rem;
-  color: #ffffff;
+  color: v.$white-color;
   position: relative;
 
   &::after,
@@ -102,7 +68,7 @@ h1,h2,h3 { display: inline-block;}
     position: absolute;
     width: 100%;
     height: 2px;
-    background: linear-gradient(to right, #ffffff, #29fdbe);
+    background: linear-gradient(to right, v.$white-color, #29fdbe);
     bottom: 0;
     left: 0;
     transform: scaleX(0);
@@ -121,7 +87,6 @@ h1,h2,h3 { display: inline-block;}
   }
 
 }
-
 
 .presentation {
     display: flex;
