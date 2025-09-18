@@ -23,6 +23,7 @@ const About: React.FC<PageProps> = ({ id }) => {
             subtitle_2={aboutSection.subtitle_2}
             HomePresentationText={aboutSection.HomePresentation}
             icons={aboutSection.icons}
+            subtitleSpanPosition={aboutSection.subtitleSpanPosition}
           />
         </div>
 

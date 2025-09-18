@@ -1,8 +1,16 @@
 import React from "react";
-import { IconPresentationProps, IconPresentationCard } from "../../interfaces/IIconPresentation";
+
+//Estilos
 import "./IconPresentations.scss";
-import Card from "../../components/Card/Card";
 import { useRevealUp } from "../../animations/RevealUp";
+
+//Componentes
+import Card from "../../components/Card/Card";
+
+//Interfaces
+import { IconPresentationProps, IconPresentationCard } from "../../interfaces/IIconPresentation";
+
+
 
 const IconPresentation: React.FC<IconPresentationProps> = ({ cards, title, extraClass, variant = "A"}) => {
 

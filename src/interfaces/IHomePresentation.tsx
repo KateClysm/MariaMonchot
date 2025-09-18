@@ -5,4 +5,5 @@ export interface HomePresentationProps {
   subtitle_2: string;
   HomePresentationText: string;
   icons: IconData[];
+  subtitleSpanPosition?: "EN" | "ES";
 }

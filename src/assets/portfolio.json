@@ -236,6 +236,7 @@
       "name": "MARIA MONCHOT",
       "subtitle_1": "DATA ",
       "subtitle_2": "ANALYST",
+      "subtitleSpanPosition": "EN", 
       "HomePresentation": "I am a Data Science student, constantly engaged in technical training and actively involved in programs related to data and artificial intelligence. I stand out for my problem-solving mindset, self-learning ability, and strong organization.",
       "icons": [{ "ref": "cv" }, { "ref": "linkedin" }, { "ref": "github" }],
       "sectionTitle": "ABOUT",
@@ -471,12 +472,8 @@
       "sectionTitle": "CONTACT",
       "text": "I am open to professional opportunities and collaborations in the field of Data Science and Analytics. Please feel free to contact me for further information or to discuss how I can contribute to your team or project.",
       "icons": [
-        {
-          "ref": "linkedin"
-        },
-        {
-          "ref": "mail"
-        },
+        { "ref": "linkedin" },
+        { "ref": "mail" },
         { "ref": "github" }
       ]
     },
@@ -505,6 +502,7 @@
       "name": "MARIA MONCHOT",
       "subtitle_1": "ANALISTA DE ",
       "subtitle_2": "DATOS",
+      "subtitleSpanPosition": "ES", 
       "HomePresentation": "Soy estudiante de Data Science, constantemente en formación técnica y participando activamente en programas relacionados con datos e inteligencia artificial. Me destaco por mi mentalidad orientada a la resolución de problemas, mi capacidad de autoaprendizaje y fuerte organización.",
       "icons": [{ "ref": "cv" }, { "ref": "linkedin" }, { "ref": "github" }],
       "sectionTitle": "SOBRE MÍ",
