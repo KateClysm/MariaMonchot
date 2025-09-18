@@ -1,16 +1,22 @@
-.about-icons {
-  display: flex;
-  gap: 1rem;
+.homePresentation{
+  position: relative;
+  .about-icons{
+    padding-top: 2rem;
+    position: absolute;
+    top: 100%;
+    display: flex;
+    gap: 1rem;
 
-  a {
-    img {
-      width: 2rem;
-      height: 2rem;
-      object-fit: contain;
-      transition: transform 0.2s ease;
+    a {
+      img {
+        width: 2rem;
+        height: 2rem;
+        object-fit: contain;
+        transition: transform 0.2s ease;
 
-      &:hover {
-        transform: translateY(-3px);
+        &:hover {
+          transform: translateY(-3px);
+        }
       }
     }
   }

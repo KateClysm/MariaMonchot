@@ -22,9 +22,8 @@ const Nav: React.FC = () => {
   // Mobile menu
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Para esconder/mostrar el header según scroll
+  // Para saber si estamos en el top del scroll
   const { scrollY } = useScroll();
-  const [hidden, setHidden] = useState(false);
   const [isTop, setIsTop] = useState(true);
 
   // Manejo del overflow al abrir/cerrar menú
@@ -36,12 +35,8 @@ const Nav: React.FC = () => {
     };
   }, [isMenuOpen]);
 
-  // Detectar dirección del scroll y si estamos en top
+  // Detectar si estamos en el top (pero sin ocultar el nav)
   useMotionValueEvent(scrollY, "change", (latest) => {
-    const previous = scrollY.getPrevious();
-    if (latest > previous + 10) setHidden(true);
-    else if (latest < previous - 10) setHidden(false);
-
     setIsTop(latest < 20);
   });
 
@@ -65,7 +60,7 @@ const Nav: React.FC = () => {
 
   return (
     <motion.nav
-      className={`nav ${isTop ? "transparent" : "solid"} ${hidden ? "hidden" : ""}`}
+      className={`nav ${isTop ? "transparent" : "solid"}`}
     >
       <div className="nav-container">
         {/* Botón hamburguesa para nav mobile*/}
@@ -94,7 +89,6 @@ const Nav: React.FC = () => {
 
         {/* Botones de idioma/tema */}
         <div className="nav-buttons">
-          
           <div className="language-toggle" onClick={toggleLanguage}>
             <div
               className="language-slider"
