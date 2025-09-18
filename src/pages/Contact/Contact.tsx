@@ -25,6 +25,7 @@ const Contact: React.FC<PageProps> = ({ id }) => {
               href={iconObj.link || "#"}
               target={iconObj.link ? "_blank" : undefined}
               rel={iconObj.link ? "noopener noreferrer" : undefined}
+              className="hover-icons"
             >
               <img src={iconObj.icon} alt={iconObj.alt} className="contact-icon" />
             </a>

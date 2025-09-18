@@ -12,10 +12,10 @@
     position: absolute;
     top: 0;
     transform: translateX(-40%);
-    height: 100%; // ocupa toda la altura de la sección
-    width: auto; // mantiene la proporción
-    z-index: 0; // queda atrás del contenido
-    pointer-events: none; // para que no interfiera con clicks
+    height: 100%; 
+    width: auto;
+    z-index: 0; 
+    pointer-events: none; 
     object-fit: cover;
   }
 
@@ -32,25 +32,6 @@
     .contact-icons {
       display: flex;
       gap: 1rem;
-
-      a {
-        display: inline-block; // necesario para que el borde envuelva el icono
-        border: 2px solid transparent; // borde invisible por defecto
-        border-radius: 20%; 
-        padding: 0.1rem; // espacio entre icono y borde
-        transition: all 0.3s ease; // transición suave al hacer hover
-
-        &:hover {
-          border-color: v.$white-color;
-          transform: scale(1.1); 
-        }
-
-        img.contact-icon {
-          display: block;
-          width: 3rem;
-          height: 3rem;
-        }
-      }
     }
   }
 }

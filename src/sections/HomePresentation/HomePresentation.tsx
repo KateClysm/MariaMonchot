@@ -32,14 +32,15 @@ const HomePresentation: React.FC<HomePresentationProps> = ({ name, subtitle_1, s
       </h3>
       <p>{HomePresentationText}</p>
 
-      <div className="about-icons">
+      <div className="about-icons animate-bounce">
         {icons.map((icon, idx) => (
           <a
               key={idx}
               href={icon.link || "#"}
               target={icon.link ? "_blank" : undefined}
               rel={icon.link ? "noopener noreferrer" : undefined}
-              title={icon.label || `icon-${idx}`}>
+              title={icon.label || `icon-${idx}`}
+              className="hover-icons">
               <img src={icon.icon} alt={icon.alt} />
           </a>
         ))}

@@ -135,6 +135,24 @@ h1,h2,h3 { display: inline-block;}
     }
 }
 
+.hover-icons{
+  display: inline-block;
+  border: 2px solid transparent;
+  border-radius: 20%; 
+  padding: 0.2rem; 
+  transition: all 0.3s ease; 
+
+  &:hover {
+    border-color: v.$white-color;
+    transform: scale(1.1); 
+  }
+
+  img {
+    display: block;
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+}
 
 @keyframes bounce {
 
@@ -151,8 +169,6 @@ h1,h2,h3 { display: inline-block;}
 .animate-bounce{
   animation: bounce 1.5s ease-in-out infinite;
 }
-
-
 
 // Ajustes responsivos de tamaño de fuente en `html`
 html {
