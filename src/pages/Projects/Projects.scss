@@ -92,9 +92,10 @@
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 500px) {
   .projects-section {
     .more-projects-btn {
+      margin-top: 5rem;
       display: flex;
       justify-content: center;
       align-items: center;
