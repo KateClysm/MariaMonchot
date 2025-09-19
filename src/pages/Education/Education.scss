@@ -72,6 +72,11 @@
                 color: v.$primary-color;
                 margin-left: 0.5rem;
                 cursor: pointer;
+                transition: transform 0.2s ease;
+
+                &:hover {
+                    transform: translateY(-3px);
+                }
             }
         }
     }

@@ -24,7 +24,7 @@ const Education: React.FC<PageProps> = ({ id }) => {
           >
             <h3 className="education-subtitle fixed-border">
               {category.section}
-              {category.section === "CERTIFICATIONS" && educationSection.icons.length > 0 && (
+              {category.seeMore && educationSection.icons.length > 0 && (
                 <a
                   href={educationSection.icons[0].link}
                   target="_blank"
