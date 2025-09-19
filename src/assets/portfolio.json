@@ -2,7 +2,8 @@
   "icons": {
     "mail": {
       "icon": "icons/mail.png",
-      "alt": "Email Icon From Flaticon, made by Uniconlabs"
+      "alt": "Email Icon From Flaticon, made by Uniconlabs",
+      "link": "https://mail.google.com/mail/?view=cm&to=mariamonchot@gmail.com"
     },
     "cv": {
       "icon": "icons/cv.png",
