@@ -15,6 +15,7 @@ import './styles/main.scss'
 import Technologies from './pages/Technologies/Technologies';
 import Projects from './pages/Projects/Projects';
 import AllProjects from './pages/AllProjects/AllProjects';
+import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton';
 
 
 const App: React.FC = () => {
@@ -30,6 +31,7 @@ const App: React.FC = () => {
           </main>
           <Contact id="contact"/>
           <Footer />
+          <ScrollToTopButton />
         </div>
       </LanguageProvider>
       
