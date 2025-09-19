@@ -5,8 +5,12 @@ import Project from "../../components/Project/Project";
 import "./projects.scss";
 import PageProps from "../../interfaces/IPage";
 import IProject from "../../interfaces/IProject";
+import { useRevealUp } from "../../animations/RevealUp";
 
 const Projects: React.FC<PageProps> = ({ id }) => {
+
+  useRevealUp();
+  
   const projectsSection = useSection("projectsData");
   
   // Solo los primeros 6 proyectos destacados
@@ -56,11 +60,11 @@ const Projects: React.FC<PageProps> = ({ id }) => {
   };
 
   return (
-    <section className="projects-section" id={id}>
-      <h2 className="margin-mark">{projectsSection.sectionProjects}</h2>
+    <section className="projects-section " id={id}>
+      <h2 className="margin-mark revealUp">{projectsSection.sectionProjects}</h2>
 
       <div
-        className={`projects-container padding-mark ${visibleCount < 3 ? "is-carousel" : "is-grid"}`}
+        className={`projects-container padding-mark  revealUp ${visibleCount < 3 ? "is-carousel" : "is-grid"}`}
         ref={carouselRef}
       >
         {featuredProjects.map((project: IProject, idx: number) => (
@@ -74,13 +78,13 @@ const Projects: React.FC<PageProps> = ({ id }) => {
 
       {/* Controles solo para carrousel */}
       {visibleCount < 3 && (
-        <div className="carousel-controls">
+        <div className="carousel-controls revealUp">
           <button className="prev" onClick={handlePrev}>&lt;</button>
           <button className="next" onClick={handleNext}>&gt;</button>
         </div>
       )}
 
-      <div className="more-projects-btn">
+      <div className="more-projects-btn revealUp">
           <Link to="/MariaMonchot/allprojects" className=" margin-mark">
         {projectsSection.moreProjects}
         </Link>

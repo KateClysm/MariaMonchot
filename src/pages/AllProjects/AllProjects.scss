@@ -60,3 +60,21 @@
   }
 }
 
+.loader {
+  opacity: 1;
+  transition: opacity 0.6s ease; 
+  &.hidden {
+    opacity: 0;
+  }
+}
+
+.projects-container {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 1;
+  transform: translateY(0);
+
+  &.animating {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}

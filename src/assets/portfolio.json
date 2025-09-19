@@ -270,6 +270,7 @@
       "sectionProjects": "PROJECTS",
       "sectionAllProjects": "ALL PROJECTS",
       "moreProjects": "ALL PROJECTS",
+      "loading": "Loading...",
       "icons": [{ "ref": "github" }, { "ref": "web" }],
       "categories": [
         { "name": "NOTABLE", "visualize": true },
@@ -605,6 +606,7 @@
       "sectionProjects": "PROJECTOS",
       "sectionAllProjects": "TODOS LOS PROJECTOS",
       "moreProjects": "TODOS MIS PROYECTOS",
+      "loading": "Cargando...",
       "categories": [
         { "name": "DESTACADOS", "visualize": true },
         { "name": "APRENDIZAJE AUTOMÁTICO", "visualize": false },
