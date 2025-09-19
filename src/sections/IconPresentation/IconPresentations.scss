@@ -2,23 +2,22 @@
 .bg-b-cards .b-cards,
 .bg-c-cards .c-cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 1rem;
   row-gap: 3.5rem;
 }
 
 .bg-b-cards {
   background-image: linear-gradient(to right, #04161a2c, #29fdbd35);
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 .bg-a-cards, .bg-c-cards {
   background-image: linear-gradient(to left, #04161a2c, #29fdbd35);
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1000px) {
   .bg-a-cards .a-cards,
   .bg-b-cards .b-cards,
   .bg-c-cards .c-cards {

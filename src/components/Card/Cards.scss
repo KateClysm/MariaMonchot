@@ -1,11 +1,10 @@
 @use '@/styles/_variables.scss' as v;
 .card {
-    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 1rem;
     min-width: 9rem;
 
     .card-img {
@@ -21,20 +20,21 @@
     align-items: baseline;
     text-align: center;
 
-    .card-icon, .card-plus{ font-size: 3rem; font-weight: lighter; font-family: v.$font-primary;}
+    .card-icon, .card-plus{ font-size: 2rem; font-weight: lighter; font-family: v.$font-primary;}
     .card-icon {color: v.$primary-color;}
     .card-plus {color: v.$white-color;}
   }
 }
+@media (min-width: 1000px) {
+  .card {
+    .card-img {
+      width: 5rem;
+    }
+  }
 
-@media (min-width: 700px) {
-    .card {
-            padding: 1rem;
-            gap: 1.5rem;
-            min-width: 14.5rem;
-
-            .card-img {
-                width: 5rem;
-            }
-        }
+  .c-card{
+    .card-text{
+      .card-icon, .card-plus{ font-size: 3rem; }
+    }
+  }
 }
