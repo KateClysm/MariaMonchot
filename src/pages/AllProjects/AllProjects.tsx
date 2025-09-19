@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { useSection } from "../../hooks/useSection";
 import Project from "../../components/Project/Project";
 import PageProps from "../../interfaces/IPage";
@@ -7,6 +8,7 @@ import "./AllProjects.scss";
 
 const AllProjects: React.FC<PageProps> = () => {
   const [ready, setReady] = useState(false);
+  const navigate = useNavigate(); // Para el botón "volver atrás"
 
   // Hook de sección SIEMPRE se ejecuta
   const projectsSection = useSection("projectsData");
@@ -95,7 +97,11 @@ const AllProjects: React.FC<PageProps> = () => {
 
           {/* Contenedor de proyectos */}
           <div
-            className={`projects-container padding-mark ${visibleCount < 3 ? "is-carousel" : "is-grid"}`} ref={carouselRef} >
+            className={`projects-container padding-mark ${
+              visibleCount < 3 ? "is-carousel" : "is-grid"
+            }`}
+            ref={carouselRef}
+          >
             {filteredProjects.map((project: IProject, idx: number) => (
               <Project key={idx} project={project} icons={projectsSection.icons} />
             ))}
@@ -104,10 +110,21 @@ const AllProjects: React.FC<PageProps> = () => {
           {/* Controles solo para carousel */}
           {visibleCount < 3 && filteredProjects.length > 1 && (
             <div className="carousel-controls">
-              <button className="prev" onClick={handlePrev}>&lt;</button>
-              <button className="next" onClick={handleNext}>&gt;</button>
+              <button className="prev" onClick={handlePrev}>
+                &lt;
+              </button>
+              <button className="next" onClick={handleNext}>
+                &gt;
+              </button>
             </div>
           )}
+
+          {/* BOTÓN VOLVER ATRÁS */}
+          <div className="margin-mark back-button-wrapper">
+            <button className="back-button" onClick={() => navigate(-1)}>
+              ←
+            </button>
+          </div>
         </>
       )}
     </section>
