@@ -285,6 +285,7 @@
         {
           "projectType": "image",
           "name": "Dashboard Sales",
+          "date": "08/2025",
           "image": "projects/dashboards/Ventas.png",
           "description": "Interactive sales dashboard showing revenue, regional sales, trends, and performance metrics with interactive visualizations.",
           "githubLink": "",
@@ -298,6 +299,7 @@
         {
           "projectType": "image",
           "name": "Dashboard Productivity",
+          "date": "08/2025",
           "image": "projects/dashboards/Productividad.png",
           "description": "Interactive productivity dashboard using DAX measures to track efficiency, quality, and operator performance, with clear visualizations designed in Figma.",
           "githubLink": "",
@@ -311,6 +313,7 @@
         {
           "projectType": "image",
           "name": "Dashboard Banking and Finance",
+          "date": "08/2025",
           "image": "projects/dashboards/Resumen Bancario.png",
           "description": "Interactive Finance dashboard using DAX measures to analyze payments, taxes, and cumulative profit, segmented by banks and payment methods, with clear visuals designed in Figma for strategic insights.",
           "githubLink": "",
@@ -324,6 +327,7 @@
         {
           "projectType": "image",
           "name": "Dashboard Sales",
+          "date": "08/2025",
           "image": "projects/dashboards/Resumen Financiero.png",
           "description": "Interactive Sales and Margin Analysis dashboard, using Power Query for data preparation and DAX for key metrics, with visuals designed in Figma to provide clear, actionable insights by region, team, and product category.",
           "githubLink": "https://github.com/mariamonchot/dashboard-resumen-financiero",
@@ -337,6 +341,7 @@
         {
           "projectType": "text",
           "name": "Polygon Area Calculator",
+          "date": "06/2025",
           "image": "",
           "description": "Object-oriented implementation for calculating areas, perimeters, and diagonals of polygons, with ASCII-based visualizations.",
           "githubLink": "https://github.com/KateClysm/Python_Practices/blob/main/FreeCodeCamp/Projects/polygon_area_calculator_project.py",
@@ -350,6 +355,7 @@
         {
           "projectType": "text",
           "name": "Probability Calculator",
+          "date": "06/2025",
           "image": "",
           "description": "Object-oriented project that simulates probability experiments using randomization and Monte Carlo methods to approximate theoretical outcomes.",
           "githubLink": "https://github.com/KateClysm/Python_Practices/blob/main/FreeCodeCamp/Projects/probability_calculator_project.py",
@@ -363,6 +369,7 @@
         {
           "projectType": "text",
           "name": "Budget App",
+          "date": "05/2025",
           "image": "",
           "description": "Budget management system supporting deposits, withdrawals, transfers, and text-based spending charts.",
           "githubLink": "https://github.com/KateClysm/Python_Practices/blob/main/FreeCodeCamp/Projects/budget_app_project_final.py",
@@ -376,6 +383,7 @@
         {
           "projectType": "text",
           "name": "Time Calculator",
+          "date": "04/2025",
           "image": "",
           "description": "Function for calculating future times based on a start time and duration, optionally considering the day of the week.",
           "githubLink": "https://github.com/KateClysm/Python_Practices/blob/main/FreeCodeCamp/Projects/time_calculator_clean_project.py",
@@ -389,6 +397,7 @@
         {
           "projectType": "text",
           "name": "Arithmetic Formatter",
+          "date": "03/2025",
           "image": "",
           "description": "Function to neatly format basic arithmetic problems in aligned vertical columns, with input validation and clean, structured design.",
           "githubLink": "https://github.com/KateClysm/Python_Practices/blob/main/FreeCodeCamp/Projects/arithmetic_formatter_project.py",
@@ -402,6 +411,7 @@
         {
           "projectType": "text",
           "name": "Computational Thinking Guide",
+          "date": "05/2025",
           "image": "",
           "description": "Free guide covering all course topics, exercises, and official resources. Includes summaries, examples, extra explanations, and practical applications with Pandas, NumPy, and Matplotlib, created to support students and future learners.",
           "githubLink": "https://github.com/KateClysm/Python_Practices/tree/main/Licenciatura%20en%20Ciencias%20de%20Datos/Pensamiento%20Computacional",
@@ -415,6 +425,7 @@
         {
           "projectType": "image",
           "name": "VibrAr",
+          "date": "02/2024",
           "image": "projects/webdevelopment/VibrAr.png",
           "description": "VibrAr is your essential guide to the latest events and rumors about concerts by artists coming to Argentina. Explore the exciting music scene with detailed information about dates, venues, and fresh news. Immerse yourself in the VibrAr experience, where music comes to life. Discover, vibe, and stay updated with the magic of music in Argentina!",
           "githubLink": "https://github.com/KateClysm/VibrAr",
@@ -428,6 +439,7 @@
         {
           "projectType": "image",
           "name": "ParaSeekers",
+          "date": "07/2023",
           "image": "projects/webdevelopment/ParaSeekers.png",
           "description": "Paraseekers Forum is an interactive discussion platform built as a group project for the Full Stack Web Development Course at SomosCoders. It allows users to create accounts, share posts, and explore content in a responsive and modern interface.",
           "githubLink": "https://github.com/KateClysm/Foro/tree/main",
@@ -610,11 +622,7 @@
       "loading": "Cargando...",
       "categories": [
         { "id": "notable", "name": "DESTACADOS", "visualize": true },
-        {
-          "id": "machinelearning",
-          "name": "APRENDIZAJE AUTOMÁTICO",
-          "visualize": false
-        },
+        {"id": "machinelearning", "name": "APRENDIZAJE AUTOMÁTICO", "visualize": false},
         { "id": "visualization", "name": "VISUALIZACIÓN", "visualize": true },
         { "id": "python", "name": "PYTHON", "visualize": true },
         {
@@ -628,6 +636,7 @@
         {
           "projectType": "image",
           "name": "Dashboard de Ventas",
+          "date": "08/2025",
           "image": "projects/dashboards/Ventas.png",
           "description": "Dashboard interactivo de ventas con datos limpios y transformados en Power Query, mostrando ingresos, ventas por región, tendencias y métricas de desempeño con visualizaciones interactivas.",
           "githubLink": "",
@@ -641,6 +650,7 @@
         {
           "projectType": "image",
           "name": "Dashboard de Productividad",
+          "date": "08/2025",
           "image": "projects/dashboards/Productividad.png",
           "description": "Dashboard interactivo de productividad usando medidas DAX para hacer seguimiento de eficiencia, calidad y desempeño por operador, con visualizaciones claras diseñadas en Figma.",
           "githubLink": "",
@@ -654,6 +664,7 @@
         {
           "projectType": "image",
           "name": "Dashboard Bancario y Financiero",
+          "date": "08/2025",
           "image": "projects/dashboards/Resumen Bancario.png",
           "description": "Dashboard financiero interactivo usando medidas DAX para analizar pagos, impuestos y utilidad acumulada, segmentado por bancos y métodos de pago, con visualizaciones claras diseñadas en Figma para insights estratégicos.",
           "githubLink": "",
@@ -667,6 +678,7 @@
         {
           "projectType": "image",
           "name": "Dashboard de Ventas y Margen",
+          "date": "08/2025",
           "image": "projects/dashboards/Resumen Financiero.png",
           "description": "Dashboard interactivo de ventas y análisis de margen, usando Power Query para preparar datos y DAX para métricas clave, con visualizaciones diseñadas en Figma para ofrecer insights claros y accionables por región, equipo y categoría de producto.",
           "githubLink": "https://github.com/mariamonchot/dashboard-resumen-financiero",
@@ -680,6 +692,7 @@
         {
           "projectType": "text",
           "name": "Calculadora de Área de Polígonos",
+          "date": "06/2025",
           "image": "",
           "description": "Implementación orientada a objetos para calcular áreas, perímetros y diagonales de polígonos, con visualizaciones en ASCII.",
           "githubLink": "https://github.com/KateClysm/Python_Practices/blob/main/FreeCodeCamp/Projects/polygon_area_calculator_project.py",
@@ -693,6 +706,7 @@
         {
           "projectType": "text",
           "name": "Calculadora de Probabilidad",
+          "date": "06/2025",
           "image": "",
           "description": "Proyecto orientado a objetos que simula experimentos de probabilidad usando métodos aleatorios y Monte Carlo para aproximar resultados teóricos.",
           "githubLink": "https://github.com/KateClysm/Python_Practices/blob/main/FreeCodeCamp/Projects/probability_calculator_project.py",
@@ -706,6 +720,7 @@
         {
           "projectType": "text",
           "name": "Aplicación de Presupuesto",
+          "date": "05/2025",
           "image": "",
           "description": "Sistema de gestión de presupuesto que permite depósitos, retiros, transferencias y gráficos de gasto en texto.",
           "githubLink": "https://github.com/KateClysm/Python_Practices/blob/main/FreeCodeCamp/Projects/budget_app_project_final.py",
@@ -719,6 +734,7 @@
         {
           "projectType": "text",
           "name": "Calculadora de Tiempo",
+          "date": "04/2025",
           "image": "",
           "description": "Función para calcular tiempos futuros basada en una hora de inicio y duración, considerando opcionalmente el día de la semana.",
           "githubLink": "https://github.com/KateClysm/Python_Practices/blob/main/FreeCodeCamp/Projects/time_calculator_clean_project.py",
@@ -732,6 +748,7 @@
         {
           "projectType": "text",
           "name": "Formateador Aritmético",
+          "date": "03/2025",
           "image": "",
           "description": "Función para formatear problemas aritméticos básicos en columnas verticales alineadas, con validación de entrada y diseño limpio y estructurado.",
           "githubLink": "https://github.com/KateClysm/Python_Practices/blob/main/FreeCodeCamp/Projects/arithmetic_formatter_project.py",
@@ -745,6 +762,7 @@
         {
           "projectType": "text",
           "name": "Guía de Pensamiento Computacional",
+          "date": "05/2025",
           "image": "",
           "description": "Guía gratuita que cubre todos los temas del curso, ejercicios y recursos oficiales. Incluye resúmenes, ejemplos, explicaciones adicionales y aplicaciones prácticas con Pandas, NumPy y Matplotlib, creada para apoyar a estudiantes y futuros aprendices.",
           "githubLink": "https://github.com/KateClysm/Python_Practices/tree/main/Licenciatura%20en%20Ciencias%20de%20Datos/Pensamiento%20Computacional",
@@ -762,6 +780,7 @@
         {
           "projectType": "image",
           "name": "VibrAr",
+          "date": "02/2024",
           "image": "projects/webdevelopment/VibrAr.png",
           "description": "VibrAr es tu guía esencial de los últimos eventos y rumores sobre conciertos de artistas que vienen a Argentina. Explora la escena musical con información detallada de fechas, recintos y noticias frescas. Sumérgete en la experiencia VibrAr, donde la música cobra vida. ¡Descubre, vibra y mantente actualizado con la magia de la música en Argentina!",
           "githubLink": "https://github.com/KateClysm/VibrAr",
@@ -779,6 +798,7 @@
         {
           "projectType": "image",
           "name": "ParaSeekers",
+          "date": "07/2023",
           "image": "projects/webdevelopment/ParaSeekers.png",
           "description": "Paraseekers Forum es una plataforma de discusión interactiva construida como proyecto grupal para el Curso de Desarrollo Web Full Stack en SomosCoders. Permite a los usuarios crear cuentas, compartir publicaciones y explorar contenido en una interfaz moderna y responsiva.",
           "githubLink": "https://github.com/KateClysm/Foro/tree/main",

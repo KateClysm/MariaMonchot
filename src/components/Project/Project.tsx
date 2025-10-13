@@ -19,6 +19,7 @@ const Project: React.FC<ProjectProps> = ({ project, icons }) => {
       )}
 
       <h3 className="fixed-border">{project.name}</h3>
+      <p className="project-date">{project.date}</p>
       <p>{project.description}</p>
 
       <div className="link-etiquetes">

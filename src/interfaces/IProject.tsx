@@ -3,6 +3,7 @@ import { IconData } from "./IIcon";
 export default interface IProject {
   projectType: string;
   name: string;
+  date: string;
   image: string;
   description: string;
   githubLink?: string;
