@@ -159,7 +159,7 @@
     "database": {
       "icon": "icons/database.png",
       "alt": "Databases Icon From Flaticon, made by the-chohans-brand",
-      "en-label": "Database",
+      "en-label": "Databases",
       "es-label": "Bases de Datos"
     },
     "communication": {
@@ -205,11 +205,11 @@
       "en-label": "Projects",
       "es-label": "Proyectos"
     },
-    "courses": {
+    "certifications": {
       "icon": "20",
       "plus": "+",
-      "en-label": "Courses",
-      "es-label": "Cursos"
+      "en-label": "Certifications",
+      "es-label": "Certificaciones"
     },
     "technologies": {
       "icon": "20",
@@ -262,7 +262,7 @@
       "myHighlights": [
         { "ref": "team_members" },
         { "ref": "projects" },
-        { "ref": "courses" },
+        { "ref": "certifications" },
         { "ref": "technologies" }
       ]
     },
@@ -609,7 +609,7 @@
       "myHighlights": [
         { "ref": "team_members" },
         { "ref": "projects" },
-        { "ref": "courses" },
+        { "ref": "certifications" },
         { "ref": "technologies" }
       ]
     },
