@@ -16,7 +16,7 @@ const AllProjects: React.FC<PageProps> = () => {
   useRevealUp();
 
   const projectsSection = useSection("projectsData");
-  const [selectedCategory, setSelectedCategory] = useState<string>("NOTABLE");
+  const [selectedCategory, setSelectedCategory] = useState<string>("notable");
 
   const filteredProjects = projectsSection.projects.filter((project: IProject) =>
     project.categories.includes(selectedCategory)
@@ -74,14 +74,32 @@ const AllProjects: React.FC<PageProps> = () => {
   };
 
   // Cambio de categoría con animación smooth
-  const handleCategoryChange = (category: string) => {
-    if (category === selectedCategory) return;
+  const handleCategoryChange = (categoryId: string) => {
+    if (categoryId === selectedCategory) return;
     setAnimateProjects(true);
     setTimeout(() => {
-      setSelectedCategory(category);
+      setSelectedCategory(categoryId);
       setAnimateProjects(false);
-    }, 300); // duración total de animación más smooth
+    }, 300);
   };
+
+
+
+  // Mantener categoría seleccionada aunque cambie el idioma
+  useEffect(() => {
+    if (!projectsSection.categories || !projectsSection.categories.length) return;
+
+    // Verificar si la categoría seleccionada sigue existiendo
+    const categoryExists = projectsSection.categories.some(
+      (cat: any) => cat.id === selectedCategory
+    );
+
+    // Si no existe, fallback a "notable"
+    if (!categoryExists) {
+      setSelectedCategory("notable");
+    }
+  }, [projectsSection.categories, selectedCategory]);
+
 
   return (
     <section className="projects-section revealUp no-reset">
@@ -95,13 +113,13 @@ const AllProjects: React.FC<PageProps> = () => {
           <div className="categories margin-mark">
             {projectsSection.categories
               .filter((cat: any) => cat.visualize)
-              .map((cat: any, idx: number) => (
+              .map((cat: any) => (
                 <button
-                  key={idx}
-                  className={selectedCategory === cat.name ? "active" : ""}
-                  onClick={() => handleCategoryChange(cat.name)}
+                  key={cat.id} 
+                  className={selectedCategory === cat.id ? "active" : ""} 
+                  onClick={() => handleCategoryChange(cat.id)}
                 >
-                  {cat.name}
+                  {cat.name} 
                 </button>
               ))}
           </div>
